@@ -1,0 +1,9 @@
+.sass-cache/
+BoschWeb.sublime-project
+BoschWeb.sublime-workspace
+vendor/
+node_modules/
+*.DS_Store
+css/
+dist/
+mocks/files/

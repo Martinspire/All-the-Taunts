@@ -1,0 +1,12 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	.popup .popup-container{
+			height:60%
+		}
+	.popup.large .popup-container{
+			height:75%
+		}
+	.popup.small .popup-container{
+			height:50%
+		}
+}

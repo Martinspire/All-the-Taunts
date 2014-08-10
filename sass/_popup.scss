@@ -1,0 +1,130 @@
+.popup{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	height:100%;
+	width:100%;
+	z-index:1100;
+	background-color:rgba(50,50,50,.25);
+	.popup-container{
+		position:absolute;
+		top:15%;
+		left:20%;
+		right:20%;
+		bottom:auto;
+		height:auto;
+		width:60%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		-moz-flex: 1;
+		-ms-flex: 1;
+		-o-flex: 1;
+		flex: 1;
+		.popup-header{
+			padding:10px;
+			background-color:$primary-color;
+			color:$font-light;
+			font-size:2em;
+			font-weight:bold;
+			height:50px;
+			box-shadow: 2px 2px 5px rgba(50,50,50,.50);
+			.popup-close{
+				display:block;
+				float:right;
+				background-image: url('../img/close.png');
+				background-size:cover;
+				height:30px;
+				width:30px;
+			}
+		}
+		.popup-content{
+			position:relative;
+			clear:both;
+			padding:10px;
+			background-color:$primary-background-color;
+			color:$font-dark;
+			font-size:1em;
+			box-shadow: 2px 2px 5px rgba(50,50,50,.50);
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			-moz-flex: 1;
+			-ms-flex: 1;
+			-o-flex: 1;
+			flex: 1;
+			overflow-y:auto;
+			overflow-x:hidden;
+			.popup-buttons{
+				position:absolute;
+				bottom:0;
+				left:0;
+				right:0;
+				width:100%;
+				height:auto;
+				padding:20px;
+				button{
+					float:right;
+					min-width:150px;
+				}
+				.popup-close{
+					float:left;
+				}
+			}
+		}
+	}
+}
+.popup.small .popup-container{
+	top:25%;
+	left:30%;
+	right:30%;
+	width:40%;
+}
+.popup.large .popup-container{
+	top:15%;
+	left:10%;
+	right:10%;
+	width:80%;
+}
+.popup.active{
+	display:block;
+}
+.popup-blocker{
+	display:none;
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	height:50px;
+	width:100%;
+	z-index:1099;
+	background-color:rgba(50,50,50,.25);
+}
+.popup-blocker.active{
+	display:block;
+}

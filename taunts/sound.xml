@@ -1,0 +1,3183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.4 U (http://www.xmlspy.com) by Isaac Ellis (Big Huge Games) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Brian Reynolds (Big Huge Games) -->
+<!-- LOCALIZATION: STRING elements.-->
+<!-- LOCALIZATION: STRING elements.-->
+<!-- LOCALIZATION: STRING elements.-->
+<!-- LOCALIZATION: STRING elements.-->
+<!-- LOCALIZATION: STRING elements.-->
+<ROOT>
+<TRACKS>
+<INTROS>
+<SOUND file=".\sounds\tracks\Misfire.wav"/>--
+<SOUND file=".\sounds\tracks\PeacePipe.wav"/>
+<SOUND file=".\sounds\tracks\Rockets.wav"/>
+<SOUND file=".\sounds\tracks\Bengal.wav"/>
+<SOUND file=".\sounds\tracks\TheHague(ruffmix2).wav"/>
+<SOUND file=".\sounds\tracks\ThunderBird.wav"/>
+<SOUND file=".\sounds\tracks\OverTheDam.wav"/>
+</INTROS>
+<FULLINTROS>
+<SOUND file=".\sounds\tracks\SacrificeToTheSun.wav"/>
+<SOUND file=".\sounds\tracks\Misfire.wav"/>
+<SOUND file=".\sounds\tracks\PeacePipe.wav"/>
+<SOUND file=".\sounds\tracks\Rockets.wav"/>
+<SOUND file=".\sounds\tracks\Bengal.wav"/>
+<SOUND file=".\sounds\tracks\TheHague(ruffmix2).wav"/>
+<SOUND file=".\sounds\tracks\ThunderBird.wav"/>
+<SOUND file=".\sounds\tracks\OverTheDam.wav"/>
+<SOUND file=".\sounds\tracks\HalfMoon.wav"/>
+<SOUND file=".\sounds\tracks\ThunderBird.wav"/>
+<SOUND file=".\sounds\tracks\AcrossTheBog.wav"/>
+<SOUND file=".\sounds\tracks\Allerton.wav"/>
+<SOUND file=".\sounds\tracks\Santiago.wav"/>
+<SOUND file=".\sounds\tracks\Hearth.wav"/>
+<SOUND file=".\sounds\tracks\Gobi.wav"/>
+<SOUND file=".\sounds\tracks\Brazil.wav"/>
+<SOUND file=".\sounds\tracks\TheRussian.wav"/>
+<SOUND file=".\sounds\tracks\Morocco.wav"/>
+<SOUND file=".\sounds\tracks\DarkForest.wav"/>
+<SOUND file=".\sounds\tracks\Eire.wav"/>
+<SOUND file=".\sounds\tracks\HighStrung.wav"/>
+<SOUND file=".\sounds\tracks\BattleAtWitchCreek.wav"/>
+<SOUND file=".\sounds\tracks\MistAtDawn.wav"/>
+<SOUND file=".\sounds\tracks\DesertWind.wav"/>
+<SOUND file=".\sounds\tracks\Osaka.wav"/>
+<SOUND file=".\sounds\tracks\WilliamWallace.wav"/>
+<SOUND file=".\sounds\tracks\Galleons.wav"/>
+<SOUND file=".\sounds\tracks\Attack.wav"/>
+<SOUND file=".\sounds\tracks\Revolver.wav"/>
+<SOUND file=".\sounds\tracks\Indochine.wav"/>
+<SOUND file=".\sounds\tracks\SriLanka.wav"/>
+<SOUND file=".\sounds\tracks\Tribes.wav"/>
+<SOUND file=".\sounds\tracks\WingAndAPrayer.wav"/>
+<SOUND file=".\sounds\tracks\SimpleSong.wav"/>
+</FULLINTROS>
+<WIN>
+<SOUND file=".\sounds\tracks\ArcDeTriomphe.wav"/>
+</WIN>
+<LOSE>
+<SOUND file=".\sounds\tracks\Waterloo.wav"/>
+</LOSE>
+<TRIBE tribe="default">
+<AGE age="0">
+<!--//BR// 1/18/2003 -> gave a last listen to everything with the new recordings and sorted the moods-->
+<MOOD mood="BATTLE_VICTORY">
+<SOUND file=".\sounds\tracks\WilliamWallace.wav"/>
+<SOUND file=".\sounds\tracks\Galleons.wav"/>
+<SOUND file=".\sounds\tracks\Attack.wav"/>
+<SOUND file=".\sounds\tracks\Revolver.wav"/>
+<SOUND file=".\sounds\tracks\TheRussian.wav"/>
+<SOUND file=".\sounds\tracks\HighStrung.wav"/>
+</MOOD>
+<MOOD mood="BATTLE_DEFEAT">
+<SOUND file=".\sounds\tracks\BattleAtWitchCreek.wav"/>
+<SOUND file=".\sounds\tracks\MistAtDawn.wav"/>
+<SOUND file=".\sounds\tracks\DesertWind.wav"/>
+<SOUND file=".\sounds\tracks\Osaka.wav"/>
+<SOUND file=".\sounds\tracks\Tribes.wav"/>
+<SOUND file=".\sounds\tracks\Allerton.wav"/>
+<SOUND file=".\sounds\tracks\Misfire.wav"/>
+</MOOD>
+<MOOD mood="ECONOMIC">
+<SOUND file=".\sounds\tracks\AcrossTheBog.wav"/>
+<SOUND file=".\sounds\tracks\Brazil.wav"/>
+<SOUND file=".\sounds\tracks\DarkForest.wav"/>
+<SOUND file=".\sounds\tracks\Eire.wav"/>
+<SOUND file=".\sounds\tracks\Gobi.wav"/>
+<SOUND file=".\sounds\tracks\Hearth.wav"/>
+<SOUND file=".\sounds\tracks\Indochine.wav"/>
+<SOUND file=".\sounds\tracks\Morocco.wav"/>
+<SOUND file=".\sounds\tracks\Santiago.wav"/>
+<SOUND file=".\sounds\tracks\SimpleSong.wav"/>
+<SOUND file=".\sounds\tracks\SriLanka.wav"/>
+<SOUND file=".\sounds\tracks\WingAndAPrayer.wav"/>
+<SOUND file=".\sounds\tracks\SacrificeToTheSun.wav"/>
+<SOUND file=".\sounds\tracks\PeacePipe.wav"/>
+<SOUND file=".\sounds\tracks\Rockets.wav"/>
+<SOUND file=".\sounds\tracks\Bengal.wav"/>
+<SOUND file=".\sounds\tracks\TheHague(ruffmix2).wav"/>
+<SOUND file=".\sounds\tracks\ThunderBird.wav"/>
+<SOUND file=".\sounds\tracks\OverTheDam.wav"/>
+<SOUND file=".\sounds\tracks\HalfMoon.wav"/>
+</MOOD>
+</AGE>
+</TRIBE>
+</TRACKS>
+<!--  <TRACKS>
+<INTROS>
+<SOUND file=".\sounds\tracks\Osaka.wav"/>
+<SOUND file=".\sounds\tracks\WilliamWallace.wav"/>
+<SOUND file=".\sounds\tracks\Attack.wav"/>
+<SOUND file=".\sounds\tracks\Revolver.wav"/>
+<SOUND file=".\sounds\tracks\Tribes.wav"/>
+</INTROS>
+<FULLINTROS>
+<SOUND file=".\sounds\tracks\AcrossTheBog.wav"/>
+<SOUND file=".\sounds\tracks\Allerton.wav"/>
+<SOUND file=".\sounds\tracks\Santiago.wav"/>
+<SOUND file=".\sounds\tracks\Hearth.wav"/>
+<SOUND file=".\sounds\tracks\Gobi.wav"/>
+<SOUND file=".\sounds\tracks\Brazil.wav"/>
+<SOUND file=".\sounds\tracks\TheRussian.wav"/>
+<SOUND file=".\sounds\tracks\Morocco.wav"/>
+<SOUND file=".\sounds\tracks\DarkForest.wav"/>
+<SOUND file=".\sounds\tracks\Eire.wav"/>
+<SOUND file=".\sounds\tracks\HighStrung.wav"/>
+<SOUND file=".\sounds\tracks\BattleAtWitchCreek.wav"/>
+<SOUND file=".\sounds\tracks\MistAtDawn.wav"/>
+<SOUND file=".\sounds\tracks\DesertWind.wav"/>
+<SOUND file=".\sounds\tracks\Osaka.wav"/>
+<SOUND file=".\sounds\tracks\WilliamWallace.wav"/>
+<SOUND file=".\sounds\tracks\Galleons.wav"/>
+<SOUND file=".\sounds\tracks\Attack.wav"/>
+<SOUND file=".\sounds\tracks\Revolver.wav"/>
+<SOUND file=".\sounds\tracks\Indochine.wav"/>
+<SOUND file=".\sounds\tracks\SriLanka.wav"/>
+<SOUND file=".\sounds\tracks\Tribes.wav"/>
+<SOUND file=".\sounds\tracks\WingAndAPrayer.wav"/>
+<SOUND file=".\sounds\tracks\SimpleSong.wav"/>
+</FULLINTROS>
+<WIN>
+<SOUND file=".\sounds\tracks\ArcDeTriomphe.wav"/>
+</WIN>
+<LOSE>
+<SOUND file=".\sounds\tracks\Waterloo.wav"/>
+</LOSE>
+<TRIBE tribe="default">
+<AGE age="0">
+<MOOD mood="BATTLE_VICTORY">
+<SOUND file=".\sounds\tracks\WilliamWallace.wav"/>
+<SOUND file=".\sounds\tracks\Galleons.wav"/>
+<SOUND file=".\sounds\tracks\Attack.wav"/>
+<SOUND file=".\sounds\tracks\Revolver.wav"/>
+<SOUND file=".\sounds\tracks\TheRussian.wav"/>
+<SOUND file=".\sounds\tracks\HighStrung.wav"/>
+</MOOD>
+<MOOD mood="BATTLE_DEFEAT">
+<SOUND file=".\sounds\tracks\BattleAtWitchCreek.wav"/>
+<SOUND file=".\sounds\tracks\MistAtDawn.wav"/>
+<SOUND file=".\sounds\tracks\DesertWind.wav"/>
+<SOUND file=".\sounds\tracks\Osaka.wav"/>
+<SOUND file=".\sounds\tracks\Tribes.wav"/>
+<SOUND file=".\sounds\tracks\Allerton.wav"/>
+</MOOD>
+<MOOD mood="ECONOMIC">
+<SOUND file=".\sounds\tracks\AcrossTheBog.wav"/>
+<SOUND file=".\sounds\tracks\Brazil.wav"/>
+<SOUND file=".\sounds\tracks\DarkForest.wav"/>
+<SOUND file=".\sounds\tracks\Eire.wav"/>
+<SOUND file=".\sounds\tracks\Gobi.wav"/>
+<SOUND file=".\sounds\tracks\Hearth.wav"/>
+<SOUND file=".\sounds\tracks\Indochine.wav"/>
+<SOUND file=".\sounds\tracks\Morocco.wav"/>
+<SOUND file=".\sounds\tracks\Santiago.wav"/>
+<SOUND file=".\sounds\tracks\SimpleSong.wav"/>
+<SOUND file=".\sounds\tracks\SriLanka.wav"/>
+<SOUND file=".\sounds\tracks\WingAndAPrayer.wav"/>
+</MOOD>
+</AGE>
+</TRIBE>
+</TRACKS> -->
+<TAUNTS>
+<TAUNT index="1" file=".\sounds\taunts\yes-3.wav" id="" volume="255">
+<STRING>Yes.</STRING>
+</TAUNT>
+<TAUNT index="2" file=".\sounds\taunts\no-2.wav" id="" volume="255">
+<STRING>No.</STRING>
+</TAUNT>
+<TAUNT index="3" file=".\sounds\taunts\maybe-2.wav" id="" volume="255">
+<STRING>Maybe.</STRING>
+</TAUNT>
+<TAUNT index="4" file=".\sounds\taunts\need_food-2.wav" id="NEED_FOOD" volume="255">
+<STRING>I need Food.</STRING>
+</TAUNT>
+<TAUNT index="5" file=".\sounds\taunts\needtimber-2.wav" id="NEED_TIMBER" volume="255">
+<STRING>I need Timber.</STRING>
+</TAUNT>
+<TAUNT index="6" file=".\sounds\taunts\need_metal-1.wav" id="NEED_METAL" volume="255">
+<STRING>I need Metal.</STRING>
+</TAUNT>
+<TAUNT index="7" file=".\sounds\taunts\needwealth-3.wav" id="NEED_WEALTH" volume="255">
+<STRING>I need Wealth.</STRING>
+</TAUNT>
+<TAUNT index="8" file=".\sounds\taunts\needoil-2.wav" id="NEED_OIL" volume="255">
+<STRING>I need Oil.</STRING>
+</TAUNT>
+<TAUNT index="9" file=".\sounds\taunts\needknowledge-1.wav" id="" volume="255">
+<STRING>I need Knowledge.</STRING>
+</TAUNT>
+<TAUNT index="10" file=".\sounds\taunts\ask_resources-2.wav" id="NEED" volume="255">
+<STRING>Do you need resources?</STRING>
+</TAUNT>
+<TAUNT index="11" file=".\sounds\taunts\help_here-3.wav" id="HELP" volume="255">
+<STRING>Little help here...</STRING>
+</TAUNT>
+<TAUNT index="12" file=".\sounds\taunts\noob_rush-1.wav" id="HELP" volume="255">
+<STRING>This noob's rushing me.</STRING>
+	</TAUNT>
+	<TAUNT index="13" file=".\sounds\taunts\buildtroops-1.wav" id="BUILD_TROOPS" volume="255">
+	<STRING>Build more troops.</STRING>
+	</TAUNT>
+	<TAUNT index="14" file=".\sounds\taunts\build_wonder-3.wav" id="BUILD_WONDER" volume="255">
+	<STRING>Build a wonder.</STRING>
+	</TAUNT>
+	<TAUNT index="15" file=".\sounds\taunts\work_econ-1.wav" id="BUILD_ECON" volume="255">
+	<STRING>Work on your economy.</STRING>
+	</TAUNT>
+	<TAUNT index="16" file=".\sounds\taunts\work_airforce-2.wav" id="BUILD_AIR" volume="255">
+	<STRING>Work on your air force.</STRING>
+	</TAUNT>
+	<TAUNT index="17" file=".\sounds\taunts\work_navy-3.wav" id="BUILD_NAVY" volume="255">
+	<STRING>Work on your navy.</STRING>
+	</TAUNT>
+	<TAUNT index="18" file=".\sounds\taunts\signal_attack-3.wav" id="BUILD_ECON" volume="255">
+	<STRING>Wait for my signal to attack.</STRING>
+	</TAUNT>
+	<TAUNT index="19" file=".\sounds\taunts\attack-3.wav" id="ATTACK" volume="255">
+	<STRING>Attack!</STRING>
+	</TAUNT>
+	<TAUNT index="20" file=".\sounds\taunts\get_em-2.wav" id="ATTACK" volume="255">
+	<STRING>Let's get 'em.</STRING>
+	</TAUNT>
+	<TAUNT index="21" file=".\sounds\taunts\guard_artillery-2.wav" id="GUARD" volume="255">
+	<STRING>Guard my artillery.</STRING>
+	</TAUNT>
+	<TAUNT index="22" file=".\sounds\taunts\move_troops-2.wav" id="HELP" volume="255">
+	<STRING>Move troops here.</STRING>
+	</TAUNT>
+	<TAUNT index="23" file=".\sounds\taunts\grab_territory-1.wav" id="" volume="255">
+	<STRING>Grab some territory.</STRING>
+	</TAUNT>
+	<TAUNT index="24" file=".\sounds\taunts\gonna_boom-2.wav" id="BOOMING" volume="255">
+	<STRING>Gonna boom.</STRING>
+	</TAUNT>
+	<TAUNT index="25" file=".\sounds\taunts\gonna_rush-1.wav" id="RUSHING" volume="255">
+	<STRING>Gonna rush.</STRING>
+	</TAUNT>
+	<TAUNT index="26" file=".\sounds\taunts\wanna_ally-3.wav" id="" volume="255">
+	<STRING>Wanna ally?</STRING>
+	</TAUNT>
+	<TAUNT index="27" file=".\sounds\taunts\wanna_peace-3.wav" id="" volume="255">
+	<STRING>Wanna make peace?</STRING>
+	</TAUNT>
+	<TAUNT index="28" file=".\sounds\taunts\means_war-3.wav" id="" volume="255">
+	<STRING>Of course you realize, this means war...</STRING>
+	</TAUNT>
+	<TAUNT index="29" file=".\sounds\taunts\pay_die-1.wav" id="" volume="255">
+	<STRING>Pay up or die.</STRING>
+	</TAUNT>
+	<TAUNT index="30" file=".\sounds\taunts\prepare_crushed-1.wav" id="" volume="255">
+	<STRING>Prepare to be crushed.</STRING>
+	</TAUNT>
+	<TAUNT index="31" file=".\sounds\taunts\who_attack-3.wav" id="" volume="255">
+	<STRING>Who we gonna attack?</STRING>
+	</TAUNT>
+	<TAUNT index="32" file=".\sounds\taunts\when_attack-2.wav" id="" volume="255">
+	<STRING>When shall we attack?</STRING>
+	</TAUNT>
+	<TAUNT index="33" file=".\sounds\taunts\where_enemy-1.wav" id="" volume="255">
+	<STRING>Where's the enemy?</STRING>
+</TAUNT>
+<TAUNT index="34" file=".\sounds\taunts\airpower-3.wav" id="" volume="255">
+<STRING>They've got air power.</STRING>
+	</TAUNT>
+	<TAUNT index="35" file=".\sounds\taunts\ships_ahoy-3.wav" id="" volume="255">
+	<STRING>Ships ahoy!</STRING>
+	</TAUNT>
+	<TAUNT index="36" file=".\sounds\taunts\spy_spy-3.wav" id="" volume="255">
+	<STRING>I spy a spy.</STRING>
+	</TAUNT>
+	<TAUNT index="37" file=".\sounds\taunts\rare_resources-3.wav" id="" volume="255">
+	<STRING>Rare resources for the taking.</STRING>
+	</TAUNT>
+	<TAUNT index="38" file=".\sounds\taunts\city_down-1.wav" id="" volume="255">
+	<STRING>The city is going down.</STRING>
+	</TAUNT>
+	<TAUNT index="39" file=".\sounds\taunts\checkouttimer-2.wav" id="" volume="255">
+	<STRING>Check out the timer.</STRING>
+	</TAUNT>
+	<TAUNT index="40" file=".\sounds\taunts\setup_shop-2.wav" id="" volume="255">
+	<STRING>Let's set up shop.</STRING>
+</TAUNT>
+<TAUNT index="41" file=".\sounds\taunts\wanna_bet-2.wav" id="" volume="255">
+<STRING>Wanna bet?</STRING>
+</TAUNT>
+<TAUNT index="42" file=".\sounds\taunts\itson-1.wav" id="" volume="255">
+<STRING>It's on.</STRING>
+	</TAUNT>
+	<TAUNT index="43" file=".\sounds\taunts\supposed_hurt-1.wav" id="" volume="255">
+	<STRING>Was that supposed to hurt?</STRING>
+	</TAUNT>
+	<TAUNT index="44" file=".\sounds\taunts\fixed_problem-1.wav" id="" volume="255">
+	<STRING>Have you fixed your little problem?</STRING>
+	</TAUNT>
+	<TAUNT index="45" file=".\sounds\taunts\good_luck-1.wav" id="" volume="255">
+	<STRING>Good luck with that.</STRING>
+	</TAUNT>
+	<TAUNT index="46" file=".\sounds\taunts\works_out-1.wav" id="" volume="255">
+	<STRING>Let me know how that works out for you.</STRING>
+	</TAUNT>
+	<TAUNT index="47" file=".\sounds\taunts\slow_ahead-3.wav" id="" volume="255">
+	<STRING>I may be slow, but I'm ahead of you.</STRING>
+</TAUNT>
+<TAUNT index="48" file=".\sounds\taunts\classy-3.wav" id="" volume="255">
+<STRING>Classy.</STRING>
+</TAUNT>
+<TAUNT index="49" file=".\sounds\taunts\tutorials_noob-1.wav" id="" volume="255">
+<STRING>Play the tutorials, noob.</STRING>
+</TAUNT>
+<TAUNT index="50" file=".\sounds\taunts\wake_done-1.wav" id="" volume="255">
+<STRING>Wake me up when you're done.</STRING>
+	</TAUNT>
+	<TAUNT index="51" file=".\sounds\taunts\get_outta-3.wav" id="" volume="255">
+	<STRING>Get outta my face.</STRING>
+	</TAUNT>
+	<TAUNT index="52" file=".\sounds\taunts\leavemealone-2.wav" id="" volume="255">
+	<STRING>Leave me alone.</STRING>
+	</TAUNT>
+	<TAUNT index="53" file=".\sounds\taunts\need_that-3.wav" id="" volume="255">
+	<STRING>'Cause you need that.</STRING>
+</TAUNT>
+<TAUNT index="54" file=".\sounds\taunts\over_yet-4.wav" id="" volume="255">
+<STRING>Is it over yet?</STRING>
+</TAUNT>
+<TAUNT index="55" file=".\sounds\taunts\parents_late-2.wav" id="" volume="255">
+<STRING>Do your parents know you're up this late?</STRING>
+	</TAUNT>
+	<TAUNT index="56" file=".\sounds\taunts\you_ok-1.wav" id="" volume="255">
+	<STRING>You okay over there?</STRING>
+	</TAUNT>
+	<TAUNT index="57" file=".\sounds\taunts\stayout-1.wav" id="" volume="255">
+	<STRING>And stay out!</STRING>
+	</TAUNT>
+	<TAUNT index="58" file=".\sounds\taunts\bwahaha-1.wav" id="" volume="255">
+	<STRING>Bwa ha ha ha ha!</STRING>
+	</TAUNT>
+	<TAUNT index="59" file=".\sounds\taunts\stormin_castle-1.wav" id="" volume="255">
+	<STRING>Have fun stormin the castle.</STRING>
+	</TAUNT>
+	<TAUNT index="60" file=".\sounds\taunts\randomrandom-2.wav" id="" volume="255">
+	<STRING>Random! Random!</STRING>
+	</TAUNT>
+	<TAUNT index="61" file=".\sounds\taunts\randomrandom-4.wav" id="" volume="255">
+	<STRING>RanDOM! RanDOM!</STRING>
+	</TAUNT>
+	<TAUNT index="62" file=".\sounds\taunts\game_begin-3.wav" id="" volume="255">
+	<STRING>Let the game begin.</STRING>
+	</TAUNT>
+	<TAUNT index="63" file=".\sounds\taunts\dude_pickem-1.wav" id="" volume="255">
+	<STRING>Dude, we know who you're going to take. Just pick 'em and get on with it.</STRING>
+	</TAUNT>
+	<TAUNT index="64" file=".\sounds\taunts\click_understand-2.wav" id="" volume="255">
+	<STRING>Which part of "Click in" didn't you understand?</STRING>
+</TAUNT>
+<TAUNT index="65" file=".\sounds\taunts\what_holdup-2.wav" id="" volume="255">
+<STRING>What's the holdup?</STRING>
+	</TAUNT>
+	<TAUNT index="66" file=".\sounds\taunts\ahh-1.wav" id="" volume="255">
+	<STRING>Ahhh.</STRING>
+	</TAUNT>
+	<TAUNT index="67" file=".\sounds\taunts\uhh_uhh-1.wav" id="" volume="255">
+	<STRING>Unh Unh Unh.</STRING>
+	</TAUNT>
+	<TAUNT index="68" file=".\sounds\taunts\ohhh-4.wav" id="" volume="255">
+	<STRING>Ohhh.</STRING>
+	</TAUNT>
+	<TAUNT index="69" file=".\sounds\taunts\uhhh-2.wav" id="" volume="255">
+	<STRING>Ughhhhhhhh.</STRING>
+	</TAUNT>
+	<TAUNT index="70" file=".\sounds\taunts\unh-3.wav" id="" volume="255">
+	<STRING>Unh!</STRING>
+	</TAUNT>
+	<TAUNT index="71" file=".\sounds\taunts\doomed-1.wav" id="" volume="255">
+	<STRING>We're doomed!</STRING>
+</TAUNT>
+<TAUNT index="72" file=".\sounds\taunts\wanngiveup-2.wav" id="" volume="255">
+<STRING>Wanna give up?</STRING>
+</TAUNT>
+<TAUNT index="73" file=".\sounds\taunts\victoryismine-3.wav" id="" volume="255">
+<STRING>Victory is mine!</STRING>
+</TAUNT>
+<TAUNT index="74" file=".\sounds\taunts\owmyeye-1.wav" id="" volume="255">
+<STRING>Oww! My eye!</STRING>
+</TAUNT>
+<TAUNT index="75" file=".\sounds\taunts\notintheface-1.wav" id="" volume="255">
+<STRING>Not in the face! Not in the face!</STRING>
+</TAUNT>
+<TAUNT index="76" file=".\sounds\taunts\coming-4.wav" id="" volume="255">
+<STRING>Coming.</STRING>
+</TAUNT>
+<TAUNT index="77" file=".\sounds\taunts\berightthere-1.wav" id="" volume="255">
+<STRING>Be right there.</STRING>
+</TAUNT>
+<TAUNT index="78" file=".\sounds\taunts\onmyway-1.wav" id="" volume="255">
+<STRING>On my way.</STRING>
+</TAUNT>
+<TAUNT index="79" file=".\sounds\taunts\send_help-1.wav" id="" volume="255">
+<STRING>I'm trying to send some help.</STRING>
+	</TAUNT>
+	<TAUNT index="80" file=".\sounds\taunts\gotchacovered-3.wav" id="" volume="255">
+	<STRING>Gotcha covered.</STRING>
+	</TAUNT>
+	<TAUNT index="81" file=".\sounds\taunts\check-2.wav" id="" volume="255">
+	<STRING>Check.</STRING>
+	</TAUNT>
+	<TAUNT index="82" file=".\sounds\taunts\itshallbedone-1.wav" id="" volume="255">
+	<STRING>It shall be done.</STRING>
+	</TAUNT>
+	<TAUNT index="83" file=".\sounds\taunts\rightonthat-2.wav" id="" volume="255">
+	<STRING>Let me get right on that.</STRING>
+	</TAUNT>
+	<TAUNT index="84" file=".\sounds\taunts\sweet-3.wav" id="" volume="255">
+	<STRING>Sweet.</STRING>
+	</TAUNT>
+	<TAUNT index="85" file=".\sounds\taunts\youdaman-2.wav" id="" volume="255">
+	<STRING>You da man.</STRING>
+	</TAUNT>
+	<TAUNT index="86" file=".\sounds\taunts\talking_about-1.wav" id="" volume="255">
+	<STRING>That's what I'm talking about.</STRING>
+	</TAUNT>
+	<TAUNT index="87" file=".\sounds\taunts\takencareof-3.wav" id="" volume="255">
+	<STRING>Consider it taken care of.</STRING>
+	</TAUNT>
+	<TAUNT index="88" file=".\sounds\taunts\soundslikeaplan-2.wav" id="" volume="255">
+	<STRING>Sounds like a plan.</STRING>
+	</TAUNT>
+	<TAUNT index="89" file=".\sounds\taunts\groovy-3.wav" id="" volume="255">
+	<STRING>Groovy.</STRING>
+	</TAUNT>
+	<TAUNT index="90" file=".\sounds\taunts\color_red-1.wav" id="" volume="255">
+	<STRING>Red</STRING>
+	</TAUNT>
+	<TAUNT index="91" file=".\sounds\taunts\color_blue-1.wav" id="" volume="255">
+	<STRING>Blue</STRING>
+	</TAUNT>
+	<TAUNT index="92" file=".\sounds\taunts\color_purple-2.wav" id="" volume="255">
+	<STRING>Purple</STRING>
+	</TAUNT>
+	<TAUNT index="93" file=".\sounds\taunts\color_green-1.wav" id="" volume="255">
+	<STRING>Green</STRING>
+	</TAUNT>
+	<TAUNT index="94" file=".\sounds\taunts\color_yellow.wav" id="" volume="255">
+	<STRING>Yellow</STRING>
+	</TAUNT>
+	<TAUNT index="95" file=".\sounds\taunts\color_ltblue-1.wav" id="" volume="255">
+	<STRING>Light Blue</STRING>
+	</TAUNT>
+	<TAUNT index="96" file=".\sounds\taunts\color_white-3.wav" id="" volume="255">
+	<STRING>White</STRING>
+	</TAUNT>
+	<TAUNT index="97" file=".\sounds\taunts\color_orange-2.wav" id="" volume="255">
+	<STRING>Orange</STRING>
+	</TAUNT>
+	<TAUNT index="98" file=".\sounds\taunts\humanity-3.wav" id="" volume="255">
+	<STRING>Aaaaagh! The Humanity!</STRING>
+	</TAUNT>
+	<TAUNT index="99" file=".\sounds\taunts\getthat-3.wav" id="" volume="255">
+	<STRING>Let me get that for you.</STRING>
+	</TAUNT>
+	<TAUNT index="100" file=".\sounds\taunts\keep_risin-1.wav" id="" volume="255">
+	<STRING>They keep on rising!</STRING>
+	</TAUNT>
+	<TAUNT index="101" file=".\sounds\taunts\rob\101 Led Zeppelin - Immigrant Song(laugh).wav" id="" volume="255">
+			<STRING>*Led Zeppelin - Immigrant Song*</STRING>
+		</TAUNT>
+		<TAUNT index="102" file=".\sounds\taunts\rob\102 haha.wav" id="" volume="255">
+			<STRING>Haha!</STRING>
+		</TAUNT>
+		<TAUNT index="103" file=".\sounds\taunts\rob\103 tnt_tick.wav" id="" volume="255">
+			<STRING>*Bomb*</STRING>
+		</TAUNT>
+		<TAUNT index="104" file=".\sounds\taunts\rob\104 chicken.wav" id="" volume="255">
+			<STRING>Chicken!</STRING>
+		</TAUNT>
+		<TAUNT index="105" file=".\sounds\taunts\rob\105 goodbad.wav" id="" volume="255">
+			<STRING>*Western Sound*</STRING>
+		</TAUNT>
+		<TAUNT index="106" file=".\sounds\taunts\rob\106 clearout.wav" id="HELP" volume="255">
+			<STRING>Better Clear out!</STRING>
+		</TAUNT>
+		<TAUNT index="107" file=".\sounds\taunts\rob\107 AwwMan.wav" id="" volume="255">
+			<STRING>Aww Man</STRING>
+		</TAUNT>
+		<TAUNT index="108" file=".\sounds\taunts\rob\108 Awwcrap.wav" id="" volume="255">
+			<STRING>AWW Crap.</STRING>
+		</TAUNT>
+		<TAUNT index="109" file=".\sounds\taunts\rob\109 lostlead.wav" id="" volume="255">
+			<STRING>Lost Lead.</STRING>
+		</TAUNT>
+		<TAUNT index="110" file=".\sounds\taunts\rob\110 takenlead.wav" id="" volume="255">
+			<STRING>Taken Lead</STRING>
+		</TAUNT>
+		<TAUNT index="111" file=".\sounds\taunts\rob\111 tiedlead.wav" id="HELP" volume="255">
+			<STRING>Tied For Lead, Better get going.</STRING>
+		</TAUNT>
+		<TAUNT index="112" file=".\sounds\taunts\rob\112 futileattemps.wav" id="HELP" volume="255">
+			<STRING>Your attempts are futile</STRING>
+		</TAUNT>
+		<TAUNT index="113" file=".\sounds\taunts\rob\113 omega.wav" id="BUILD_TROOPS" volume="255">
+			<STRING>Cheating Bastard.</STRING>
+		</TAUNT>
+		<TAUNT index="114" file=".\sounds\taunts\rob\114 whin.wav" id="" volume="255">
+			<STRING>Stop Whining.</STRING>
+		</TAUNT>
+		<TAUNT index="115" file=".\sounds\taunts\rob\115 daddy.wav" id="" volume="255">
+			<STRING>Who's your daddy?.</STRING>
+</TAUNT>
+<TAUNT index="116" file=".\sounds\taunts\rob\116 excellant.wav" id="" volume="255">
+<STRING>Excellent.</STRING>
+</TAUNT>
+<TAUNT index="117" file=".\sounds\taunts\rob\117 shutup.wav" id="" volume="255">
+<STRING>Shut up fool!.</STRING>
+</TAUNT>
+<TAUNT index="118" file=".\sounds\taunts\rob\118 idontthinkso.wav" id="" volume="255">
+<STRING>I don't think so.</STRING>
+		</TAUNT>
+		<TAUNT index="119" file=".\sounds\taunts\rob\119 startgame.wav" id="" volume="255">
+			<STRING>Start the game already!</STRING>
+		</TAUNT>
+		<TAUNT index="120" file=".\sounds\taunts\rob\120 iamweak.wav" id="HELP" volume="255">
+			<STRING>I am weak.</STRING>
+		</TAUNT>
+		<TAUNT index="121" file=".\sounds\taunts\rob\121 gotsomesatisfaction.wav" id="" volume="255">
+			<STRING>I just got some satisfaction.</STRING>
+		</TAUNT>
+		<TAUNT index="122" file=".\sounds\taunts\rob\122 zerotolerance.wav" id="BUILD_TROOPS" volume="255">
+			<STRING>Zero Tolerance.</STRING>
+		</TAUNT>
+		<TAUNT index="123" file=".\sounds\taunts\rob\123 ohyeah.wav" id="" volume="255">
+			<STRING>Oh Yeah.</STRING>
+		</TAUNT>
+		<TAUNT index="124" file=".\sounds\taunts\rob\124 South Park - Towelie - I am so high.wav" id="" volume="255">
+			<STRING>I am so high.</STRING>
+		</TAUNT>
+		<TAUNT index="125" file=".\sounds\taunts\rob\125 why.wav" id="HELP" volume="255">
+			<STRING>Why is everybody riding me today?</STRING>
+		</TAUNT>
+		<TAUNT index="126" file=".\sounds\taunts\rob\126 bitch.wav" id="" volume="255">
+			<STRING>You're goin' down!</STRING>
+		</TAUNT>
+		<TAUNT index="127" file=".\sounds\taunts\rob\127 outnow.wav" id="BUILD_TROOPS" volume="255">
+			<STRING>Well now you'll gonna get it motherfucker! That's right, you and me, right now, we're havin' it out ! Let's go ! C'mon ! C'mon !</STRING>
+</TAUNT>
+<TAUNT index="128" file=".\sounds\taunts\rob\128 righton.wav" id="" volume="255">
+<STRING>Right on!</STRING>
+</TAUNT>
+<TAUNT index="129" file=".\sounds\taunts\rob\129 attacked.wav" id="HELP" volume="255">
+<STRING>I'm being attacked!</STRING>
+		</TAUNT>
+		<TAUNT index="130" file=".\sounds\taunts\rob\130 sucks.wav" id="" volume="255">
+			<STRING>Sucks to be you.</STRING>
+		</TAUNT>
+		<TAUNT index="131" file=".\sounds\taunts\rob\131 hello baby.wav" id="" volume="255">
+			<STRING>Hello... baby</STRING>
+		</TAUNT>
+		<TAUNT index="132" file=".\sounds\taunts\rob\132 goodlookin.wav" id="" volume="255">
+			<STRING>Hehe! Good-looking</STRING>
+		</TAUNT>
+		<TAUNT index="133" file=".\sounds\taunts\rob\133 goodmorning vietnam.wav" id="" volume="255">
+			<STRING>Goooooood Morning Vietnam!</STRING>
+		</TAUNT>
+		<TAUNT index="134" file=".\sounds\taunts\rob\134 ladies and gentlemen welcome to my underground lair.wav" id="" volume="255">
+			<STRING>Ladies and Gentlemen, Welcome to my underground lair</STRING>
+		</TAUNT>
+		<TAUNT index="135" file=".\sounds\taunts\rob\135 master master we have a visitor.wav" id="" volume="255">
+			<STRING>Master, Master, We have a visitor...</STRING>
+		</TAUNT>
+		<TAUNT index="136" file=".\sounds\taunts\rob\136 welcome my brother.wav" id="" volume="255">
+			<STRING>Welcome my brother.</STRING>
+		</TAUNT>
+		<TAUNT index="137" file=".\sounds\taunts\rob\137 welcome back my friend.wav" id="" volume="255">
+			<STRING>Welcome back my friend!</STRING>
+		</TAUNT>
+		<TAUNT index="138" file=".\sounds\taunts\rob\138 All Hail.wav" id="ATTACK" volume="255">
+			<STRING>All Hail for da King!</STRING>
+		</TAUNT>
+		<TAUNT index="139" file=".\sounds\taunts\rob\139 so hmmm how you doing.wav" id="BUILD_ECON" volume="255">
+			<STRING>So, how you doing?</STRING>
+		</TAUNT>
+		<TAUNT index="140" file=".\sounds\taunts\rob\140 shall we play a game.wav" id="" volume="255">
+			<STRING>Shall we play a game?</STRING>
+		</TAUNT>
+		<TAUNT index="141" file=".\sounds\taunts\rob\141 Is everyone on a break.wav" id="" volume="255">
+			<STRING>Someone here? Hello? Is everyone on a break???</STRING>
+		</TAUNT>
+		<TAUNT index="142" file=".\sounds\taunts\rob\142 Where your waiting for Christmas.wav" id="ATTACK" volume="255">
+			<STRING>What are your waiting for? Christmas?</STRING>
+		</TAUNT>
+		<TAUNT index="143" file=".\sounds\taunts\rob\143 everybody online looking good.wav" id="" volume="255">
+			<STRING>Everybody online?? Looking good!</STRING>
+		</TAUNT>
+		<TAUNT index="144" file=".\sounds\taunts\rob\144 Oh joy what a beautifull day.wav" id="" volume="255">
+			<STRING>Oh joy! What a beautiful day...</STRING>
+		</TAUNT>
+		<TAUNT index="145" file=".\sounds\taunts\rob\145 welcome to the internet my friend how can i help you.wav" id="" volume="255">
+			<STRING>Welcome to the internet my friend, How can I help you???</STRING>
+		</TAUNT>
+		<TAUNT index="146" file=".\sounds\taunts\rob\146 So you are a user.wav" id="" volume="255">
+			<STRING>So you are a user...fascinating!</STRING>
+		</TAUNT>
+		<TAUNT index="147" file=".\sounds\taunts\rob\147 oh oh we got a moron here.wav" id="" volume="255">
+			<STRING>Oh, Oh... We got a moron here...</STRING>
+		</TAUNT>
+		<TAUNT index="148" file=".\sounds\taunts\rob\148 newbie.wav" id="" volume="255">
+			<STRING>Newbie!</STRING>
+		</TAUNT>
+		<TAUNT index="149" file=".\sounds\taunts\rob\149 Let's See what you're made of.wav" id="RUSHING" volume="255">
+			<STRING>Let's see, what you're made of!!!</STRING>
+		</TAUNT>
+		<TAUNT index="150" file=".\sounds\taunts\rob\150 I show you a function or two.wav" id="RUSHING" volume="255">
+			<STRING>I show you, a function or two...</STRING>
+		</TAUNT>
+		<TAUNT index="151" file=".\sounds\taunts\rob\151 Shut Up.wav" id="" volume="300">
+			<STRING>Shut Up!!!</STRING>
+		</TAUNT>
+		<TAUNT index="152" file=".\sounds\taunts\rob\152 remember the force will be with you always.wav" id="" volume="255">
+			<STRING>FSF Remember the force will be with you... Always!</STRING>
+		</TAUNT>
+		<TAUNT index="153" file=".\sounds\taunts\rob\153 Attack them now.wav" id="ATTACK" volume="255">
+			<STRING>Attack them now!!!</STRING>
+		</TAUNT>
+		<TAUNT index="154" file=".\sounds\taunts\rob\154 Im in position.wav" id="GUARD" volume="255">
+			<STRING>I'm in position...</STRING>
+</TAUNT>
+<TAUNT index="155" file=".\sounds\taunts\rob\155 We're beying watched.wav" id="" volume="255">
+<STRING>We're being watched... (by scout and/or spies)</STRING>
+		</TAUNT>
+		<TAUNT index="156" file=".\sounds\taunts\rob\156 Why did you do that for.wav" id="" volume="255">
+			<STRING>You clumsy poop! Why did you do that for???</STRING>
+		</TAUNT>
+		<TAUNT index="157" file=".\sounds\taunts\rob\157 Sir Yes Sir!.wav" id="" volume="255">
+			<STRING>Sir!, Yes!, Sir!</STRING>
+		</TAUNT>
+		<TAUNT index="158" file=".\sounds\taunts\rob\158 woody laugh.wav" id="" volume="255">
+			<STRING>Laughing Out Loud!</STRING>
+		</TAUNT>
+		<TAUNT index="159" file=".\sounds\taunts\rob\159 infinity.wav" id="BUILD_TROOPS" volume="255">
+			<STRING>I start my attack! Back me up when needed... I don't like a 2vs1</STRING>
+</TAUNT>
+<TAUNT index="160" file=".\sounds\taunts\rob\160 Rock and Roll.wav" id="ATTACK" volume="255">
+<STRING>Rock and Roll!!! I attack all who dare to face me!!!</STRING>
+</TAUNT>
+<TAUNT index="161" file=".\sounds\taunts\rob\161 you cant hide from me i know all the shortcuts.wav" id="" volume="255">
+<STRING>You can run, but you can't hide from me...I know all the shortcuts!</STRING>
+		</TAUNT>
+		<TAUNT index="162" file=".\sounds\taunts\rob\162 You Will Bow.wav" id="" volume="255">
+			<STRING>Before this is over, you Will kneel and bow before me, begging to spare your live...</STRING>
+		</TAUNT>
+		<TAUNT index="163" file=".\sounds\taunts\rob\163 feelthecorruption.wav" id="" volume="255">
+			<STRING>Feel the corruption...</STRING>
+		</TAUNT>
+		<TAUNT index="164" file=".\sounds\taunts\rob\164 He I'm in your town.wav" id="" volume="255">
+			<STRING>He! I'm in your town!</STRING>
+		</TAUNT>
+		<TAUNT index="165" file=".\sounds\taunts\rob\165 Were Taking This Place.wav" id="" volume="255">
+			<STRING>I think, I like this city, We're taking this place over...</STRING>
+		</TAUNT>
+		<TAUNT index="166" file=".\sounds\taunts\rob\166 Sorry I only ment to wound you.wav" id="" volume="255">
+			<STRING>Resigned?!? Sorry, I only meant to wound you...</STRING>
+		</TAUNT>
+		<TAUNT index="167" file=".\sounds\taunts\rob\167 You die too easily.wav" id="" volume="255">
+			<STRING>You die too easily!!!</STRING>
+		</TAUNT>
+		<TAUNT index="168" file=".\sounds\taunts\rob\168 See You In Hell.wav" id="" volume="255">
+			<STRING>See You In Hell.</STRING>
+		</TAUNT>
+		<TAUNT index="169" file=".\sounds\taunts\rob\169 Damn Im Good.wav" id="" volume="255">
+			<STRING>Damn I'm Good!!!</STRING>
+		</TAUNT>
+		<TAUNT index="170" file=".\sounds\taunts\rob\170 Yeh man that team sucked.wav" id="" volume="255">
+			<STRING>Yeh, man that team sucked... It was too easy!!!</STRING>
+		</TAUNT>
+		<TAUNT index="171" file=".\sounds\taunts\rob\171 Couldn't let you have all the glory.wav" id="" volume="255">
+			<STRING>Couldn't let you have all the glory...</STRING>
+</TAUNT>
+<TAUNT index="172" file=".\sounds\taunts\rob\172 Stinker.wav" id="" volume="255">
+<STRING>Am I a stinker???</STRING>
+</TAUNT>
+<TAUNT index="173" file=".\sounds\taunts\rob\173 Remind me.wav" id="" volume="255">
+<STRING>Remind me to kill you later!! Well... Let's do it now...</STRING>
+		</TAUNT>
+		<TAUNT index="174" file=".\sounds\taunts\rob\174 Here They Come.wav" id="GUARD" volume="255">
+			<STRING>Here They Come... Fire!!!</STRING>
+		</TAUNT>
+		<TAUNT index="175" file=".\sounds\taunts\rob\175 Leave Me Alone.wav" id="" volume="255">
+			<STRING>Leave Me Alone!</STRING>
+		</TAUNT>
+		<TAUNT index="176" file=".\sounds\taunts\rob\176 Will evil never rest.wav" id="" volume="255">
+			<STRING>Will evil never rest?!?</STRING>
+		</TAUNT>
+		<TAUNT index="177" file=".\sounds\taunts\rob\177 Ill Teach You.wav" id="GUARD" volume="255">
+			<STRING>I'll teach you to come near to my cities, I eat people like you for breakfast!!!</STRING>
+</TAUNT>
+<TAUNT index="178" file=".\sounds\taunts\rob\178 Help I need somebody01.wav" id="HELP" volume="255">
+<STRING>Help, I need somebody, Help, not just anybody, Help, you know I need someone, help!!!</STRING>
+</TAUNT>
+<TAUNT index="179" file=".\sounds\taunts\rob\179 Help me if you can.wav" id="HELP" volume="255">
+<STRING>Help me if you can, I'm feeling down... And I do appreciate you being round...</STRING>
+		</TAUNT>
+		<TAUNT index="180" file=".\sounds\taunts\rob\180 Would you please please help me.wav" id="HELP" volume="255">
+			<STRING>Help me, get my feet back on the ground... Won't you please, please help me?!?</STRING>
+</TAUNT>
+<TAUNT index="181" file=".\sounds\taunts\rob\181 I cant take it anymore.wav" id="HELP" volume="255">
+<STRING>I can't take it anymore...</STRING>
+		</TAUNT>
+		<TAUNT index="182" file=".\sounds\taunts\rob\182 Thank you.wav" id="" volume="255">
+			<STRING>THANK YOU! My friend.</STRING>
+		</TAUNT>
+		<TAUNT index="183" file=".\sounds\taunts\rob\183 now go away or i shall taunt you a second time.wav" id="" volume="255">
+			<STRING>Now go away... or I shall taunt you a second time...</STRING>
+		</TAUNT>
+		<TAUNT index="184" file=".\sounds\taunts\rob\184 they are coming to take me away.wav" id="" volume="255">
+			<STRING>They are coming to take me away...</STRING>
+		</TAUNT>
+		<TAUNT index="185" file=".\sounds\taunts\rob\185 We Surrender.wav" id="" volume="255">
+			<STRING>We Surrender...Move a little closer.</STRING>
+		</TAUNT>
+		<TAUNT index="186" file=".\sounds\taunts\rob\186 I Hate You.wav" id="" volume="255">
+			<STRING>I hate you!</STRING>
+		</TAUNT>
+		<TAUNT index="187" file=".\sounds\taunts\rob\187 i will leave you now but you wont defeat me.wav" id="NEED" volume="255">
+			<STRING>I will leave you now... but you wont defeat me...</STRING>
+		</TAUNT>
+		<TAUNT index="188" file=".\sounds\taunts\rob\188 goodnite stupid.wav" id="" volume="255">
+			<STRING>Goodnight stupid.</STRING>
+		</TAUNT>
+		<TAUNT index="189" file=".\sounds\taunts\rob\189 forgoing.wav" id="" volume="255">
+			<STRING>I regret to announce, this is the end! I am going now... I bid you all, a very fond farewell...</STRING>
+		</TAUNT>
+		<TAUNT index="190" file=".\sounds\taunts\rob\190 gnight ladies- goodnight Sir.wav" id="" volume="255">
+			<STRING>G'night ladies...Goodnight Sir!</STRING>
+</TAUNT>
+<TAUNT index="191" file=".\sounds\taunts\rob\191 fragmentedperformance.wav" id="" volume="255">
+<STRING>Shit... This game is laggy...=(</STRING>
+</TAUNT>
+<TAUNT index="192" file=".\sounds\taunts\rob\192 getaloadofthatjunkdata.wav" id="" volume="255">
+<STRING>Please all turn off other programs running in the background... please!</STRING>
+</TAUNT>
+<TAUNT index="193" file=".\sounds\taunts\rob\193 illegalprogramtermination.wav" id="" volume="255">
+<STRING>It's GameSpy again...</STRING>
+		</TAUNT>
+		<TAUNT index="194" file=".\sounds\taunts\rob\194 lowsamplejunk.wav" id="" volume="255">
+			<STRING>Man... This tauntpack sucks...</STRING>
+		</TAUNT>
+		<TAUNT index="195" file=".\sounds\taunts\rob\195 nopermissionnoadmission.wav" id="" volume="255">
+			<STRING>Woooo... holdup script no permission no admission...READ THE DESCRIPTION PLEASE!!!</STRING>
+		</TAUNT>
+		<TAUNT index="196" file=".\sounds\taunts\rob\196 addressthosebugsinnextpatch.wav" id="" volume="255">
+			<STRING>You address those bugs in the next patch???</STRING>
+		</TAUNT>
+		<TAUNT index="197" file=".\sounds\taunts\rob\197 therecanbeonlyonemaster.wav" id="" volume="255">
+			<STRING>There can be only one Master... IN THIS CASE: _FSF_[NL]Fedomar!!!</STRING>
+		</TAUNT>
+		<TAUNT index="198" file=".\sounds\taunts\rob\198 therecanbeonlyonemaster.wav" id="" volume="255">
+			<STRING>There can be only one Master!</STRING>
+		</TAUNT>
+		<TAUNT index="199" file=".\sounds\taunts\rob\199 mmm unprocessed FishSticks.wav" id="NEED_FOOD" volume="255">
+			<STRING>Hmmm unprocessed FishSticks...</STRING>
+		</TAUNT>
+		<TAUNT index="200" file=".\sounds\taunts\rob\200 keep_risin-1.wav" id="NEED_WEALTH" volume="255">
+			<STRING>The Fish Stick Foundation!</STRING>
+		</TAUNT>
+		<TAUNT index="201" file=".\sounds\taunts\rob\201 Darth.wav" id="" volume="255">
+			<STRING>Indeed you are powerful.</STRING>
+		</TAUNT>
+		<TAUNT index="202" file=".\sounds\taunts\rob\202 av-ohyes.wav" id="" volume="255">
+			<STRING>Yes! Yes! Oh, yeah! Can you feel that buddy? Huh? Huh? Huh?!</STRING>
+		</TAUNT>
+		<TAUNT index="203" file=".\sounds\taunts\rob\203 av2-selfish.wav" id="" volume="255">
+			<STRING>Of course, how selfish of me... let's do all the things that you wanna do.</STRING>
+</TAUNT>
+<TAUNT index="204" file=".\sounds\taunts\rob\204 beveryquiet.wav" id="" volume="255">
+<STRING>Be vewy vewy quiet. I'm hunting wabbits.</STRING>
+		</TAUNT>
+		<TAUNT index="205" file=".\sounds\taunts\rob\205 excuse_me.wav" id="" volume="255">
+			<STRING>Excuseeeeeeeeeeeee meeeeeeeeeeeeeeeee!</STRING>
+		</TAUNT>
+		<TAUNT index="206" file=".\sounds\taunts\rob\206 911.wav" id="" volume="255">
+			<STRING>Somebody call 911!</STRING>
+		</TAUNT>
+		<TAUNT index="207" file=".\sounds\taunts\rob\207 musthaveprecious.wav" id="" volume="330">
+			<STRING>We wants it. We needs it. Must have the precious!</STRING>
+		</TAUNT>
+		<TAUNT index="208" file=".\sounds\taunts\rob\208 precious1.wav" id="" volume="280">
+			<STRING>My Precious!</STRING>
+		</TAUNT>
+		<TAUNT index="209" file=".\sounds\taunts\rob\209 precious2.wav" id="" volume="300">
+			<STRING>My Precious!!!</STRING>
+		</TAUNT>
+		<TAUNT index="210" file=".\sounds\taunts\rob\210 doesntanyonelisten.wav" id="" volume="255">
+			<STRING>Doesn't anyone listen to one damn word I say?!?</STRING>
+</TAUNT>
+<TAUNT index="211" file=".\sounds\taunts\rob\211 simp193.wav" id="" volume="255">
+<STRING>I didn't think it was physically possible that this both sucks and blows.</STRING>
+		</TAUNT>
+		<TAUNT index="212" file=".\sounds\taunts\rob\212 ohno2.wav" id="" volume="255">
+			<STRING>Oh no! Oh no! Oho oh no! No! No! No! No! Nooo!</STRING>
+		</TAUNT>
+		<TAUNT index="213" file=".\sounds\taunts\rob\213 feelgood.wav" id="" volume="255">
+			<STRING>Whoa! I feel good, I knew that I would now, so good, so good, I've got you!</STRING>
+</TAUNT>
+<TAUNT index="214" file=".\sounds\taunts\rob\214 10secs.wav" id="" volume="255">
+<STRING>Is it possible for you to STFU for ten seconds?</STRING>
+</TAUNT>
+<TAUNT index="215" file=".\sounds\taunts\rob\215 av-loser.wav" id="" volume="255">
+<STRING>La-hew... Za-her.</STRING>
+</TAUNT>
+<TAUNT index="216" file=".\sounds\taunts\rob\216 av-right.wav" id="" volume="255">
+<STRING>All-righty then!</STRING>
+</TAUNT>
+<TAUNT index="217" file=".\sounds\taunts\rob\217 badolputty.wav" id="" volume="255">
+<STRING>Bad ol' putty cat !</STRING>
+		</TAUNT>
+		<TAUNT index="218" file=".\sounds\taunts\rob\218 destruction.wav" id="" volume="255">
+			<STRING>Prepare yourself for destruction!!!</STRING>
+		</TAUNT>
+		<TAUNT index="219" file=".\sounds\taunts\rob\219 dumb-idea.wav" id="" volume="255">
+			<STRING>I think I just... yeah... I just had an idea.</STRING>
+		</TAUNT>
+		<TAUNT index="220" file=".\sounds\taunts\rob\220 awesome.wav" id="" volume="255">
+			<STRING>This is awesome... We're going to be like "pow-pow-pow" and they going to be like "arrghhhh"</STRING>
+</TAUNT>
+<TAUNT index="221" file=".\sounds\taunts\rob\221 happening2.wav" id="" volume="255">
+<STRING>Why does this keep happening to me?!</STRING>
+</TAUNT>
+<TAUNT index="222" file=".\sounds\taunts\rob\222 pitiful2human.wav" id="" volume="255">
+<STRING>Pitiful human!!!</STRING>
+</TAUNT>
+<TAUNT index="223" file=".\sounds\taunts\rob\223 razorsharp.wav" id="" volume="255">
+<STRING>Oh no! How could my razor-sharp intellect betray me?</STRING>
+</TAUNT>
+<TAUNT index="224" file=".\sounds\taunts\rob\224 tick3.wav" id="" volume="255">
+<STRING>I am mighty!</STRING>
+</TAUNT>
+<TAUNT index="225" file=".\sounds\taunts\rob\225 bendover.wav" id="" volume="255">
+<STRING>It is time for me to bend over and receive my destiny.</STRING>
+</TAUNT>
+<TAUNT index="226" file=".\sounds\taunts\rob\226 3steps.wav" id="" volume="255">
+<STRING>You'd need three promotions to get to be an asshole.</STRING>
+		</TAUNT>
+		<TAUNT index="227" file=".\sounds\taunts\rob\227 dissapointed.wav" id="" volume="255">
+			<STRING>Disappointed!!!</STRING>
+		</TAUNT>
+		<TAUNT index="228" file=".\sounds\taunts\rob\228 assholemio.asp.wav" id="" volume="255">
+			<STRING>Assholemioooo!!!!</STRING>
+		</TAUNT>
+		<TAUNT index="229" file=".\sounds\taunts\rob\229 assmine.wav" id="" volume="255">
+			<STRING>Your ass is mine.</STRING>
+		</TAUNT>
+		<TAUNT index="230" file=".\sounds\taunts\rob\230 beavisheheheheh.wav" id="" volume="255">
+			<STRING>Heheheheh.</STRING>
+		</TAUNT>
+		<TAUNT index="231" file=".\sounds\taunts\rob\231 stopme.asp.wav" id="" volume="255">
+			<STRING>Somebody stop me !</STRING>
+		</TAUNT>
+		<TAUNT index="232" file=".\sounds\taunts\rob\232 let's rock.asp.wav" id="" volume="255">
+			<STRING>Let's ROCK this joint !</STRING>
+		</TAUNT>
+		<TAUNT index="233" file=".\sounds\taunts\rob\233 smokin.asp.wav" id="" volume="255">
+			<STRING>SMOKIN' !!!!</STRING>
+		</TAUNT>
+		<TAUNT index="234" file=".\sounds\taunts\rob\234 meepmeep.asp.wav" id="" volume="255">
+			<STRING>Meep Meep!</STRING>
+		</TAUNT>
+		<TAUNT index="235" file=".\sounds\taunts\rob\235 speedy.asp.wav" id="" volume="255">
+			<STRING>Faster, faster!</STRING>
+		</TAUNT>
+		<TAUNT index="236" file=".\sounds\taunts\rob\236 goodmen.wav" id="" volume="255">
+			<STRING>The marines are looking for a few good men. Unfortunately you ain't it.</STRING>
+		</TAUNT>
+		<TAUNT index="237" file=".\sounds\taunts\rob\237 flesh.wav" id="" volume="255">
+			<STRING>You will taste man flesh!</STRING>
+		</TAUNT>
+		<TAUNT index="238" file=".\sounds\taunts\rob\238 remove.wav" id="" volume="255">
+			<STRING>We have only to remove those who oppose us.</STRING>
+		</TAUNT>
+		<TAUNT index="239" file=".\sounds\taunts\rob\239 Duke5.wav" id="" volume="255">
+			<STRING>You're gonna get accidentally shot!</STRING>
+		</TAUNT>
+		<TAUNT index="240" file=".\sounds\taunts\rob\240 work.wav" id="" volume="255">
+			<STRING>We have work to do!</STRING>
+		</TAUNT>
+		<TAUNT index="241" file=".\sounds\taunts\rob\241 bibi.wav" id="" volume="255">
+			<STRING>Bibbidi-bobbidi-boo!</STRING>
+		</TAUNT>
+		<TAUNT index="242" file=".\sounds\taunts\rob\242 bitch.wav" id="" volume="255">
+			<STRING>Oh bitch bitch bitch!</STRING>
+		</TAUNT>
+		<TAUNT index="243" file=".\sounds\taunts\rob\243 chrischicken.wav" id="" volume="255">
+			<STRING>Hey! Guess who's here... What are we serving today, chicken or... chicken?</STRING>
+		</TAUNT>
+		<TAUNT index="244" file=".\sounds\taunts\rob\244 adult.wav" id="" volume="255">
+			<STRING>Due to mature adult content parental discretion is advised.</STRING>
+		</TAUNT>
+		<TAUNT index="245" file=".\sounds\taunts\rob\245 child.wav" id="" volume="255">
+			<STRING>To say you behave childishly is an insult to children everywhere.</STRING>
+		</TAUNT>
+		<TAUNT index="246" file=".\sounds\taunts\rob\246 dexter.wav" id="" volume="255">
+			<STRING>It never fails to surprise me how completely without intelligence you are.</STRING>
+		</TAUNT>
+		<TAUNT index="247" file=".\sounds\taunts\rob\247 youranidiot.wav" id="" volume="255">
+			<STRING>First of all you are an idiot, and second... nah.. that pretty much covers it.</STRING>
+		</TAUNT>
+		<TAUNT index="248" file=".\sounds\taunts\rob\248 ruamoron.wav" id="" volume="255">
+			<STRING>Are you some kind of moron?</STRING>
+		</TAUNT>
+		<TAUNT index="249" file=".\sounds\taunts\rob\249 shag.wav" id="" volume="255">
+			<STRING>Shall we shag now or shall we shag later?</STRING>
+		</TAUNT>
+		<TAUNT index="250" file=".\sounds\taunts\rob\250 failure.wav" id="" volume="255">
+			<STRING>Let this be a reminder to you all that this organization will not tolerate failure.</STRING>
+		</TAUNT>
+		<TAUNT index="251" file=".\sounds\taunts\rob\251 sexybody.wav" id="" volume="255">
+			<STRING>Look at my sexy body.</STRING>
+		</TAUNT>
+		<TAUNT index="252" file=".\sounds\taunts\rob\252 hallelujah.wav" id="" volume="255">
+			<STRING>Hallelujah!</STRING>
+		</TAUNT>
+		<TAUNT index="253" file=".\sounds\taunts\rob\253 mymomma.wav" id="" volume="255">
+			<STRING>My momma can do better than that!</STRING>
+		</TAUNT>
+		<TAUNT index="254" file=".\sounds\taunts\rob\254 comeforyou.wav" id="" volume="255">
+			<STRING>I have come for you! I am death!</STRING>
+		</TAUNT>
+		<TAUNT index="255" file=".\sounds\taunts\rob\255 goaway.wav" id="" volume="255">
+			<STRING>Go away!!!</STRING>
+		</TAUNT>
+		<TAUNT index="256" file=".\sounds\taunts\rob\256 ask.wav" id="" volume="255">
+			<STRING>May I ask sir what more you require?</STRING>
+		</TAUNT>
+		<TAUNT index="257" file=".\sounds\taunts\rob\257 gogirl.wav" id="" volume="255">
+			<STRING>You go girl!</STRING>
+		</TAUNT>
+		<TAUNT index="258" file=".\sounds\taunts\rob\258 aspirin.wav" id="" volume="255">
+			<STRING>Where is my Aspirin?</STRING>
+		</TAUNT>
+		<TAUNT index="259" file=".\sounds\taunts\rob\259 momgod.wav" id="" volume="255">
+			<STRING>Sweet mother of God, what is the hold up?!</STRING>
+		</TAUNT>
+		<TAUNT index="260" file=".\sounds\taunts\rob\260 nobodylikesyou.wav" id="" volume="255">
+			<STRING>You don't have any friends. Nobody likes you.</STRING>
+		</TAUNT>
+		<TAUNT index="261" file=".\sounds\taunts\rob\261 strikenow.wav" id="" volume="255">
+			<STRING>We have to strike now, sir! Annihilate! Kill! Kill! Kill!</STRING>
+		</TAUNT>
+		<TAUNT index="262" file=".\sounds\taunts\rob\262 genius.wav" id="" volume="255">
+			<STRING>You're such a genius!</STRING>
+		</TAUNT>
+		<TAUNT index="263" file=".\sounds\taunts\rob\263 lovegame.wav" id="" volume="255">
+			<STRING>I love this game.</STRING>
+		</TAUNT>
+		<TAUNT index="264" file=".\sounds\taunts\rob\264 onlypower.wav" id="" volume="255">
+			<STRING>There is no Good and Evil. There is only Power, and those too weak to seek it.</STRING>
+		</TAUNT>
+		<TAUNT index="265" file=".\sounds\taunts\rob\265 nervous.wav" id="" volume="255">
+			<STRING>Should I be nervous?</STRING>
+		</TAUNT>
+		<TAUNT index="266" file=".\sounds\taunts\rob\266 runaway.wav" id="" volume="255">
+			<STRING>RUN AWAY!</STRING>
+		</TAUNT>
+		<TAUNT index="267" file=".\sounds\taunts\rob\267 death.wav" id="" volume="255">
+			<STRING>Death has come to your little town.</STRING>
+		</TAUNT>
+		<TAUNT index="268" file=".\sounds\taunts\rob\268 weapon.wav" id="" volume="255">
+			<STRING>My body is a weapon. Use it!</STRING>
+		</TAUNT>
+		<TAUNT index="269" file=".\sounds\taunts\rob\269 yeahbaby.wav" id="" volume="255">
+			<STRING>Yeah baby!</STRING>
+		</TAUNT>
+		<TAUNT index="270" file=".\sounds\taunts\rob\270 meow.wav" id="" volume="255">
+			<STRING>Meow! Meow! Meow!</STRING>
+		</TAUNT>
+		<TAUNT index="271" file=".\sounds\taunts\rob\271 madcow.wav" id="" volume="255">
+			<STRING>*MAD COW*</STRING>
+		</TAUNT>
+		<TAUNT index="272" file=".\sounds\taunts\rob\272 Sheep.wav" id="" volume="255">
+			<STRING>*SHEEP*</STRING>
+		</TAUNT>
+		<TAUNT index="273" file=".\sounds\taunts\rob\273 moo.wav" id="" volume="255">
+			<STRING>*COW*</STRING>
+		</TAUNT>
+		<TAUNT index="274" file=".\sounds\taunts\rob\274 turkey.wav" id="" volume="255">
+			<STRING>*TURKEY*</STRING>
+		</TAUNT>
+		<TAUNT index="275" file=".\sounds\taunts\rob\275 goat.wav" id="" volume="255">
+			<STRING>*GOAT*</STRING>
+		</TAUNT>
+		<TAUNT index="276" file=".\sounds\taunts\rob\276 chicken.wav" id="" volume="255">
+			<STRING>*CHICKEN*</STRING>
+		</TAUNT>
+		<TAUNT index="277" file=".\sounds\taunts\rob\277 frogs.wav" id="" volume="255">
+			<STRING>*FROG*</STRING>
+		</TAUNT>
+		<TAUNT index="278" file=".\sounds\taunts\rob\278 lion.wav" id="" volume="255">
+			<STRING>*LION*</STRING>
+		</TAUNT>
+		<TAUNT index="279" file=".\sounds\taunts\rob\279 momma2.wav" id="" volume="255">
+			<STRING>Stay away from me you horse's ass!</STRING>
+		</TAUNT>
+		<TAUNT index="280" file=".\sounds\taunts\rob\280 hasta.wav" id="" volume="255">
+			<STRING>Hasta la vista, baby.</STRING>
+		</TAUNT>
+		<TAUNT index="281" file=".\sounds\taunts\rob\281 weakest.wav" id="" volume="255">
+			<STRING>You are the weakest link. Goodbye!</STRING>
+		</TAUNT>
+		<TAUNT index="282" file=".\sounds\taunts\rob\282 back.wav" id="" volume="255">
+			<STRING>I'll be back.</STRING>
+		</TAUNT>
+		<TAUNT index="283" file=".\sounds\taunts\rob\283 friend.wav" id="" volume="255">
+			<STRING>I'm having an old friend for dinner.</STRING>
+		</TAUNT>
+		<TAUNT index="284" file=".\sounds\taunts\rob\284 weasel.wav" id="" volume="255">
+			<STRING>I've got a plan so cunning you could put a tail on it and call it a weasel.</STRING>
+		</TAUNT>
+		<TAUNT index="285" file=".\sounds\taunts\rob\285 talk.wav" id="" volume="255">
+			<STRING>If I wanted to talk to a vegetable I would bought one at the market.</STRING>
+		</TAUNT>
+		<TAUNT index="286" file=".\sounds\taunts\rob\286 powerofisengard.wav" id="" volume="255">
+			<STRING>The power of Isengard is at your command, Sauron, Lord of the Earth.</STRING>
+		</TAUNT>
+		<TAUNT index="287" file=".\sounds\taunts\rob\287 rulemiddle-earth.wav" id="" volume="255">
+			<STRING>Together, my lord Sauron, we shall rule this Middle–Earth.</STRING>
+		</TAUNT>
+		<TAUNT index="288" file=".\sounds\taunts\rob\288 offer.wav" id="" volume="255">
+			<STRING>I'm gonna make him an offer he can't refuse.</STRING>
+		</TAUNT>
+		<TAUNT index="289" file=".\sounds\taunts\rob\289 seedead.wav" id="" volume="255">
+			<STRING>I see dead people.</STRING>
+		</TAUNT>
+		<TAUNT index="290" file=".\sounds\taunts\rob\290 change.wav" id="" volume="255">
+			<STRING>Keep a change you filthy animal.</STRING>
+		</TAUNT>
+		<TAUNT index="291" file=".\sounds\taunts\rob\291 idiots.wav" id="" volume="255">
+			<STRING>I'm surrounded by idiots.</STRING>
+		</TAUNT>
+		<TAUNT index="292" file=".\sounds\taunts\rob\292 meme.wav" id="" volume="255">
+			<STRING>Me, me, me, me, me, me!</STRING>
+		</TAUNT>
+		<TAUNT index="293" file=".\sounds\taunts\rob\293 fu.wav" id="" volume="255">
+			<STRING>Fuck you asshole.</STRING>
+		</TAUNT>
+		<TAUNT index="294" file=".\sounds\taunts\rob\294 stick.wav" id="" volume="255">
+			<STRING>I stick my neck out for nobody.</STRING>
+		</TAUNT>
+		<TAUNT index="295" file=".\sounds\taunts\rob\295 lock.wav" id="" volume="255">
+			<STRING>That would be all, just be sure to lock the door behind you. Good night.</STRING>
+		</TAUNT>
+		<TAUNT index="296" file=".\sounds\taunts\rob\296 cant.wav" id="" volume="255">
+			<STRING>I can't let this happen. I will not allow it. I mean look at this people.</STRING>
+		</TAUNT>
+		<TAUNT index="297" file=".\sounds\taunts\rob\297 fame.wav" id="" volume="255">
+			<STRING>Clearly fame is not everything.</STRING>
+		</TAUNT>
+		<TAUNT index="298" file=".\sounds\taunts\rob\298 jump.wav" id="" volume="255">
+			<STRING>When I give an order, you jump!</STRING>
+		</TAUNT>
+		<TAUNT index="299" file=".\sounds\taunts\rob\299 good.wav" id="" volume="255">
+			<STRING>Why are you so good to me?</STRING>
+		</TAUNT>
+		<TAUNT index="300" file=".\sounds\taunts\rob\300 boom.wav" id="" volume="255">
+			<STRING>Boom baby boom!</STRING>
+		</TAUNT>
+		<TAUNT index="301" file=".\sounds\taunts\rob\301 clapping.wav" id="" volume="255">
+			<STRING>*CLAPPING*</STRING>
+		</TAUNT>
+		<TAUNT index="302" file=".\sounds\taunts\rob\302 growup.wav" id="" volume="255">
+			<STRING>Oh for Christ's sake, grow up!</STRING>
+		</TAUNT>
+		<TAUNT index="303" file=".\sounds\taunts\rob\303 mind.wav" id="" volume="255">
+			<STRING>Have you lost your fucking mind?</STRING>
+		</TAUNT>
+		<TAUNT index="304" file=".\sounds\taunts\rob\304 shit.wav" id="" volume="255">
+			<STRING>He's full of shit!</STRING>
+		</TAUNT>
+		<TAUNT index="305" file=".\sounds\taunts\rob\305 warn.wav" id="" volume="255">
+			<STRING>I warned you, you fat piece of shit!</STRING>
+		</TAUNT>
+		<TAUNT index="306" file=".\sounds\taunts\rob\306 crazy.wav" id="" volume="255">
+			<STRING>*CRAZY LAUGHTER*</STRING>
+		</TAUNT>
+		<TAUNT index="307" file=".\sounds\taunts\rob\307 TANKYOU.wav" id="" volume="255">
+			<STRING>Thank you very much!</STRING>
+		</TAUNT>
+		<TAUNT index="308" file=".\sounds\taunts\rob\308 run.wav" id="" volume="255">
+			<STRING>Running away won't save ya!</STRING>
+		</TAUNT>
+		<TAUNT index="309" file=".\sounds\taunts\rob\309 taps.wav" id="" volume="255">
+			<STRING>*FUNERAL TRUMPETS*</STRING>
+		</TAUNT>
+		<TAUNT index="310" file=".\sounds\taunts\rob\310 theend.wav" id="" volume="255">
+			<STRING>The end.</STRING>
+		</TAUNT>
+		<TAUNT index="311" file=".\sounds\taunts\rob\311 clueless.wav" id="" volume="255">
+			<STRING>Hello!</STRING>
+		</TAUNT>
+		<TAUNT index="312" file=".\sounds\taunts\rob\312 urabitch.wav" id="" volume="255">
+			<STRING>You are a bitch!</STRING>
+		</TAUNT>
+		<TAUNT index="313" file=".\sounds\taunts\rob\313 dontfail.wav" id="" volume="255">
+			<STRING>Don't fail me again!</STRING>
+		</TAUNT>
+		<TAUNT index="314" file=".\sounds\taunts\rob\314 failed.wav" id="" volume="255">
+			<STRING>You have failed me for the last time.</STRING>
+		</TAUNT>
+		<TAUNT index="315" file=".\sounds\taunts\rob\315 scully.wav" id="" volume="255">
+			<STRING>You did something incredibly stupid!</STRING>
+		</TAUNT>
+		<TAUNT index="316" file=".\sounds\taunts\rob\316 fucku.wav" id="" volume="255">
+			<STRING>Fuck you!</STRING>
+		</TAUNT>
+		<TAUNT index="317" file=".\sounds\taunts\rob\317 unaccept.wav" id="" volume="255">
+			<STRING>You made a mistake an that was entirely unacceptable.</STRING>
+		</TAUNT>
+		<TAUNT index="318" file=".\sounds\taunts\rob\318 allwrong.wav" id="" volume="255">
+			<STRING>No, no, no, you're doing it all wrong!</STRING>
+		</TAUNT>
+		<TAUNT index="319" file=".\sounds\taunts\rob\319 lt_screwy.wav" id="" volume="255">
+			<STRING>There's something screwy around here.</STRING>
+		</TAUNT>
+		<TAUNT index="320" file=".\sounds\taunts\rob\320 Imperial.wav" id="" volume="255">
+			<STRING>*IMPERIAL MARCH*</STRING>
+		</TAUNT>
+		<TAUNT index="321" file=".\sounds\taunts\rob\321 annoyou.wav" id="" volume="300">
+			<STRING>We interrupt this program to annoy you and make things generally irritating.</STRING>
+		</TAUNT>
+		<TAUNT index="322" file=".\sounds\taunts\rob\322 pussy.wav" id="" volume="255">
+			<STRING>_FSF_[PL]Muad'Dib: "This is paradise, this town is like a great big pussy, Just waiting to get fucked".</STRING>
+		</TAUNT>
+		<TAUNT index="323" file=".\sounds\taunts\rob\323 Zornmeister in da house!.wav" id="" volume="292">
+			<STRING>_FSF_Zornmeister is in da House!!!</STRING>
+		</TAUNT>
+		<TAUNT index="324" file=".\sounds\taunts\rob\324 godfather2_certain.wav" id="" volume="255">
+			<STRING>_FSF_Godfather: "If anything in this life is certain, if history has thaught us anything... 't is that you could kill anyone".</STRING>
+		</TAUNT>
+		<TAUNT index="325" file=".\sounds\taunts\rob\325 depressedmyself.wav" id="" volume="255">
+			<STRING>Oh, Fish Sticks. I've depressed myself. I have to go lie down.</STRING>
+</TAUNT>
+<TAUNT index="326" file=".\sounds\taunts\rob\326 fisharefriends.wav" id="" volume="255">
+<STRING>Fish are friends, not food.</STRING>
+</TAUNT>
+<TAUNT index="327" file=".\sounds\taunts\rob\327 fishnetwork.wav" id="" volume="255">
+<STRING>You're watching the Fish Network. All fish, all the time.</STRING>
+		</TAUNT>
+		<TAUNT index="328" file=".\sounds\taunts\rob\328 wheeloffish.wav" id="" volume="255">
+			<STRING>Today, one of these lucky contestants will win his-or-her weight in fish, right here on… –Wheel Of Fish!</STRING>
+		</TAUNT>
+		<TAUNT index="329" file=".\sounds\taunts\rob\329 wilkommen.wav" id="" volume="255">
+			<STRING>Wilkommen. Bienvenue. Welcome. Come on in</STRING>
+		</TAUNT>
+		<TAUNT index="330" file=".\sounds\taunts\rob\330 sogladyoucame.wav" id="" volume="255">
+			<STRING>Helloooo!!!! OH!! So glad you could come!</STRING>
+		</TAUNT>
+		<TAUNT index="331" file=".\sounds\taunts\rob\331 Bhereiam.wav" id="" volume="255">
+			<STRING>Here I am… hehehe</STRING>
+		</TAUNT>
+		<TAUNT index="332" file=".\sounds\taunts\rob\332 Bhhey.wav" id="" volume="255">
+			<STRING>Hehehe Hé!</STRING>
+		</TAUNT>
+		<TAUNT index="333" file=".\sounds\taunts\rob\333 agelimit.wav" id="" volume="255">
+			<STRING>Liar! There is not an age-limit...</STRING>
+		</TAUNT>
+		<TAUNT index="334" file=".\sounds\taunts\rob\334 187langs.wav" id="" volume="280">
+			<STRING>If you do not speak English, I am at your disposal with 187 other languages along with their various dialects and subtongues.
+</STRING>
+		</TAUNT>
+		<TAUNT index="335" file=".\sounds\taunts\rob\335 amusing.wav" id="" volume="255">
+			<STRING>Actually I think you are going to find this very amusing.</STRING>
+		</TAUNT>
+		<TAUNT index="336" file=".\sounds\taunts\rob\336 awayforamin.wav" id="" volume="255">
+			<STRING>I was only away for a minute, Master.</STRING>
+		</TAUNT>
+		<TAUNT index="337" file=".\sounds\taunts\rob\337 beenthere.wav" id="" volume="255">
+			<STRING>Nahhh!!! Been there, Done that!</STRING>
+		</TAUNT>
+		<TAUNT index="338" file=".\sounds\taunts\rob\338 bonehead.wav" id="" volume="255">
+			<STRING>How long have you boneheads been here?</STRING>
+		</TAUNT>
+		<TAUNT index="339" file=".\sounds\taunts\rob\339 botherme.wav" id="" volume="255">
+			<STRING>Go away, boy, ya bother me.</STRING>
+		</TAUNT>
+		<TAUNT index="340" file=".\sounds\taunts\rob\340 changemind.wav" id="" volume="255">
+			<STRING>Sure you won't change your mind? –Is there something wrong with the one I have?"</STRING>
+		</TAUNT>
+		<TAUNT index="341" file=".\sounds\taunts\rob\341 chatrats.wav" id="" volume="255">
+			<STRING>Ever seen any rats in this room? -All the time, why?</STRING>
+		</TAUNT>
+		<TAUNT index="342" file=".\sounds\taunts\rob\342 choiceisillusion.wav" id="" volume="255">
+			<STRING>Choice is an illusion created between those with power and those without.</STRING>
+		</TAUNT>
+		<TAUNT index="343" file=".\sounds\taunts\rob\343 choiceswedontunderstand.wav" id="" volume="255">
+			<STRING>We can never see past the choices we don't understand.</STRING>
+		</TAUNT>
+		<TAUNT index="344" file=".\sounds\taunts\rob\344 chosenwisely.wav" id="" volume="255">
+			<STRING>You have chosen wisely.</STRING>
+		</TAUNT>
+		<TAUNT index="345" file=".\sounds\taunts\rob\345 chosepoorly.wav" id="" volume="255">
+			<STRING>He chose poorly.</STRING>
+		</TAUNT>
+		<TAUNT index="346" file=".\sounds\taunts\rob\346 clik.wav" id="" volume="280">
+			<STRING>That’s it dick. Click!</STRING>
+		</TAUNT>
+		<TAUNT index="347" file=".\sounds\taunts\rob\347 comeandgo.wav" id="" volume="255">
+			<STRING>My! People come and go so quickly here!</STRING>
+		</TAUNT>
+		<TAUNT index="348" file=".\sounds\taunts\rob\348 dumber.wav" id="" volume="255">
+			<STRING>Whoaa! Dumber then advertised.</STRING>
+		</TAUNT>
+		<TAUNT index="349" file=".\sounds\taunts\rob\349 falseadvertising.wav" id="" volume="255">
+			<STRING>Do you know what this is? This, my friends, is false advertising!</STRING>
+		</TAUNT>
+		<TAUNT index="350" file=".\sounds\taunts\rob\350 have2wait.wav" id="" volume="255">
+			<STRING>You mean we have to wait?!?</STRING>
+		</TAUNT>
+		<TAUNT index="351" file=".\sounds\taunts\rob\351 homer_boring.wav" id="" volume="292">
+			<STRING>Boring!</STRING>
+		</TAUNT>
+		<TAUNT index="352" file=".\sounds\taunts\rob\352 ladiesngentlemen.wav" id="" volume="255">
+			<STRING>Ladies... and Gentlemen</STRING>
+		</TAUNT>
+		<TAUNT index="353" file=".\sounds\taunts\rob\353 langbarrier.wav" id="" volume="255">
+			<STRING>There's defiantly a language barrier here</STRING>
+		</TAUNT>
+		<TAUNT index="354" file=".\sounds\taunts\rob\354 Ln_wait.wav" id="" volume="255">
+			<STRING>If I sit here any longer I'm gonna have one severe case of asteroids</STRING>
+		</TAUNT>
+		<TAUNT index="355" file=".\sounds\taunts\rob\355 lookinto.wav" id="" volume="255">
+			<STRING>And now, ladies and gentlemen, as I look into your faces, and believe me, some of your faces need looking into…</STRING>
+		</TAUNT>
+		<TAUNT index="356" file=".\sounds\taunts\rob\356 lowerclasses.wav" id="" volume="255">
+			<STRING>Sir, I consider you a member of the lower classes</STRING>
+		</TAUNT>
+		<TAUNT index="357" file=".\sounds\taunts\rob\357 machinefriends.wav" id="" volume="255">
+			<STRING>I cannot stay here too long before my machine friends will become nervous and do something rash.</STRING>
+		</TAUNT>
+		<TAUNT index="358" file=".\sounds\taunts\rob\358 next.wav" id="" volume="300">
+			<STRING>Oh, perfect. You'll hear from us. Next!</STRING>
+		</TAUNT>
+		<TAUNT index="359" file=".\sounds\taunts\rob\359 noshedidnt.wav" id="" volume="255">
+			<STRING>Damn! No she didn't...</STRING>
+		</TAUNT>
+		<TAUNT index="360" file=".\sounds\taunts\rob\360 notgettingpaid.wav" id="" volume="255">
+			<STRING>This is ridiculous. It's crazy. I feel like I'm babysitting, except I'm not getting paid.</STRING>
+		</TAUNT>
+		<TAUNT index="361" file=".\sounds\taunts\rob\361 playingvideogame.wav" id="" volume="255">
+			<STRING>God damn it. Can we please just get back to playing our videogame, please?!</STRING>
+		</TAUNT>
+		<TAUNT index="362" file=".\sounds\taunts\rob\362 replaced.wav" id="" volume="255">
+			<STRING>You can be replaced, you know...</STRING>
+		</TAUNT>
+		<TAUNT index="363" file=".\sounds\taunts\rob\363 scat.wav" id="" volume="255">
+			<STRING>Scat. Skedaddle. Adios. Arrividerci. Ciao. Aloha. Bug off.</STRING>
+		</TAUNT>
+		<TAUNT index="364" file=".\sounds\taunts\rob\364 thatsforbabies.wav" id="" volume="255">
+			<STRING>Héééé that's for babies!</STRING>
+		</TAUNT>
+		<TAUNT index="365" file=".\sounds\taunts\rob\365 voteplease.wav" id="" volume="255">
+			<STRING>Vote, please. Vote, please.</STRING>
+		</TAUNT>
+		<TAUNT index="366" file=".\sounds\taunts\rob\366 watchmate.wav" id="" volume="255">
+			<STRING>If I'm not mistaken, they are preparing to mate. -Do you think they might let me watch?</STRING>
+		</TAUNT>
+		<TAUNT index="367" file=".\sounds\taunts\rob\367 chitchat.wav" id="" volume="255">
+			<STRING>What do you say we cut the chit-chat, a-hole?</STRING>
+		</TAUNT>
+		<TAUNT index="368" file=".\sounds\taunts\rob\368 dayone.wav" id="" volume="255">
+			<STRING>If I were creating a world, I wouldn't mess about with butterflies and daffodils. I would've started with lasers, eight o'clock, day one. (explosion) Sorry.</STRING>
+		</TAUNT>
+		<TAUNT index="369" file=".\sounds\taunts\rob\369 dontlikeme.wav" id="" volume="255">
+			<STRING>Now answer my question. You don't like me, why?</STRING>
+		</TAUNT>
+		<TAUNT index="370" file=".\sounds\taunts\rob\370 famebitch.wav" id="" volume="255">
+			<STRING>Fame, ain't it a bitch?</STRING>
+		</TAUNT>
+		<TAUNT index="371" file=".\sounds\taunts\rob\371 finalanswer.wav" id="" volume="255">
+			<STRING>Is that your final answer?</STRING>
+		</TAUNT>
+		<TAUNT index="372" file=".\sounds\taunts\rob\372 fineday.wav" id="" volume="255">
+			<STRING>Well, it looks like it's going to be another fine day.</STRING>
+		</TAUNT>
+		<TAUNT index="373" file=".\sounds\taunts\rob\373 for5minutes.wav" id="" volume="255">
+			<STRING>For five minutes could you not be yourself? For five minutes!</STRING>
+		</TAUNT>
+		<TAUNT index="374" file=".\sounds\taunts\rob\374 game.wav" id="" volume="255">
+			<STRING>Ohh… I love this game!</STRING>
+		</TAUNT>
+		<TAUNT index="375" file=".\sounds\taunts\rob\375 getnthru.wav" id="" volume="255">
+			<STRING>Any of this gettin' through to you, son?</STRING>
+		</TAUNT>
+		<TAUNT index="376" file=".\sounds\taunts\rob\376 gettothepoint.wav" id="" volume="255">
+			<STRING>You want to get to the point, mister? Now what is it? What are you trying to tell us?</STRING>
+		</TAUNT>
+		<TAUNT index="377" file=".\sounds\taunts\rob\377 gmorningimhere.wav" id="" volume="255">
+			<STRING>Good morning… I'm here...</STRING>
+		</TAUNT>
+		<TAUNT index="378" file=".\sounds\taunts\rob\378 groucho3.wav" id="" volume="255">
+			<STRING>The next time I see you, remind me not to talk to you, will you?</STRING>
+		</TAUNT>
+		<TAUNT index="379" file=".\sounds\taunts\rob\379 halches2.wav" id="" volume="255">
+			<STRING>Would you like to play a game of chess? I play very well.</STRING>
+		</TAUNT>
+		<TAUNT index="380" file=".\sounds\taunts\rob\380 chekmate.wav" id="" volume="255">
+			<STRING>Checkmate!</STRING>
+		</TAUNT>
+		<TAUNT index="381" file=".\sounds\taunts\rob\381 lostsense.wav" id="" volume="255">
+			<STRING>Don't tell me you lost your sense of humor already.</STRING>
+		</TAUNT>
+		<TAUNT index="382" file=".\sounds\taunts\rob\382 lovetalk.wav" id="" volume="255">
+			<STRING>I just love the way you talk.</STRING>
+		</TAUNT>
+		<TAUNT index="383" file=".\sounds\taunts\rob\383 militaryschool.wav" id="" volume="255">
+			<STRING>Well kids… How was military school??? -Yes Sir! Fine Sir!</STRING>
+		</TAUNT>
+		<TAUNT index="384" file=".\sounds\taunts\rob\384 needsofmany1.wav" id="" volume="255">
+			<STRING>Logic clearly dictates that the needs of the many outweigh the needs of the few.</STRING>
+		</TAUNT>
+		<TAUNT index="385" file=".\sounds\taunts\rob\385 notech.wav" id="" volume="255">
+			<STRING>God isn't interested in technology. He knows nothing of the potential of the microchip or the silicon revolution. Look how he spends his time, 43 species of parrots. . .nipples for men!</STRING>
+		</TAUNT>
+		<TAUNT index="386" file=".\sounds\taunts\rob\386 notworthyofu.wav" id="" volume="255">
+			<STRING>This conversation is not worthy of you!</STRING>
+		</TAUNT>
+		<TAUNT index="387" file=".\sounds\taunts\rob\387 nowords.wav" id="" volume="255">
+			<STRING>For some moments in life there are no words.</STRING>
+		</TAUNT>
+		<TAUNT index="388" file=".\sounds\taunts\rob\388 offworldcolonies.wav" id="" volume="255">
+			<STRING>A new life awaits you in the Off-World Colonies... The chance to begin again in a golden land of opportunity and adventure.</STRING>
+		</TAUNT>
+		<TAUNT index="389" file=".\sounds\taunts\rob\389 personalquestion.wav" id="" volume="255">
+			<STRING>By the way, do you mind if I ask you a personal question?</STRING>
+		</TAUNT>
+		<TAUNT index="390" file=".\sounds\taunts\rob\390 reputation.wav" id="" volume="255">
+			<STRING>Once again our reputation precedes us.</STRING>
+		</TAUNT>
+		<TAUNT index="391" file=".\sounds\taunts\rob\391 rosesarered.wav" id="" volume="255">
+			<STRING>Roses are red, violets are blue -I can't write poems, but I've been told I've many other good qualities.</STRING>
+		</TAUNT>
+		<TAUNT index="392" file=".\sounds\taunts\rob\392 Yeehaa2.wav" id="" volume="255">
+			<STRING>Yeehaa</STRING>
+		</TAUNT>
+		<TAUNT index="393" file=".\sounds\taunts\rob\393 Sb_lord.wav" id="" volume="255">
+			<STRING>I am Lord of this place</STRING>
+		</TAUNT>
+		<TAUNT index="394" file=".\sounds\taunts\rob\394 shutup2.wav" id="" volume="255">
+			<STRING>Shut up' includes you.</STRING>
+		</TAUNT>
+		<TAUNT index="395" file=".\sounds\taunts\rob\395 ShutUp.wav" id="" volume="255">
+			<STRING>Shut Up! Shut up! Shut up!</STRING>
+		</TAUNT>
+		<TAUNT index="396" file=".\sounds\taunts\rob\396 spam2.wav " id="" volume="255">
+			<STRING>I don't want any Spam.</STRING>
+		</TAUNT>
+		<TAUNT index="397" file=".\sounds\taunts\rob\397 spam5.wav" id="" volume="255">
+			<STRING>I don't like Spam!</STRING>
+		</TAUNT>
+		<TAUNT index="398" file=".\sounds\taunts\rob\398 smalldreams.wav" id="" volume="255">
+			<STRING>But where is it written that all our dreams must be small ones?</STRING>
+		</TAUNT>
+		<TAUNT index="399" file=".\sounds\taunts\rob\399 st_11_2.wav" id="" volume="255">
+			<STRING>You bought your ticket, might as well enjoy the show.</STRING>
+		</TAUNT>
+		<TAUNT index="400" file=".\sounds\taunts\rob\400 st_19_2.wav" id="" volume="255">
+			<STRING>Death to the fascists!</STRING>
+		</TAUNT>
+		<TAUNT index="401" file=".\sounds\taunts\rob\401 precisly.wav" id="" volume="255">
+			<STRING>Precisely!</STRING>
+		</TAUNT>
+		<TAUNT index="402" file=".\sounds\taunts\rob\402 brothersgonnaworkitout.wav" id="" volume="255">
+			<STRING>The brothers gonna work it out…</STRING>
+		</TAUNT>
+		<TAUNT index="403" file=".\sounds\taunts\rob\403 TheVonBondies-C_monC_mon.wav" id="" volume="255">
+			<STRING>Come' on Come' on Come' on Come' on Come' on Come' on</STRING>
+		</TAUNT>
+		<TAUNT index="404" file=".\sounds\taunts\rob\404 Chug.wav" id="" volume="255">
+			<STRING>*chugging and burping*</STRING>
+		</TAUNT>
+		<TAUNT index="405" file=".\sounds\taunts\rob\405 cookies.wav" id="" volume="255">
+			<STRING>Cookies mean so much to me!</STRING>
+		</TAUNT>
+		<TAUNT index="406" file=".\sounds\taunts\rob\406 damngoodcoffee.wav" id="" volume="255">
+			<STRING>Damn good coffee... and hot!</STRING>
+		</TAUNT>
+		<TAUNT index="407" file=".\sounds\taunts\rob\407 dinner.wav" id="" volume="255">
+			<STRING>Master, dinner is prepared!</STRING>
+		</TAUNT>
+		<TAUNT index="408" file=".\sounds\taunts\rob\408 drugreal.wav" id="" volume="255">
+			<STRING>I know drug-real from real-real!</STRING>
+		</TAUNT>
+		<TAUNT index="409" file=".\sounds\taunts\rob\409 drunktest.wav" id="" volume="255">
+			<STRING>Damn your drunk tests are hard!</STRING>
+		</TAUNT>
+		<TAUNT index="410" file=".\sounds\taunts\rob\410 foodfite.wav" id="" volume="255">
+			<STRING>Food fight!!! #ICON1#ICON1#ICON1#ICON1#ICON1#ICON1</STRING>
+		</TAUNT>
+		<TAUNT index="411" file=".\sounds\taunts\rob\411 foodservices.wav" id="" volume="255">
+			<STRING>And for those with less, uh, robust scores there's still wonderful opportunities in the food services sector.</STRING>
+		</TAUNT>
+		<TAUNT index="412" file=".\sounds\taunts\rob\412 whatscookin.wav" id="" volume="255">
+			<STRING>Eh, what's cookin', Doc?</STRING>
+		</TAUNT>
+		<TAUNT index="413" file=".\sounds\taunts\rob\413 hadenoughrum.wav" id="" volume="255">
+			<STRING>I'm not entirely sure that I've had enough rum to allow that kind of talk.</STRING>
+		</TAUNT>
+		<TAUNT index="414" file=".\sounds\taunts\rob\414 wetmove.wav" id="" volume="255">
+			<STRING>I farted, it's wet and I don't wanna move</STRING>
+		</TAUNT>
+		<TAUNT index="415" file=".\sounds\taunts\rob\415 st_16_3.wav" id="" volume="255">
+			<STRING>Did you have a nice tea-break?</STRING>
+		</TAUNT>
+		<TAUNT index="416" file=".\sounds\taunts\rob\416 idrankwhat.wav" id="" volume="255">
+			<STRING>I was thinking of the immortal words of Socrates who said… 'I drank what?'</STRING>
+		</TAUNT>
+		<TAUNT index="417" file=".\sounds\taunts\rob\417 livevan.wav" id="" volume="255">
+			<STRING>…We gonna end up eating a steady diet of government cheese and living in a van down by the river!</STRING>
+		</TAUNT>
+		<TAUNT index="418" file=".\sounds\taunts\rob\418 Ln_bnch.wav" id="" volume="255">
+			<STRING>I'm hungry enough to eat a baby's butt through a park fence!</STRING>
+		</TAUNT>
+		<TAUNT index="419" file=".\sounds\taunts\rob\419 Ln_fried.wav" id="" volume="255">
+			<STRING>Double battered n' Dixie fried!</STRING>
+		</TAUNT>
+		<TAUNT index="420" file=".\sounds\taunts\rob\420 morecoffee.wav" id="" volume="255">
+			<STRING>Oh, you look like a man who could use more coffee.</STRING>
+		</TAUNT>
+		<TAUNT index="421" file=".\sounds\taunts\rob\421 pizzasense.wav" id="" volume="255">
+			<STRING>Great Scott! My pizza-sense is tingling!</STRING>
+		</TAUNT>
+		<TAUNT index="422" file=".\sounds\taunts\rob\422 roomservice.wav" id="" volume="255">
+			<STRING>I want room service!!!</STRING>
+		</TAUNT>
+		<TAUNT index="423" file=".\sounds\taunts\rob\423 snack.wav" id="" volume="255">
+			<STRING>Snack? Did somebody say snack?</STRING>
+		</TAUNT>
+		<TAUNT index="424" file=".\sounds\taunts\rob\424 hownovel.wav" id="" volume="255">
+			<STRING>Oh, take it easy, will ya? Come on, be nice. For you, I'm doing this show straight. No booze, no pot, no coke, no nothing... Oh, god. Oh, don't get me wrong, really. I don't snort cocaine. I just like the way it smells, that's all.</STRING>
+		</TAUNT>
+		<TAUNT index="425" file=".\sounds\taunts\rob\425 stoned2.wav" id="" volume="255">
+			<STRING>But I am stoned!</STRING>
+		</TAUNT>
+		<TAUNT index="426" file=".\sounds\taunts\rob\426 stoned.wav" id="" volume="255">
+			<STRING>What, are you stoned or stupid?</STRING>
+		</TAUNT>
+		<TAUNT index="427" file=".\sounds\taunts\rob\427 wannagethigh.wav" id="" volume="255">
+			<STRING>You wanna get high?</STRING>
+		</TAUNT>
+		<TAUNT index="428" file=".\sounds\taunts\rob\428 takealittlebreak.wav" id="" volume="255">
+			<STRING>We will take a little break, but we will be back in awhile… so..ehh.. don't nobody go nowhere.</STRING>
+		</TAUNT>
+		<TAUNT index="429" file=".\sounds\taunts\rob\429 greedy.wav" id="" volume="255">
+			<STRING>I can't help it, I'm a greedy slob. It's my hobby.</STRING>
+		</TAUNT>
+		<TAUNT index="430" file=".\sounds\taunts\rob\430 6inspikepenis.wav" id="" volume="255">
+			<STRING>No, seriously, listen. If there's ever anything I can do for you, or, more to the point, to you, you let me know, OK? –Can you hammer a 6-inch spike through a board with your penis? –Not right now. –A girl's got to have her standards.</STRING>
+		</TAUNT>
+		<TAUNT index="431" file=".\sounds\taunts\rob\431 eunuch.wav" id="" volume="255">
+			<STRING>You're not a eunuch, are you?</STRING>
+		</TAUNT>
+		<TAUNT index="432" file=".\sounds\taunts\rob\432 wife2orgasm.wav" id="" volume="255">
+			<STRING>I've tried everything; the Embassy, the German government, the Consulate, I even talked to the U.N. Ambassador. It's no use. I just can't bring my wife to orgasm.</STRING>
+		</TAUNT>
+		<TAUNT index="433" file=".\sounds\taunts\rob\433 lasttimesex.wav" id="" volume="255">
+			<STRING>The other day I called up my wife. I said to her, 'Honey, I've been thinking about the last time we had sex and I'm getting excited.' She said, 'Who is this?'</STRING>
+		</TAUNT>
+		<TAUNT index="434" file=".\sounds\taunts\rob\434 lewinsky1.wav" id="" volume="255">
+			<STRING>I did not have sexual relations with that woman, Miss Lewinsky.</STRING>
+		</TAUNT>
+		<TAUNT index="435" file=".\sounds\taunts\rob\435 noquestion.wav" id="" volume="255">
+			<STRING>There isn't a question we can't answer! –Here's one, geniuses. What's it like to kiss a girl? –Shut up.</STRING>
+		</TAUNT>
+		<TAUNT index="436" file=".\sounds\taunts\rob\436 noquickfix.wav" id="" volume="255">
+			<STRING>No quick fix for porn!</STRING>
+		</TAUNT>
+		<TAUNT index="437" file=".\sounds\taunts\rob\437 not2mentionass.wav" id="" volume="255">
+			<STRING>You know, before you turn around you guys will be our age. –God, don't remind me. –And you'll regret every night you didn't go out and grab a little life! –Not to mention a little ass!</STRING>
+		</TAUNT>
+		<TAUNT index="438" file=".\sounds\taunts\rob\438 pleasure.wav" id="" volume="255">
+			<STRING>There's no crime in giving yourself over to pleasure.</STRING>
+		</TAUNT>
+		<TAUNT index="439" file=".\sounds\taunts\rob\439 talkdirty.wav" id="" volume="255">
+			<STRING>I love it when you talk dirty...</STRING>
+		</TAUNT>
+		<TAUNT index="440" file=".\sounds\taunts\rob\440 urgay2.wav" id="" volume="255">
+			<STRING>You're--You're gay! -Me? No, I'm not gay. -You're not? But y-y-you just kissed me. -O.k., I'm gay.</STRING>
+		</TAUNT>
+		<TAUNT index="441" file=".\sounds\taunts\rob\441 Vx_die1.wav" id="" volume="255">
+			<STRING>But I love you</STRING>
+		</TAUNT>
+		<TAUNT index="442" file=".\sounds\taunts\rob\442 Vx_die6.wav" id="" volume="255">
+			<STRING>Please, …Come with me...</STRING>
+		</TAUNT>
+		<TAUNT index="443" file=".\sounds\taunts\rob\443 computersnevermakemistakes.wav" id="" volume="255">
+			<STRING>Computers never make mistakes. –Hard drive crash. Twenty seconds to meltdown. –Gotta go.</STRING>
+		</TAUNT>
+		<TAUNT index="444" file=".\sounds\taunts\rob\444 damnyouinternet.wav" id="" volume="255">
+			<STRING>Damn you, Internet!</STRING>
+		</TAUNT>
+		<TAUNT index="445" file=".\sounds\taunts\rob\445 Dexterdp.wav" id="" volume="255">
+			<STRING>Please, please don't push the button, you have no idea what it... ...does</STRING>
+		</TAUNT>
+		<TAUNT index="446" file=".\sounds\taunts\rob\446 dratcomp.wav" id="" volume="255">
+			<STRING>Oh, drat these computers. They're so naughty and so complex I could pinch them.</STRING>
+		</TAUNT>
+		<TAUNT index="447" file=".\sounds\taunts\rob\447 globalcommsystem.wav" id="" volume="255">
+			<STRING>Our story can be that this is nothing more than a freakish malfunction of a highly–sophisticated global comm system</STRING>
+		</TAUNT>
+		<TAUNT index="448" file=".\sounds\taunts\rob\448 knowbetr.wav" id="" volume="255">
+			<STRING>You know better than to trust a strange computer.</STRING>
+		</TAUNT>
+		<TAUNT index="449" file=".\sounds\taunts\rob\449 knowproblem.wav" id="" volume="255">
+			<STRING>I think you know what the problem is just as well as I do...</STRING>
+		</TAUNT>
+		<TAUNT index="450" file=".\sounds\taunts\rob\450 launchdesign.wav" id="" volume="255">
+			<STRING>Would you classify that as a launch problem or a design problem?</STRING>
+		</TAUNT>
+		<TAUNT index="451" file=".\sounds\taunts\rob\451 merecomp.wav" id="" volume="255">
+			<STRING>Could a mere computer solve the problem of Life, the Universe, and Everything?</STRING>
+		</TAUNT>
+		<TAUNT index="452" file=".\sounds\taunts\rob\452 software.wav" id="" volume="255">
+			<STRING>Nice software!</STRING>
+		</TAUNT>
+		<TAUNT index="453" file=".\sounds\taunts\rob\453 thesystemsucks.wav" id="" volume="255">
+			<STRING>The system's failed us. –The system sucks. We're going to have to go outside the system.</STRING>
+		</TAUNT>
+		<TAUNT index="454" file=".\sounds\taunts\rob\454 WTFinternet.wav" id="" volume="255">
+			<STRING>What the fuck is the internet? –The internet is a communications tool used the world over where people can come together to bitch about movies and share pornography with one another.</STRING>
+		</TAUNT>
+		<TAUNT index="455" file=".\sounds\taunts\rob\455 alive.wav" id="" volume="255">
+			<STRING>It's alive!</STRING>
+		</TAUNT>
+		<TAUNT index="456" file=".\sounds\taunts\rob\456 ally.wav" id="" volume="255">
+			<STRING>You are my ally. I will not abandon you.</STRING>
+		</TAUNT>
+		<TAUNT index="457" file=".\sounds\taunts\rob\457 bigdecisions.wav" id="" volume="255">
+			<STRING>If you can't make the big decisions, commander, I suggest you make room for someone who can.</STRING>
+		</TAUNT>
+		<TAUNT index="458" file=".\sounds\taunts\rob\458 Bk_heynb.wav" id="" volume="255">
+			<STRING>Hey neighbor!!!</STRING>
+		</TAUNT>
+		<TAUNT index="459" file=".\sounds\taunts\rob\459 cantchange.wav" id="" volume="255">
+			<STRING>What can I do? I can't change my family.</STRING>
+		</TAUNT>
+		<TAUNT index="460" file=".\sounds\taunts\rob\460 Ch_2468.wav" id="" volume="255">
+			<STRING>Two, Four, Six, Eight, Who do we appreciate?</STRING>
+		</TAUNT>
+		<TAUNT index="461" file=".\sounds\taunts\rob\461 Ch_gogog.wav" id="" volume="255">
+			<STRING>And Team, And spirit And GoGoGoGooo</STRING>
+		</TAUNT>
+		<TAUNT index="462" file=".\sounds\taunts\rob\462 Ch_gteam.wav" id="" volume="255">
+			<STRING>Goooo Team!!!</STRING>
+		</TAUNT>
+		<TAUNT index="463" file=".\sounds\taunts\rob\463 Ch_redok.wav" id="" volume="255">
+			<STRING>Ready-OK</STRING>
+		</TAUNT>
+		<TAUNT index="464" file=".\sounds\taunts\rob\464 challenge.wav" id="" volume="255">
+			<STRING>I realize how difficult it's going to be in this god-forsaken place where you can't find what you need, but there's the challenge.</STRING>
+		</TAUNT>
+		<TAUNT index="465" file=".\sounds\taunts\rob\465 dcorrect.wav" id="" volume="255">
+			<STRING>You're absolutely correct!</STRING>
+		</TAUNT>
+		<TAUNT index="466" file=".\sounds\taunts\rob\466 conduct.wav" id="" volume="255">
+			<STRING>Enough! If this is what passes for conduct becoming of world leaders, I don't want any part of it!</STRING>
+		</TAUNT>
+		<TAUNT index="467" file=".\sounds\taunts\rob\467 disturbg.wav" id="" volume="255">
+			<STRING>I find your lack of faith disturbing.</STRING>
+		</TAUNT>
+		<TAUNT index="468" file=".\sounds\taunts\rob\468 dofirst.wav" id="" volume="255">
+			<STRING>So, what would you little maniacs like to do first?</STRING>
+		</TAUNT>
+		<TAUNT index="469" file=".\sounds\taunts\rob\469 doitself.wav" id="" volume="255">
+			<STRING>I can see if I want anything done around here I gotta do it myself.</STRING>
+		</TAUNT>
+		<TAUNT index="470" file=".\sounds\taunts\rob\470 dontutrustme.wav" id="" volume="255">
+			<STRING>What's the matter, don't you trust me?</STRING>
+		</TAUNT>
+		<TAUNT index="471" file=".\sounds\taunts\rob\471 fitin.wav" id="" volume="255">
+			<STRING>I just thought I found a way to--to fit in. –You'll never fit in!!!</STRING>
+		</TAUNT>
+		<TAUNT index="472" file=".\sounds\taunts\rob\472 who2trust.wav" id="" volume="255">
+			<STRING>You won't know who to trust.</STRING>
+		</TAUNT>
+		<TAUNT index="473" file=".\sounds\taunts\rob\473 iwillbringuhope.wav" id="" volume="255">
+			<STRING>I will bring you hope, old friend, and I ask only one thing in return: don't get in my way.</STRING>
+		</TAUNT>
+		<TAUNT index="474" file=".\sounds\taunts\rob\474 jointheclub.wav" id="" volume="255">
+			<STRING>Join the club, we've got jackets.</STRING>
+		</TAUNT>
+		<TAUNT index="475" file=".\sounds\taunts\rob\475 joinus.wav" id="" volume="255">
+			<STRING>He will join us or die, Master.</STRING>
+		</TAUNT>
+		<TAUNT index="476" file=".\sounds\taunts\rob\476 master.wav" id="" volume="255">
+			<STRING>I am looking forward to completing your training. In time, you will call me . . . Master.</STRING>
+		</TAUNT>
+		<TAUNT index="477" file=".\sounds\taunts\rob\477 monkchant.wav" id="" volume="255">
+			<STRING>*Monk-chant with gunshots*</STRING>
+		</TAUNT>
+		<TAUNT index="478" file=".\sounds\taunts\rob\478 need2know.wav" id="" volume="255">
+			<STRING>Damn it, I need to know and I need to know now!</STRING>
+		</TAUNT>
+		<TAUNT index="479" file=".\sounds\taunts\rob\479 needinfo.wav" id="" volume="255">
+			<STRING>Throw me a friggin' bone, here. I'm the boss. . .need the info.</STRING>
+		</TAUNT>
+		<TAUNT index="480" file=".\sounds\taunts\rob\480 notworking.wav" id="" volume="255">
+			<STRING>Looks like somebody's not working.</STRING>
+		</TAUNT>
+		<TAUNT index="481" file=".\sounds\taunts\rob\481 peopleswar.wav" id="" volume="255">
+			<STRING>This is the People's War. It is our war. We are the fighters. Fight it then! Fight it with all that is in us and may God defend the Right.</STRING>
+		</TAUNT>
+		<TAUNT index="482" file=".\sounds\taunts\rob\482 standup2friends.wav" id="" volume="255">
+			<STRING>It takes a great deal of bravery to stand up to your enemies, but a great deal more to stand up to your friends.</STRING>
+		</TAUNT>
+		<TAUNT index="483" file=".\sounds\taunts\rob\483 stuart.wav" id="" volume="255">
+			<STRING>Because I'm good enough, I'm smart enough, and doggone it, people like me.</STRING>
+		</TAUNT>
+		<TAUNT index="484" file=".\sounds\taunts\rob\484 urscary.wav" id="" volume="255">
+			<STRING>You're a little scary sometimes, you know that. Brilliant, but scary.</STRING>
+		</TAUNT>
+		<TAUNT index="485" file=".\sounds\taunts\rob\485 wantfrnd.wav" id="" volume="255">
+			<STRING>All I want is a friend!</STRING>
+		</TAUNT>
+		<TAUNT index="486" file=".\sounds\taunts\rob\486 battle.wav" id="" volume="255">
+			<STRING>Now throw the switch and let us begin the battle for the planet!</STRING>
+		</TAUNT>
+		<TAUNT index="487" file=".\sounds\taunts\rob\487 bomb_x.wav" id="" volume="255">
+			<STRING>*Falling Bomb*</STRING>
+		</TAUNT>
+		<TAUNT index="488" file=".\sounds\taunts\rob\488 boombaby.wav" id="" volume="255">
+			<STRING>Boom, baby, boom! I'm the Evil Midnight Bomber what bombs at midnight!</STRING>
+		</TAUNT>
+		<TAUNT index="489" file=".\sounds\taunts\rob\489 byyourcommandslow.wav" id="" volume="255">
+			<STRING>By your command...</STRING>
+		</TAUNT>
+		<TAUNT index="490" file=".\sounds\taunts\rob\490 comeout2.wav" id="" volume="255">
+			<STRING>Come out, come out, where ever you are.</STRING>
+		</TAUNT>
+		<TAUNT index="491" file=".\sounds\taunts\rob\491 crush.wav" id="" volume="255">
+			<STRING>Crush! Kill! Destroy!</STRING>
+		</TAUNT>
+		<TAUNT index="492" file=".\sounds\taunts\rob\492 feellikekillingsomeone.wav" id="" volume="255">
+			<STRING>Feel like killing someone?</STRING>
+		</TAUNT>
+		<TAUNT index="493" file=".\sounds\taunts\rob\493 glryhonr.wav" id="" volume="255">
+			<STRING>May glory and honor follow you on your journey.</STRING>
+		</TAUNT>
+		<TAUNT index="494" file=".\sounds\taunts\rob\494 iswear.wav" id="" volume="255">
+			<STRING>I swear I will not kill anyone.</STRING>
+		</TAUNT>
+		<TAUNT index="495" file=".\sounds\taunts\rob\495 itsshowtime.wav" id="" volume="255">
+			<STRING>It's Showtime!</STRING>
+		</TAUNT>
+		<TAUNT index="496" file=".\sounds\taunts\rob\496 lettheattackbegin.wav" id="" volume="255">
+			<STRING>Let the attack begin.</STRING>
+		</TAUNT>
+		<TAUNT index="497" file=".\sounds\taunts\rob\497 onlychaos.wav" id="" volume="255">
+			<STRING>There will be no order, only chaos.</STRING>
+		</TAUNT>
+		<TAUNT index="498" file=".\sounds\taunts\rob\498 patton.wav" id="" volume="255">
+			<STRING>We are advancing constantly and we're not interested in holding onto anything except the enemy! We're going to hold onto him by the nose and kick him in the ass! ..And we're going to go through him like crap through a goose!</STRING>
+		</TAUNT>
+		<TAUNT index="499" file=".\sounds\taunts\rob\499 readiness.wav" id="" volume="255">
+			<STRING>Everything is in readiness, master. We merely await your word.</STRING>
+		</TAUNT>
+		<TAUNT index="500" file=".\sounds\taunts\rob\500 reaganbomb.wav" id="" volume="255">
+			<STRING>My fellow Americans, I'm pleased to tell you today that I've signed legislation that will outlaw Russia forever. We begin bombing in five minutes.</STRING>
+		</TAUNT>
+		<TAUNT index="501" file=".\sounds\taunts\rob\501 Sb_min1.wav" id="" volume="255">
+			<STRING>Go minions!</STRING>
+		</TAUNT>
+		<TAUNT index="502" file=".\sounds\taunts\rob\502 Sb_min2.wav" id="" volume="255">
+			<STRING>Take him down minions!</STRING>
+		</TAUNT>
+		<TAUNT index="503" file=".\sounds\taunts\rob\503 Sb_min3.wav" id="" volume="255">
+			<STRING>Get them minions! Get them!</STRING>
+		</TAUNT>
+		<TAUNT index="504" file=".\sounds\taunts\rob\504 sitight.wav" id="" volume="255">
+			<STRING>Ok, you people sit tight, hold the fort and keep the home fires burning, and if we're not back by dawn, call the president.</STRING>
+		</TAUNT>
+		<TAUNT index="505" file=".\sounds\taunts\rob\505 sittingduck.wav" id="" volume="255">
+			<STRING>Roger, Bravo Delta, this is Sitting Duck. I have Bogie Queen in my sights, and I’m, uh, going to shoot bullets at it now.</STRING>
+		</TAUNT>
+		<TAUNT index="506" file=".\sounds\taunts\rob\506 takewhatyoucan.wav" id="" volume="255">
+			<STRING>Take what you can! Give nothing back!</STRING>
+		</TAUNT>
+		<TAUNT index="507" file=".\sounds\taunts\rob\507 terminator.wav" id="" volume="255">
+			<STRING>Jesus, you were going to kill that guy! –Of course. I'm a Terminator.</STRING>
+		</TAUNT>
+		<TAUNT index="508" file=".\sounds\taunts\rob\508 triangulate.wav" id="" volume="255">
+			<STRING>All right, I'll take point, you two flank. Let's triangulate. –Equilateral or isosceles?</STRING>
+		</TAUNT>
+		<TAUNT index="509" file=".\sounds\taunts\rob\509 trumpet_x.wav" id="" volume="255">
+			<STRING>*Trumpet*</STRING>
+		</TAUNT>
+		<TAUNT index="510" file=".\sounds\taunts\rob\510 trynot.wav" id="" volume="255">
+			<STRING>Try not! Do. Or do not. There is no 'try.'</STRING>
+		</TAUNT>
+		<TAUNT index="511" file=".\sounds\taunts\rob\511 uhavedestiny.wav" id="" volume="255">
+			<STRING>You have a destiny, and now is your time to fulfill it.</STRING>
+		</TAUNT>
+		<TAUNT index="512" file=".\sounds\taunts\rob\512 warweapons.wav" id="" volume="255">
+			<STRING>Now let's see how destructive you are without your war weapons!</STRING>
+		</TAUNT>
+		<TAUNT index="513" file=".\sounds\taunts\rob\513 whatcouldhappen.wav" id="" volume="255">
+			<STRING>Hey, come on, we're superheroes. What could happen?</STRING>
+		</TAUNT>
+		<TAUNT index="514" file=".\sounds\taunts\rob\514 worshipped.wav" id="" volume="255">
+			<STRING>Now remember, I do my best work when I'm being worshipped as a god</STRING>
+		</TAUNT>
+		<TAUNT index="515" file=".\sounds\taunts\rob\515 assistance.wav" id="" volume="255">
+			<STRING>Your assistance would be welcomed.</STRING>
+		</TAUNT>
+		<TAUNT index="516" file=".\sounds\taunts\rob\516 bartles.wav" id="" volume="255">
+			<STRING>Thanks for your support.</STRING>
+		</TAUNT>
+		<TAUNT index="517" file=".\sounds\taunts\rob\517 d-day_flash.wav" id="" volume="255">
+			<STRING>We interrupt our program to bring you a special broadcast. The German news agency Transoceanic said today in a broadcast that the Allied invasion had begun. There was no Allied confirmation.</STRING>
+		</TAUNT>
+		<TAUNT index="518" file=".\sounds\taunts\rob\518 dirtywork.wav" id="" volume="255">
+			<STRING>Get someone else to do your dirty work!</STRING>
+		</TAUNT>
+		<TAUNT index="519" file=".\sounds\taunts\rob\519 help.wav" id="" volume="255">
+			<STRING>Help!!! Somebody… Help!!!</STRING>
+		</TAUNT>
+		<TAUNT index="520" file=".\sounds\taunts\rob\520 howcanyousitthere.wav" id="" volume="255">
+			<STRING>How can you two just sit there and watch this happen?</STRING>
+		</TAUNT>
+		<TAUNT index="521" file=".\sounds\taunts\rob\521 ifat1st.wav" id="" volume="255">
+			<STRING>You mean it's like 'if at first you don't succeed, try, try again.' –Yes. –I thought so.</STRING>
+		</TAUNT>
+		<TAUNT index="522" file=".\sounds\taunts\rob\522 importantassignment.wav" id="" volume="255">
+			<STRING>Important assignment!  Important assignment!</STRING>
+		</TAUNT>
+		<TAUNT index="523" file=".\sounds\taunts\rob\523 kennedy.wav" id="" volume="255">
+			<STRING>So, my fellow Americans, ask not what your country can do for you. Ask what you can do for your country.</STRING>
+		</TAUNT>
+		<TAUNT index="524" file=".\sounds\taunts\rob\524 machothings.wav" id="" volume="255">
+			<STRING>What are you doing? Is this one of those macho things?</STRING>
+		</TAUNT>
+		<TAUNT index="525" file=".\sounds\taunts\rob\525 mrknowitall.wav" id="" volume="255">
+			<STRING>OK, then, thank you, Mr. Know-It-All.</STRING>
+		</TAUNT>
+		<TAUNT index="526" file=".\sounds\taunts\rob\526 natlemergency.wav" id="" volume="255">
+			<STRING>'Scuse me, national emergency! Coming through!</STRING>
+		</TAUNT>
+		<TAUNT index="527" file=".\sounds\taunts\rob\527 ohlook.wav" id="" volume="255">
+			<STRING>Oh! Oh! Oh! Oh! Oh, look!</STRING>
+		</TAUNT>
+		<TAUNT index="528" file=".\sounds\taunts\rob\528 see.wav" id="" volume="255">
+			<STRING>This you gotta see to believe.</STRING>
+		</TAUNT>
+		<TAUNT index="529" file=".\sounds\taunts\rob\529 st_5_1.wav" id="" volume="255">
+			<STRING>Taking fire, need some help!</STRING>
+		</TAUNT>
+		<TAUNT index="530" file=".\sounds\taunts\rob\530 takeover2.wav" id="" volume="255">
+			<STRING>Hey, I got him this far. You take over from here.</STRING>
+		</TAUNT>
+		<TAUNT index="531" file=".\sounds\taunts\rob\531 thisisamatteroflifeanddeath.wav" id="" volume="255">
+			<STRING>This is a matter of life and death!!!</STRING>
+		</TAUNT>
+		<TAUNT index="532" file=".\sounds\taunts\rob\532 Vx_die4.wav" id="" volume="255">
+			<STRING>Please help me...</STRING>
+		</TAUNT>
+		<TAUNT index="533" file=".\sounds\taunts\rob\533 whatthehell3.wav" id="" volume="255">
+			<STRING>What the hell is going on around here?! Who the hell are you people?!</STRING>
+		</TAUNT>
+		<TAUNT index="534" file=".\sounds\taunts\rob\534 arentyouforgetting.wav" id="" volume="255">
+			<STRING>Chicken, Aren't you forgetting something?</STRING>
+		</TAUNT>
+		<TAUNT index="535" file=".\sounds\taunts\rob\535 firstmatecow.wav" id="" volume="255">
+			<STRING>First mate Cow ready for duty. </STRING>
+		</TAUNT>
+		<TAUNT index="536" file=".\sounds\taunts\rob\536 assistnc.wav" id="" volume="255">
+			<STRING>How may I, in all humble servitude, be of assistance?</STRING>
+		</TAUNT>
+		<TAUNT index="537" file=".\sounds\taunts\rob\537 bepolite.wav" id="" volume="255">
+			<STRING>You know, I was only trying to be polite!</STRING>
+		</TAUNT>
+		<TAUNT index="538" file=".\sounds\taunts\rob\538 bow2sensei.wav" id="" volume="300">
+			<STRING>Bow to your sensei! Bow to your sensei!!!</STRING>
+		</TAUNT>
+		<TAUNT index="539" file=".\sounds\taunts\rob\539 cunning.wav" id="" volume="255">
+			<STRING>I have a cunning plan that could get you out of this problem.</STRING>
+		</TAUNT>
+		<TAUNT index="540" file=".\sounds\taunts\rob\540 disclosureaverted.wav" id="" volume="255">
+			<STRING>Disclosure averted. Continue observation.</STRING>
+		</TAUNT>
+		<TAUNT index="541" file=".\sounds\taunts\rob\541 dontunderstand.wav" id="" volume="255">
+			<STRING>You do not understand… but you will.</STRING>
+		</TAUNT>
+		<TAUNT index="542" file=".\sounds\taunts\rob\542 failure1.wav" id="" volume="255">
+			<STRING>What we've got here is... failure to communicate.</STRING>
+		</TAUNT>
+		<TAUNT index="543" file=".\sounds\taunts\rob\543 figureout.wav" id="" volume="255">
+			<STRING>Ok, so what did we just figure out?</STRING>
+		</TAUNT>
+		<TAUNT index="544" file=".\sounds\taunts\rob\544 gowhereactionis.wav" id="" volume="255">
+			<STRING>Then let's go where the action is!</STRING>
+		</TAUNT>
+		<TAUNT index="545" file=".\sounds\taunts\rob\545 hecanfixanything.wav" id="" volume="255">
+			<STRING>His name is MacGyver. He can fix anything. He could fix a computer with a hairpin and a piece of duct tape.</STRING>
+		</TAUNT>
+		<TAUNT index="546" file=".\sounds\taunts\rob\546 itsnasty.wav" id="" volume="255">
+			<STRING>Oh, who did this to you? This is just not right. In fact, it's nasty...</STRING>
+		</TAUNT>
+		<TAUNT index="547" file=".\sounds\taunts\rob\547 judasrockingpriest.wav" id="" volume="255">
+			<STRING>What in Judas-Rocking-Priest is going on around here?!?</STRING>
+		</TAUNT>
+		<TAUNT index="548" file=".\sounds\taunts\rob\548 killyoutwice.wav" id="" volume="255">
+			<STRING>This damn well better be worth it. Because if this story of yours turns out to be bogus, I'm going to kill you twice. Now you got that?</STRING>
+		</TAUNT>
+		<TAUNT index="549" file=".\sounds\taunts\rob\549 liketohelp.wav" id="" volume="255">
+			<STRING>Well, I'd like to help, but not as much as I'd like not to.</STRING>
+		</TAUNT>
+		<TAUNT index="550" file=".\sounds\taunts\rob\550 listentome.wav" id="" volume="255">
+			<STRING>Why do you listen to me when I'm wrong? </STRING>
+		</TAUNT>
+		<TAUNT index="551" file=".\sounds\taunts\rob\551 Ln_bacon.wav" id="" volume="255">
+			<STRING>There you go, now your makin' bacon</STRING>
+		</TAUNT>
+		<TAUNT index="552" file=".\sounds\taunts\rob\552 Ln_sorry.wav" id="" volume="255">
+			<STRING>Sorry, I guess I just got caught up</STRING>
+		</TAUNT>
+		<TAUNT index="553" file=".\sounds\taunts\rob\553 neverwasteit.wav" id="" volume="255">
+			<STRING>Time is a precious thing, never waste it.</STRING>
+		</TAUNT>
+		<TAUNT index="554" file=".\sounds\taunts\rob\554 oldtech.wav" id="" volume="255">
+			<STRING>It's old technology!</STRING>
+		</TAUNT>
+		<TAUNT index="555" file=".\sounds\taunts\rob\555 opportunemoment.wav" id="" volume="255">
+			<STRING>If you were waiting for the opportune moment, that was it.</STRING>
+		</TAUNT>
+		<TAUNT index="556" file=".\sounds\taunts\rob\556 owemebigtime.wav" id="" volume="255">
+			<STRING>You owe me big-time.</STRING>
+		</TAUNT>
+		<TAUNT index="557" file=".\sounds\taunts\rob\557 payattn.wav" id="" volume="255">
+			<STRING>Pay attention, son, this is for your own good.</STRING>
+		</TAUNT>
+		<TAUNT index="558" file=".\sounds\taunts\rob\558 st_4_2.wav" id="" volume="255">
+			<STRING>You’re doing great guys, hang in there!</STRING>
+		</TAUNT>
+		<TAUNT index="559" file=".\sounds\taunts\rob\559 st_10_2.wav" id="" volume="255">
+			<STRING>You defend brat don’t you stop!</STRING>
+		</TAUNT>
+		<TAUNT index="560" file=".\sounds\taunts\rob\560 stupid2.wav" id="" volume="255">
+			<STRING>There are no stupid questions, just stupid people</STRING>
+		</TAUNT>
+		<TAUNT index="561" file=".\sounds\taunts\rob\561 whoare.wav" id="" volume="255">
+			<STRING>Who are those guys?!?</STRING>
+		</TAUNT>
+		<TAUNT index="562" file=".\sounds\taunts\rob\562 whyask.wav" id="" volume="255">
+			<STRING>Why do you ask questions to which you already know the answers?</STRING>
+		</TAUNT>
+		<TAUNT index="563" file=".\sounds\taunts\rob\563 yourang2.wav" id="" volume="255">
+			<STRING>You rang?</STRING>
+		</TAUNT>
+		<TAUNT index="564" file=".\sounds\taunts\rob\564 angry.wav" id="" volume="255">
+			<STRING>You have made me very angry, very angry indeed!</STRING>
+		</TAUNT>
+		<TAUNT index="565" file=".\sounds\taunts\rob\565 anhonor.wav" id="" volume="255">
+			<STRING>It is an honor to protect my country and my family.</STRING>
+		</TAUNT>
+		<TAUNT index="566" file=".\sounds\taunts\rob\566 betlife.wav" id="" volume="255">
+			<STRING>Well, now don't you bet your life on it.</STRING>
+		</TAUNT>
+		<TAUNT index="567" file=".\sounds\taunts\rob\567 blowskirt.wav" id="" volume="255">
+			<STRING>So far, this is not blowing my skirt up, gentlemen.</STRING>
+		</TAUNT>
+		<TAUNT index="568" file=".\sounds\taunts\rob\568 youshallnotpasss.wav" id="" volume="255">
+			<STRING>You shall not pass!</STRING>
+		</TAUNT>
+		<TAUNT index="569" file=".\sounds\taunts\rob\569 dangersover.wav" id="" volume="255">
+			<STRING>Danger is over...</STRING>
+		</TAUNT>
+		<TAUNT index="570" file=".\sounds\taunts\rob\570 destroy2.wav" id="" volume="255">
+			<STRING>Don't make me destroy you!</STRING>
+		</TAUNT>
+		<TAUNT index="571" file=".\sounds\taunts\rob\571 destroytheworld.wav" id="" volume="255">
+			<STRING>Everything is back to normal. I-I think… I think I can go back to trying to destroy the world again.</STRING>
+		</TAUNT>
+		<TAUNT index="572" file=".\sounds\taunts\rob\572 Dexterun.wav" id="" volume="255">
+			<STRING>This is unacceptable!</STRING>
+		</TAUNT>
+		<TAUNT index="573" file=".\sounds\taunts\rob\573 difficult.wav" id="" volume="255">
+			<STRING>You're always making things difficult!</STRING>
+		</TAUNT>
+		<TAUNT index="574" file=".\sounds\taunts\rob\574 disturbslumber.wav" id="" volume="255">
+			<STRING>Who disturbs my slumber?</STRING>
+		</TAUNT>
+		<TAUNT index="575" file=".\sounds\taunts\rob\575 donkeysenses.wav" id="" volume="255">
+			<STRING>Hey, man, this don't feel right. My donkey senses are tingling all over.</STRING>
+		</TAUNT>
+		<TAUNT index="576" file=".\sounds\taunts\rob\576 dothat.wav" id="" volume="255">
+			<STRING>I wouldn’t do that if I were you…</STRING>
+		</TAUNT>
+		<TAUNT index="577" file=".\sounds\taunts\rob\577 duke_freedom_x.wav" id="" volume="255">
+			<STRING>I don't know who you are, where you're from, or what you want... but if you threaten my freedom, I'll kill you.</STRING>
+		</TAUNT>
+		<TAUNT index="578" file=".\sounds\taunts\rob\578 enemyneutralized.wav" id="" volume="255">
+			<STRING>Enemy neutralized, ladies and gentlemen.</STRING>
+		</TAUNT>
+		<TAUNT index="579" file=".\sounds\taunts\rob\579 st_10_3.wav" id="" volume="255">
+			<STRING>I don’t bloody believe it!</STRING>
+		</TAUNT>
+		<TAUNT index="580" file=".\sounds\taunts\rob\580 fdrfear.wav" id="" volume="255">
+			<STRING>Let me assert my firm belief... that the only thing we have to fear is... fear itself.</STRING>
+		</TAUNT>
+		<TAUNT index="581" file=".\sounds\taunts\rob\581 freak.wav" id="" volume="255">
+			<STRING>Please, I don't wanna go back there! You don't know what it's like to be considered a freak! Well, maybe you do.</STRING>
+		</TAUNT>
+		<TAUNT index="582" file=".\sounds\taunts\rob\582 gropos.wav" id="" volume="255">
+			<STRING>All right, you ground-pounders, if it's fighting you want then you're about to get your share.</STRING>
+		</TAUNT>
+		<TAUNT index="583" file=".\sounds\taunts\rob\583 it_takes.wav" id="" volume="255">
+			<STRING>You think you’ve got what it takes?!?</STRING>
+		</TAUNT>
+		<TAUNT index="584" file=".\sounds\taunts\rob\584 itakethatback.wav" id="" volume="255">
+			<STRING>I take that back. This is real bad </STRING>
+		</TAUNT>
+		<TAUNT index="585" file=".\sounds\taunts\rob\585 itsyou.wav" id="" volume="255">
+			<STRING>Huh? It's you?!?</STRING>
+		</TAUNT>
+		<TAUNT index="586" file=".\sounds\taunts\rob\586 iwouldnt.wav" id="" volume="255">
+			<STRING>Oh! I wouldn't do that. I really wouldn't.</STRING>
+		</TAUNT>
+		<TAUNT index="587" file=".\sounds\taunts\rob\587 killingme.wav" id="" volume="255">
+			<STRING>Killing me won't help you.</STRING>
+		</TAUNT>
+		<TAUNT index="588" file=".\sounds\taunts\rob\588 killya.wav" id="" volume="255">
+			<STRING>You do that and I'll kill ya.</STRING>
+		</TAUNT>
+		<TAUNT index="589" file=".\sounds\taunts\rob\589 hanbar04.wav" id="" volume="255">
+			<STRING>*Cartoon sound of running away*</STRING>
+		</TAUNT>
+		<TAUNT index="590" file=".\sounds\taunts\rob\590 Ln_run.wav" id="" volume="255">
+			<STRING>Run for your lives!</STRING>
+		</TAUNT>
+		<TAUNT index="591" file=".\sounds\taunts\rob\591 Ln_shit.wav" id="" volume="255">
+			<STRING>Holy shit!</STRING>
+		</TAUNT>
+		<TAUNT index="592" file=".\sounds\taunts\rob\592 Ln_slow.wav" id="" volume="255">
+			<STRING>Slower n' molasses in January</STRING>
+		</TAUNT>
+		<TAUNT index="593" file=".\sounds\taunts\rob\593 myswamp.wav" id="" volume="255">
+			<STRING>What are you doing in my swamp?</STRING>
+		</TAUNT>
+		<TAUNT index="594" file=".\sounds\taunts\rob\594 noeffect.wav" id="" volume="255">
+			<STRING>There is a weapons deactivator in effect here. Your destructive machines will have no effect.</STRING>
+		</TAUNT>
+		<TAUNT index="595" file=".\sounds\taunts\rob\595 noproblemo.wav" id="" volume="255">
+			<STRING>No problemo!</STRING>
+		</TAUNT>
+		<TAUNT index="596" file=".\sounds\taunts\rob\596 offmyland.wav" id="" volume="255">
+			<STRING>Get off my land!!!</STRING>
+		</TAUNT>
+		<TAUNT index="597" file=".\sounds\taunts\rob\597 screamandrun.wav" id="" volume="255">
+			<STRING>Well, I don't know about you, but I am planning to scream and run.</STRING>
+		</TAUNT>
+		<TAUNT index="598" file=".\sounds\taunts\rob\598 serioustherapy.wav" id="" volume="255">
+			<STRING>You know, before this is over I'm going to need a whole lot of serious therapy.</STRING>
+		</TAUNT>
+		<TAUNT index="599" file=".\sounds\taunts\rob\599 Sf_hold.wav" id="" volume="255">
+			<STRING>Hold it right there, boy!!!</STRING>
+		</TAUNT>
+		<TAUNT index="600" file=".\sounds\taunts\rob\600 Sf_rload.wav" id="" volume="255">
+			<STRING>Slow down boy. I'm trying to reload my gun...</STRING>
+		</TAUNT>
+		<TAUNT index="601" file=".\sounds\taunts\rob\601 Sf_shoot.wav" id="" volume="255">
+			<STRING>Stop or I'll shoot!</STRING>
+		</TAUNT>
+		<TAUNT index="602" file=".\sounds\taunts\rob\602 sointrouble.wav" id="" volume="255">
+			<STRING>Man, I'm so in trouble!</STRING>
+		</TAUNT>
+		<TAUNT index="603" file=".\sounds\taunts\rob\603 financialfuture.wav" id="" volume="255">
+			<STRING>Go! Hurry! My financial future is at stake!</STRING>
+		</TAUNT>
+		<TAUNT index="604" file=".\sounds\taunts\rob\604 whathaveyoudone.wav" id="" volume="255">
+			<STRING>What have you done?!?</STRING>
+		</TAUNT>
+		<TAUNT index="605" file=".\sounds\taunts\rob\605 whatwasthat2.wav" id="" volume="255">
+			<STRING>What was that? –I have no idea. But it would be really great if it didn't do it again.</STRING>
+		</TAUNT>
+		<TAUNT index="606" file=".\sounds\taunts\rob\606 whyhere.wav" id="" volume="255">
+			<STRING>I am wondering, why are you here?</STRING>
+		</TAUNT>
+		<TAUNT index="607" file=".\sounds\taunts\rob\607 whyme.wav" id="" volume="255">
+			<STRING>Why is it always me?</STRING>
+		</TAUNT>
+		<TAUNT index="608" file=".\sounds\taunts\rob\608 1autodestruct.wav" id="" volume="255">
+			<STRING>One minute to autodestruct…</STRING>
+		</TAUNT>
+		<TAUNT index="609" file=".\sounds\taunts\rob\609 autshtdn.wav" id="" volume="255">
+			<STRING>Auto-shutdown sequence in progress...</STRING>
+		</TAUNT>
+		<TAUNT index="610" file=".\sounds\taunts\rob\610 3minutes.wav" id="" volume="255">
+			<STRING>Scotty, I need warp speed in three minutes or we're all dead.</STRING>
+		</TAUNT>
+		<TAUNT index="611" file=".\sounds\taunts\rob\611 aintafraid2die.wav" id="" volume="255">
+			<STRING>Yeah? Well, I ain't afraid to die. I just hate being killed, that's all.</STRING>
+		</TAUNT>
+		<TAUNT index="612" file=".\sounds\taunts\rob\612 manfallingtoground.wav" id="" volume="255">
+			<STRING>*Cartoon sound of someone fall to the ground*</STRING>
+		</TAUNT>
+		<TAUNT index="613" file=".\sounds\taunts\rob\613 battlywar.wav" id="" volume="255">
+			<STRING>OK, the battle is yours, Raymond. But it's just one battle in a huge, battly, war–thing with lots of other battles.</STRING>
+		</TAUNT>
+		<TAUNT index="614" file=".\sounds\taunts\rob\614 begone.wav" id="" volume="255">
+			<STRING>Be gone, evil one!</STRING>
+		</TAUNT>
+		<TAUNT index="615" file=".\sounds\taunts\rob\615 breathstinks.wav" id="" volume="255">
+			<STRING>Ooh! Aah! That was really scary! And if you don't mind me saying, if that don't work your breath will certainly get the job done because you definitely need some Tic-Tacs or something because your breath stinks!!!</STRING>
+		</TAUNT>
+		<TAUNT index="616" file=".\sounds\taunts\rob\616 bribe.wav" id="" volume="255">
+			<STRING>Yes, truly, a little bribe never hurts.</STRING>
+		</TAUNT>
+		<TAUNT index="617" file=".\sounds\taunts\rob\617 burninhell.wav" id="" volume="255">
+			<STRING>I'm just afraid that you're going to burn in Hell for all this.</STRING>
+		</TAUNT>
+		<TAUNT index="618" file=".\sounds\taunts\rob\618 couldbeworse.wav" id="" volume="255">
+			<STRING>What a filthy job! –Could be worse. –How? –Could be raining...</STRING>
+		</TAUNT>
+		<TAUNT index="619" file=".\sounds\taunts\rob\619 cristalball.wav" id="" volume="255">
+			<STRING>Look into my crystal ball to see your future... -This is not going to work cow... -Please big brother... concentrate!</STRING>
+		</TAUNT>
+		<TAUNT index="620" file=".\sounds\taunts\rob\620 curse.wav" id="" volume="255">
+			<STRING>There a curse upon it! A curse I say...</STRING>
+		</TAUNT>
+		<TAUNT index="621" file=".\sounds\taunts\rob\621 damnyou.wav" id="" volume="330">
+			<STRING>You maniacs! You blew it up! Oh, damn you! God damn you all to hell!</STRING>
+		</TAUNT>
+		<TAUNT index="622" file=".\sounds\taunts\rob\622 destiny.wav" id="" volume="255">
+			<STRING>Yes, Destiny has her hand on my back -And she's pushing!</STRING>
+		</TAUNT>
+		<TAUNT index="623" file=".\sounds\taunts\rob\623 dontpanc.wav" id="" volume="255">
+			<STRING>Oh, don't panic! Don't panic!</STRING>
+		</TAUNT>
+		<TAUNT index="624" file=".\sounds\taunts\rob\624 duke_this_sux.wav" id="" volume="255">
+			<STRING>Oops. This sucks!</STRING>
+		</TAUNT>
+		<TAUNT index="625" file=".\sounds\taunts\rob\625 everyman.wav" id="" volume="255">
+			<STRING>Every man for himself!</STRING>
+		</TAUNT>
+		<TAUNT index="626" file=".\sounds\taunts\rob\626 exitdoubletime.wav" id="" volume="255">
+			<STRING>Exit double-quick time, stage right!</STRING>
+		</TAUNT>
+		<TAUNT index="627" file=".\sounds\taunts\rob\627 goingdown.wav" id="" volume="255">
+			<STRING>We're going down, Captain!</STRING>
+		</TAUNT>
+		<TAUNT index="628" file=".\sounds\taunts\rob\628 hangon.wav" id="" volume="255">
+			<STRING>All you can do at a time like this is just hang on until the scenery changes.</STRING>
+		</TAUNT>
+		<TAUNT index="629" file=".\sounds\taunts\rob\629 hangover.wav" id="" volume="255">
+			<STRING>Oh, boy, what a hangover!</STRING>
+		</TAUNT>
+		<TAUNT index="630" file=".\sounds\taunts\rob\630 humiliation.wav" id="" volume="255">
+			<STRING>Must one person's triumph be another's humiliation? -Of course.</STRING>
+		</TAUNT>
+		<TAUNT index="631" file=".\sounds\taunts\rob\631 imafailure.wav" id="" volume="255">
+			<STRING>I'm a failure...</STRING>
+		</TAUNT>
+		<TAUNT index="632" file=".\sounds\taunts\rob\632 imamess.wav" id="" volume="255">
+			<STRING>Oh, don't look at me! I'm a mess!</STRING>
+		</TAUNT>
+		<TAUNT index="633" file=".\sounds\taunts\rob\633 imustsavemyself.wav" id="" volume="255">
+			<STRING>I must save myself. But what can I do?!?</STRING>
+		</TAUNT>
+		<TAUNT index="634" file=".\sounds\taunts\rob\634 Banjo1.wav" id="" volume="255">
+			<STRING>*Banjo Melody 1*</STRING>
+		</TAUNT>
+		<TAUNT index="635" file=".\sounds\taunts\rob\635 Banjo2.wav" id="" volume="255">
+			<STRING>*Banjo Melody 2*</STRING>
+		</TAUNT>
+		<TAUNT index="636" file=".\sounds\taunts\rob\636 Banjo3.wav" id="" volume="255">
+			<STRING>*Banjo Melody 3*</STRING>
+		</TAUNT>
+		<TAUNT index="637" file=".\sounds\taunts\rob\637 madhouse.wav" id="" volume="255">
+			<STRING>It's a madhouse! A madhouse!</STRING>
+		</TAUNT>
+		<TAUNT index="638" file=".\sounds\taunts\rob\638 makesomethingup.wav" id="" volume="255">
+			<STRING>Oh, crap! We never planned for this contingency. Quick, make something up!</STRING>
+		</TAUNT>
+		<TAUNT index="639" file=".\sounds\taunts\rob\639 ministryofpain.wav" id="" volume="255">
+			<STRING>The Ministry Of Pain?! Aaah! We're doomed! We're all doomed!</STRING>
+		</TAUNT>
+		<TAUNT index="640" file=".\sounds\taunts\rob\640 mostawful.wav" id="" volume="255">
+			<STRING>Well… Yeh… Ok… That’s just about the most awful thing I’ve ever seen.</STRING>
+		</TAUNT>
+		<TAUNT index="641" file=".\sounds\taunts\rob\641 movefast.wav" id="" volume="255">
+			<STRING>Don't move until it opens fire, then move fast!</STRING>
+		</TAUNT>
+		<TAUNT index="642" file=".\sounds\taunts\rob\642 myfault.wav" id="" volume="255">
+			<STRING>You're acting like this is all my fault.</STRING>
+		</TAUNT>
+		<TAUNT index="643" file=".\sounds\taunts\rob\643 mymistak.wav" id="" volume="255">
+			<STRING>Oh, heh heh heh, my mistake.</STRING>
+		</TAUNT>
+		<TAUNT index="644" file=".\sounds\taunts\rob\644 needhug.wav" id="" volume="255">
+			<STRING>I think I need a hug.</STRING>
+		</TAUNT>
+		<TAUNT index="645" file=".\sounds\taunts\rob\645 nevergiveup.wav" id="" volume="255">
+			<STRING>Never give up, never surrender!</STRING>
+		</TAUNT>
+		<TAUNT index="646" file=".\sounds\taunts\rob\646 not_yet_over.wav" id="" volume="255">
+			<STRING>This is important. The race is not yet over!</STRING>
+		</TAUNT>
+		<TAUNT index="647" file=".\sounds\taunts\rob\647 notfinished.wav" id="" volume="255">
+			<STRING>I'm not finished yet!</STRING>
+		</TAUNT>
+		<TAUNT index="648" file=".\sounds\taunts\rob\648 ohmy2.wav" id="" volume="255">
+			<STRING>Oh, no, not again! Oh my! Oh my! Oh, my goodness gracious!</STRING>
+		</TAUNT>
+		<TAUNT index="649" file=".\sounds\taunts\rob\649 pagesofhistory.wav" id="" volume="255">
+			<STRING>Oh, this is one of those days which the pages of history teach us are best spent lying in bed.</STRING>
+		</TAUNT>
+		<TAUNT index="650" file=".\sounds\taunts\rob\650 please.wav" id="" volume="255">
+			<STRING>Oh, that'll teach me to say please.</STRING>
+		</TAUNT>
+		<TAUNT index="651" file=".\sounds\taunts\rob\651 remembered.wav" id="" volume="255">
+			<STRING>This is not the way how I wish to be remembered.</STRING>
+		</TAUNT>
+		<TAUNT index="652" file=".\sounds\taunts\rob\652 s~fire.wav" id="" volume="255">
+			<STRING>Oh, Shit fire and fuck me running!</STRING>
+		</TAUNT>
+		<TAUNT index="653" file=".\sounds\taunts\rob\653 Sb_hrt1.wav" id="" volume="255">
+			<STRING>Always hurting me...</STRING>
+		</TAUNT>
+		<TAUNT index="654" file=".\sounds\taunts\rob\654 Sb_hrt3.wav" id="" volume="255">
+			<STRING>You hurt me!</STRING>
+		</TAUNT>
+		<TAUNT index="655" file=".\sounds\taunts\rob\655 SCreek.wav" id="" volume="255">
+			<STRING>Damn, reckon I'm up shit creek now!</STRING>
+		</TAUNT>
+		<TAUNT index="656" file=".\sounds\taunts\rob\656 shouldyouhearscreeming.wav" id="" volume="255">
+			<STRING>Should you hear screaming or anything, don't worry about it!</STRING>
+		</TAUNT>
+		<TAUNT index="657" file=".\sounds\taunts\rob\657 st_8_3.wav" id="" volume="255">
+			<STRING>Who here wants revenge?!?</STRING>
+		</TAUNT>
+		<TAUNT index="658" file=".\sounds\taunts\rob\658 suffer.wav" id="" volume="255">
+			<STRING>We seem to be made to suffer, it's our lot in life.</STRING>
+		</TAUNT>
+		<TAUNT index="659" file=".\sounds\taunts\rob\659 superherobutton.wav" id="" volume="255">
+			<STRING>Quickly, before it's too late! Press the Superhero button!</STRING>
+		</TAUNT>
+		<TAUNT index="660" file=".\sounds\taunts\rob\660 thanicandiehappy.wav" id="" volume="255">
+			<STRING>Than I can die happy!</STRING>
+		</TAUNT>
+		<TAUNT index="661" file=".\sounds\taunts\rob\661 torturingme.wav" id="" volume="255">
+			<STRING>Why do you delight in torturing me?</STRING>
+		</TAUNT>
+		<TAUNT index="662" file=".\sounds\taunts\rob\662 Vx_die5.wav" id="" volume="255">
+			<STRING>It’s not over…</STRING>
+		</TAUNT>
+		<TAUNT index="663" file=".\sounds\taunts\rob\663 werealldoomed.wav" id="" volume="255">
+			<STRING>Ehh, e-everyone stay calm… because we're all doomed!</STRING>
+		</TAUNT>
+		<TAUNT index="664" file=".\sounds\taunts\rob\664 whatplanet.wav" id="" volume="255">
+			<STRING>What planet is this guy from?</STRING>
+		</TAUNT>
+		<TAUNT index="665" file=".\sounds\taunts\rob\665 abunchofcommies.wav" id="" volume="255">
+			<STRING>Ohh… What are you people? A bunch of communists?</STRING>
+		</TAUNT>
+		<TAUNT index="666" file=".\sounds\taunts\rob\666 und theme 2.wav" id="" volume="255">
+			<STRING>kn0bi da undertaker - diggin your grave!</STRING>
+		</TAUNT>
+		<TAUNT index="667" file=".\sounds\taunts\rob\667 beast.wav" id="" volume="255">
+			<STRING>You beast... You savage... C'mon, bark like a dog for me!</STRING>
+		</TAUNT>
+		<TAUNT index="668" file=".\sounds\taunts\rob\668 Bk_road.wav" id="" volume="255">
+			<STRING>Let’s hit the road neighbor!</STRING>
+		</TAUNT>
+		<TAUNT index="669" file=".\sounds\taunts\rob\669 Ch_teas2.wav" id="" volume="255">
+			<STRING>Ha ha ha ha, sigh</STRING>
+		</TAUNT>
+		<TAUNT index="670" file=".\sounds\taunts\rob\670 Ch_teas1.wav" id="" volume="255">
+			<STRING>Ooh, ha ha ha ha ha</STRING>
+		</TAUNT>
+		<TAUNT index="671" file=".\sounds\taunts\rob\671 doesthatsuck.wav" id="" volume="255">
+			<STRING>Oh, my gosh, does that suck.</STRING>
+		</TAUNT>
+		<TAUNT index="672" file=".\sounds\taunts\rob\672 dontdoitatall.wav" id="" volume="255">
+			<STRING>If you can't do something right, don't do it at all.</STRING>
+		</TAUNT>
+		<TAUNT index="673" file=".\sounds\taunts\rob\673 dontgiveup.wav" id="" volume="255">
+			<STRING>Ohh don’t give-up so easily. I don’t.</STRING>
+		</TAUNT>
+		<TAUNT index="674" file=".\sounds\taunts\rob\674 dontknowme.wav" id="" volume="255">
+			<STRING>Heh heh. He don't know me vewy well, do he?</STRING>
+		</TAUNT>
+		<TAUNT index="675" file=".\sounds\taunts\rob\675 dontlooknow.wav" id="" volume="255">
+			<STRING>Don't look now… but there's one man too many in this room, and I think it's you.</STRING>
+		</TAUNT>
+		<TAUNT index="676" file=".\sounds\taunts\rob\676 dontmakemecomeoverthere.wav" id="" volume="255">
+			<STRING>Don't make me come over there!</STRING>
+		</TAUNT>
+		<TAUNT index="677" file=".\sounds\taunts\rob\677 duke_back_2_work_y.wav" id="" volume="255">
+			<STRING>Get back to work, you slacker.</STRING>
+		</TAUNT>
+		<TAUNT index="678" file=".\sounds\taunts\rob\678 duke_out_of_gum_x.wav" id="" volume="255">
+			<STRING>It's time to kick ass and chew bubblegum... and I'm all outta gum.</STRING>
+		</TAUNT>
+		<TAUNT index="679" file=".\sounds\taunts\rob\679 efficiency.wav" id="" volume="255">
+			<STRING>We can teach these barbarians a lesson in Western methods and efficiency that will put them to shame. We'll show them what the British soldier is capable of doing.</STRING>
+		</TAUNT>
+		<TAUNT index="680" file=".\sounds\taunts\rob\680 fun.wav" id="" volume="255">
+			<STRING>Hey! This promises to be fun!</STRING>
+		</TAUNT>
+		<TAUNT index="681" file=".\sounds\taunts\rob\681 geekboy.wav" id="" volume="255">
+			<STRING>Leave me alone, geek-boy!</STRING>
+		</TAUNT>
+		<TAUNT index="682" file=".\sounds\taunts\rob\682 hasbeen.wav" id="" volume="255">
+			<STRING>I'm just an untalented old has-been. -Were you ever famous? -No. -Then how can you be a has-been?</STRING>
+		</TAUNT>
+		<TAUNT index="683" file=".\sounds\taunts\rob\683 intolerance.wav" id="" volume="255">
+			<STRING>Your intolerance infuriates me!</STRING>
+		</TAUNT>
+		<TAUNT index="684" file=".\sounds\taunts\rob\684 justiceisblind.wav" id="" volume="255">
+			<STRING>Who says justice is blind?</STRING>
+		</TAUNT>
+		<TAUNT index="685" file=".\sounds\taunts\rob\685 landwar.wav" id="" volume="255">
+			<STRING>Ha ha, you fool! You fell victim to one of the classic blunders!</STRING>
+		</TAUNT>
+		<TAUNT index="686" file=".\sounds\taunts\rob\686 messyoassup.wav" id="" volume="255">
+			<STRING>Ooh, child, he gonna mess your ass up!</STRING>
+		</TAUNT>
+		<TAUNT index="687" file=".\sounds\taunts\rob\687 ohgoody.wav" id="" volume="255">
+			<STRING>Oh, goody, My Illudium Pu–36 Explosive Space Modulator!</STRING>
+		</TAUNT>
+		<TAUNT index="688" file=".\sounds\taunts\rob\688 prettyneat.wav" id="" volume="255">
+			<STRING>Oh, you got to admit that is pretty neat.</STRING>
+		</TAUNT>
+		<TAUNT index="689" file=".\sounds\taunts\rob\689 Sf_getya.wav" id="" volume="255">
+			<STRING>I'm gonna get you boy!</STRING>
+		</TAUNT>
+		<TAUNT index="690" file=".\sounds\taunts\rob\690 showingoffdont.wav" id="" volume="255">
+			<STRING>And the next time you feel like showing off, Don't!</STRING>
+		</TAUNT>
+		<TAUNT index="691" file=".\sounds\taunts\rob\691 shyonehorse.wav" id="" volume="255">
+			<STRING>Well, heh heh, looks like we're, heh heh heh, looks like we're shy one horse.</STRING>
+		</TAUNT>
+		<TAUNT index="692" file=".\sounds\taunts\rob\692 st_6_2.wav" id="" volume="255">
+			<STRING>I think the Germans are out of real man!</STRING>
+		</TAUNT>
+		<TAUNT index="693" file=".\sounds\taunts\rob\693 whatsitmeantobegijoe.wav" id="" volume="255">
+			<STRING>What's it mean to be GI Joe? –America's number one fighting force, sir! –And that means? –Big muscles, sir! –And? –Big missiles, sir!</STRING>
+		</TAUNT>
+		<TAUNT index="694" file=".\sounds\taunts\rob\694 allgay.wav" id="" volume="255">
+			<STRING>All my friends are gay. All my friends are gay!</STRING>
+		</TAUNT>
+		<TAUNT index="695" file=".\sounds\taunts\rob\695 assholex3.wav" id="" volume="255">
+			<STRING>You're an asshole, you're an asshole, and you're an asshole.</STRING>
+		</TAUNT>
+		<TAUNT index="696" file=".\sounds\taunts\rob\696 4fuck1cool.wav" id="" volume="255">
+			<STRING>Fuck you. Fuck you. Fuck you. You're cool. And fuck you!</STRING>
+		</TAUNT>
+		<TAUNT index="697" file=".\sounds\taunts\rob\697 Bk_bourb.wav" id="" volume="255">
+			<STRING>Where's my bourbon?</STRING>
+		</TAUNT>
+		<TAUNT index="698" file=".\sounds\taunts\rob\698 Bk_cheer.wav" id="" volume="255">
+			<STRING>Why don't ya cheer Bitch!</STRING>
+		</TAUNT>
+		<TAUNT index="699" file=".\sounds\taunts\rob\699 Bk_dienb.wav" id="" volume="255">
+			<STRING>Die neighbor!</STRING>
+		</TAUNT>
+		<TAUNT index="700" file=".\sounds\taunts\rob\700 Bk_dntlk.wav" id="" volume="255">
+			<STRING>Don't you look at me!</STRING>
+		</TAUNT>
+		<TAUNT index="701" file=".\sounds\taunts\rob\701 Bk_fun.wav" id="" volume="255">
+			<STRING>Fun's just starting neighbor!</STRING>
+		</TAUNT>
+		<TAUNT index="702" file=".\sounds\taunts\rob\702 Bk_keepa.wav" id="" volume="255">
+			<STRING>Keep away from my cheerleader neighbor!</STRING>
+		</TAUNT>
+		<TAUNT index="703" file=".\sounds\taunts\rob\703 Bk_tohel.wav" id="" volume="255">
+			<STRING>I'll send you straight to hell neighbor!</STRING>
+		</TAUNT>
+		<TAUNT index="704" file=".\sounds\taunts\rob\704 smelfear.wav" id="" volume="255">
+			<STRING>I can smell your fear…</STRING>
+		</TAUNT>
+		<TAUNT index="705" file=".\sounds\taunts\rob\705 Ch_barn.wav" id="" volume="255">
+			<STRING>Were you raised in a barn?!?</STRING>
+		</TAUNT>
+		<TAUNT index="706" file=".\sounds\taunts\rob\706 Ch_donit.wav" id="" volume="255">
+			<STRING>Now you've gone and done it!</STRING>
+		</TAUNT>
+		<TAUNT index="707" file=".\sounds\taunts\rob\707 Ch_whoop.wav" id="" volume="255">
+			<STRING>I reckon I'm gonna have to open a can of whoop ass on you!</STRING>
+		</TAUNT>
+		<TAUNT index="708" file=".\sounds\taunts\rob\708 Ct_get.wav" id="" volume="255">
+			<STRING>I'm gonna get ya boy, I'm gonna get ya...</STRING>
+		</TAUNT>
+		<TAUNT index="709" file=".\sounds\taunts\rob\709 damn.wav" id="" volume="255">
+			<STRING>Damn... You Suck!!!</STRING>
+		</TAUNT>
+		<TAUNT index="710" file=".\sounds\taunts\rob\710 dorkalert.wav" id="" volume="255">
+			<STRING>Oh, god, here we go again. Dork alert!</STRING>
+		</TAUNT>
+		<TAUNT index="711" file=".\sounds\taunts\rob\711 duke_pisses_me.wav" id="" volume="255">
+			<STRING>This pisses me off!</STRING>
+		</TAUNT>
+		<TAUNT index="712" file=".\sounds\taunts\rob\712 embarrassment2nature.wav" id="" volume="255">
+			<STRING>You're an embarrassment to nature, do you know that?</STRING>
+		</TAUNT>
+		<TAUNT index="713" file=".\sounds\taunts\rob\713 fullofcrap.wav" id="" volume="255">
+			<STRING>You're full of crap.</STRING>
+		</TAUNT>
+		<TAUNT index="714" file=".\sounds\taunts\rob\714 ignored.wav" id="" volume="255">
+			<STRING>Hey, I will not be ignored!</STRING>
+		</TAUNT>
+		<TAUNT index="715" file=".\sounds\taunts\rob\715 justthinkoftheheadache.wav" id="" volume="255">
+			<STRING>Just think of the havoc this little succor would play on history...</STRING>
+		</TAUNT>
+		<TAUNT index="716" file=".\sounds\taunts\rob\716 L_smonkeys.wav" id="" volume="255">
+			<STRING>I bet this place is just crawling with their damn shit monkeys.</STRING>
+		</TAUNT>
+		<TAUNT index="717" file=".\sounds\taunts\rob\717 Ln_bbq.wav" id="" volume="255">
+			<STRING>I'll barbecue your ass in molasses!</STRING>
+		</TAUNT>
+		<TAUNT index="718" file=".\sounds\taunts\rob\718 Ln_bitch.wav" id="" volume="255">
+			<STRING>Son of a bitch!</STRING>
+		</TAUNT>
+		<TAUNT index="719" file=".\sounds\taunts\rob\719 Ln_blow.wav" id="" volume="255">
+			<STRING>Them boys blowed up real good!</STRING>
+		</TAUNT>
+		<TAUNT index="720" file=".\sounds\taunts\rob\720 Ln_busy.wav" id="" volume="255">
+			<STRING>I'm busier than a one legged man in an ass-kicking contest!</STRING>
+		</TAUNT>
+		<TAUNT index="721" file=".\sounds\taunts\rob\721 Ln_city.wav" id="" volume="255">
+			<STRING>City folk!</STRING>
+		</TAUNT>
+		<TAUNT index="722" file=".\sounds\taunts\rob\722 Ln_fkyo.wav" id="" volume="255">
+			<STRING>Screw you and the horse you rode in on!</STRING>
+		</TAUNT>
+		<TAUNT index="723" file=".\sounds\taunts\rob\723 Ln_Hog'sbt.wav" id="" volume="255">
+			<STRING>This is like looking up a hogs butt for a ham sandwich!</STRING>
+		</TAUNT>
+		<TAUNT index="724" file=".\sounds\taunts\rob\724 Ln_nosht.wav" id="" volume="255">
+			<STRING>We don’t take no shit from no suckers!</STRING>
+		</TAUNT>
+		<TAUNT index="725" file=".\sounds\taunts\rob\725 Ln_stink.wav" id="" volume="255">
+			<STRING>I'm on you like stink on shit!</STRING>
+</TAUNT>
+<TAUNT index="726" file=".\sounds\taunts\rob\726 Ln_whup.wav" id="" volume="255">
+<STRING>I'm gonna have to open up a can of whoop ass on you now.</STRING>
+		</TAUNT>
+		<TAUNT index="727" file=".\sounds\taunts\rob\727 Lnfoot.wav" id="" volume="255">
+			<STRING>Don't make me break my foot off in your ass!</STRING>
+</TAUNT>
+<TAUNT index="728" file=".\sounds\taunts\rob\728 massivewuss.wav" id="" volume="255">
+<STRING>You are such a massive wuss!</STRING>
+</TAUNT>
+<TAUNT index="729" file=".\sounds\taunts\rob\729 myeyes.wav" id="" volume="255">
+<STRING>Oh, my god! My eyes! Oh, my eyes!</STRING>
+</TAUNT>
+<TAUNT index="730" file=".\sounds\taunts\rob\730 onamission.wav" id="" volume="255">
+<STRING>We're on a mission, you nit!</STRING>
+		</TAUNT>
+		<TAUNT index="731" file=".\sounds\taunts\rob\731 paranoid.wav" id="" volume="255">
+			<STRING>This is an extremely primitive and paranoid culture.</STRING>
+		</TAUNT>
+		<TAUNT index="732" file=".\sounds\taunts\rob\732 pathetic.wav" id="" volume="255">
+			<STRING>You're useless and pathetic, like a useless and pathetic thing.</STRING>
+</TAUNT>
+<TAUNT index="733" file=".\sounds\taunts\rob\733 practicemakesperfect.wav" id="" volume="255">
+<STRING>You might want to practice a little more… </STRING>
+</TAUNT>
+<TAUNT index="734" file=".\sounds\taunts\rob\734 promqueen.wav" id="" volume="255">
+<STRING>Losers always whine about 'their best'. Winners go home and fuck the prom queen.</STRING>
+</TAUNT>
+<TAUNT index="735" file=".\sounds\taunts\rob\735 pullpstl.wav" id="" volume="255">
+<STRING>Are you going to pull those pistols or whistle Dixie?</STRING>
+</TAUNT>
+<TAUNT index="736" file=".\sounds\taunts\rob\736 pussyboy.wav" id="" volume="255">
+<STRING>So, how did you do, pussy-boy?</STRING>
+</TAUNT>
+<TAUNT index="737" file=".\sounds\taunts\rob\737 ripuanewbutthole.wav" id="" volume="255">
+<STRING>And one more thing… The next time you talk to me like that, I'm going to rip you a new butthole so big you can be able to take a cannon up your ass.</STRING>
+		</TAUNT>
+		<TAUNT index="738" file=".\sounds\taunts\rob\738 sickensme.wav" id="" volume="255">
+			<STRING>I was being sarcastic, which is another big word you'll learn in school. But you wouldn't know that considering you've never attended one of this country's great educational facilities, which is a thought that just sickens me.</STRING>
+		</TAUNT>
+		<TAUNT index="739" file=".\sounds\taunts\rob\739 silence.wav" id="" volume="255">
+			<STRING>Silence, you mental midget!</STRING>
+		</TAUNT>
+		<TAUNT index="740" file=".\sounds\taunts\rob\740 smackedbottom1.wav" id="" volume="255">
+			<STRING>All right, you're going the right way for a smacked bottom.</STRING>
+</TAUNT>
+<TAUNT index="741" file=".\sounds\taunts\rob\741 weirdestthing.wav" id="" volume="255">
+<STRING>That is the weirdest thing you have ever said.</STRING>
+</TAUNT>
+<TAUNT index="742" file=".\sounds\taunts\rob\742 sonofbitch.wav" id="" volume="255">
+<STRING>Oh, son–of–a–b–b–– son–of–a–b–b–– son–of–a–b–b–– uh, gun. Heh, heh, heh. You thought I was going to, uh, say son–of–a–bitch, didn't you? Heh, heh.</STRING>
+		</TAUNT>
+		<TAUNT index="743" file=".\sounds\taunts\rob\743 st_1_2.wav" id="" volume="255">
+			<STRING>Your next!</STRING>
+		</TAUNT>
+		<TAUNT index="744" file=".\sounds\taunts\rob\744 st_11_3.wav" id="" volume="255">
+			<STRING>Bloody Hell!</STRING>
+		</TAUNT>
+		<TAUNT index="745" file=".\sounds\taunts\rob\745 st_15_2.wav" id="" volume="255">
+			<STRING>Is that all you got?!?</STRING>
+		</TAUNT>
+		<TAUNT index="746" file=".\sounds\taunts\rob\746 good, good - then what.wav" id="" volume="255">
+			<STRING>Good...Good... Then what!?!</STRING>
+		</TAUNT>
+		<TAUNT index="747" file=".\sounds\taunts\rob\747 strongox.wav" id="" volume="255">
+			<STRING>That boy's as strong as an ox. . .and just about as smart.</STRING>
+</TAUNT>
+<TAUNT index="748" file=".\sounds\taunts\rob\748 surroundedbyfreaks.wav" id="" volume="255">
+<STRING>I am surrounded by freaks!</STRING>
+</TAUNT>
+<TAUNT index="749" file=".\sounds\taunts\rob\749 thissuckerisnuclear.wav" id="" volume="255">
+<STRING>Are you telling me that this sucker is nuclear?!?</STRING>
+</TAUNT>
+<TAUNT index="750" file=".\sounds\taunts\rob\750 threatenedyoubefore.wav" id="" volume="255">
+<STRING>You seem somewhat familiar. Have I threatened you before?</STRING>
+</TAUNT>
+<TAUNT index="751" file=".\sounds\taunts\rob\751 throwup.wav" id="" volume="255">
+<STRING>I'm constantly in the state of wanting to throw up.</STRING>
+		</TAUNT>
+		<TAUNT index="752" file=".\sounds\taunts\rob\752 usostupid.wav" id="" volume="255">
+			<STRING>Stupid! You're so stupid!</STRING>
+</TAUNT>
+<TAUNT index="753" file=".\sounds\taunts\rob\753 Vx_hurt2.wav" id="" volume="255">
+<STRING>Did that hurt?!?</STRING>
+</TAUNT>
+<TAUNT index="754" file=".\sounds\taunts\rob\754 wanker.wav" id="" volume="255">
+<STRING>Why do you have to be such a wanker?</STRING>
+</TAUNT>
+<TAUNT index="755" file=".\sounds\taunts\rob\755 welcome2.wav" id="" volume="255">
+<STRING>Welcome to my nightmare!</STRING>
+</TAUNT>
+<TAUNT index="756" file=".\sounds\taunts\rob\756 bevictim.wav" id="" volume="255">
+<STRING>Be my victim!</STRING>
+</TAUNT>
+<TAUNT index="757" file=".\sounds\taunts\rob\757 what.wav" id="" volume="255">
+<STRING>What would you do with a brain if you had one?</STRING>
+</TAUNT>
+<TAUNT index="758" file=".\sounds\taunts\rob\758 whatareyougonnado.wav" id="" volume="255">
+<STRING>Just what are you sissies gonna do?!? Huh?</STRING>
+</TAUNT>
+<TAUNT index="759" file=".\sounds\taunts\rob\759 whatsyourpoint.wav" id="" volume="255">
+<STRING>And??? What’s your point!</STRING>
+</TAUNT>
+<TAUNT index="760" file=".\sounds\taunts\rob\760 whoopass.wav" id="" volume="255">
+<STRING>Don't make me open a can of Whoop-Ass, buster!</STRING>
+		</TAUNT>
+		<TAUNT index="761" file=".\sounds\taunts\rob\761 worldfavor.wav" id="" volume="255">
+			<STRING>Why don't you do the world a favor? Pull your lip over your head and swallow.</STRING>
+</TAUNT>
+<TAUNT index="762" file=".\sounds\taunts\rob\762 youreasucker.wav" id="" volume="255">
+<STRING>You're a sucker!!! </STRING>
+		</TAUNT>
+		<TAUNT index="763" file=".\sounds\taunts\rob\763 ambitious.wav" id="" volume="255">
+			<STRING>Are you blackmailing me, you ambitious shit?</STRING>
+		</TAUNT>
+		<TAUNT index="764" file=".\sounds\taunts\rob\764 asifwecare.wav" id="" volume="255">
+			<STRING>As if we care.</STRING>
+		</TAUNT>
+		<TAUNT index="765" file=".\sounds\taunts\rob\765 betterthanthis.wav" id="" volume="255">
+			<STRING>It just doesn't get better than this, does it?</STRING>
+</TAUNT>
+<TAUNT index="766" file=".\sounds\taunts\rob\766 bigman.wav" id="" volume="255">
+<STRING>Big mouth don't make a big man.</STRING>
+		</TAUNT>
+		<TAUNT index="767" file=".\sounds\taunts\rob\767 bigwords.wav" id="" volume="255">
+			<STRING>Stop now! Or I shall use more big words at you.</STRING>
+		</TAUNT>
+		<TAUNT index="768" file=".\sounds\taunts\rob\768 bitnice.wav" id="" volume="255">
+			<STRING>That wasn’t a bit nice!</STRING>
+		</TAUNT>
+		<TAUNT index="769" file=".\sounds\taunts\rob\769 Bk_pleas.wav" id="" volume="255">
+			<STRING>Don't say please neighbor!</STRING>
+</TAUNT>
+<TAUNT index="770" file=".\sounds\taunts\rob\770 Bk_shtup.wav" id="" volume="255">
+<STRING>Shut up cheer-bitch!</STRING>
+</TAUNT>
+<TAUNT index="771" file=".\sounds\taunts\rob\771 Bk_tryin.wav" id="" volume="255">
+<STRING>Shut up cheer girl. I'm trying to kill somebody here!</STRING>
+		</TAUNT>
+		<TAUNT index="772" file=".\sounds\taunts\rob\772 chillthat.wav" id="" volume="255">
+			<STRING>Chill that you pile of crap!</STRING>
+		</TAUNT>
+		<TAUNT index="773" file=".\sounds\taunts\rob\773 dizzy.wav" id="" volume="255">
+			<STRING>I'm gonna hit you so hard it'll make your ancestors dizzy.</STRING>
+		</TAUNT>
+		<TAUNT index="774" file=".\sounds\taunts\rob\774 dontfuck.wav" id="" volume="255">
+			<STRING>Don’t fuck with me fellows!</STRING>
+		</TAUNT>
+		<TAUNT index="775" file=".\sounds\taunts\rob\775 dontslap.wav" id="" volume="255">
+			<STRING>Don't you slap me no more. We clear on that?</STRING>
+</TAUNT>
+<TAUNT index="776" file=".\sounds\taunts\rob\776 dontstartfights.wav" id="" volume="255">
+<STRING>Ladies do not start fights… But they can finish them!</STRING>
+</TAUNT>
+<TAUNT index="777" file=".\sounds\taunts\rob\777 learned.wav" id="" volume="255">
+<STRING>You have learned much, young one.</STRING>
+</TAUNT>
+<TAUNT index="778" file=".\sounds\taunts\rob\778 dramaking.wav" id="" volume="255">
+<STRING>Oh, stop being such a drama king.</STRING>
+</TAUNT>
+<TAUNT index="779" file=".\sounds\taunts\rob\779 duke_blow_it_x.wav" id="" volume="255">
+<STRING>Blow it out your ass!</STRING>
+</TAUNT>
+<TAUNT index="780" file=".\sounds\taunts\rob\780 duke_come_get_some_x.wav" id="" volume="255">
+<STRING>Come get some!</STRING>
+</TAUNT>
+<TAUNT index="781" file=".\sounds\taunts\rob\781 no sense.wav" id="" volume="255">
+<STRING>That plan makes no sense!</STRING>
+</TAUNT>
+<TAUNT index="782" file=".\sounds\taunts\rob\782 father.wav" id="" volume="255">
+<STRING>No, I am your father.</STRING>
+</TAUNT>
+<TAUNT index="783" file=".\sounds\taunts\rob\783 fkngidot.wav" id="" volume="255">
+<STRING>Personally, I think you're a fucking idiot.</STRING>
+		</TAUNT>
+		<TAUNT index="784" file=".\sounds\taunts\rob\784 xsqueeze.wav" id="" volume="255">
+			<STRING>X'squeeze me.</STRING>
+</TAUNT>
+<TAUNT index="785" file=".\sounds\taunts\rob\785 friendlyargument.wav" id="" volume="255">
+<STRING>It's all right. It's all right, mate. We're just having a friendly little argument.</STRING>
+		</TAUNT>
+		<TAUNT index="786" file=".\sounds\taunts\rob\786 fudgem.wav" id="" volume="255">
+			<STRING>Wife got you down? Boss makin' you angry? Kids yellin' at you? Well, Fudge 'Em!</STRING>
+</TAUNT>
+<TAUNT index="787" file=".\sounds\taunts\rob\787 greatscott.wav" id="" volume="255">
+<STRING>Great Scott!</STRING>
+</TAUNT>
+<TAUNT index="788" file=".\sounds\taunts\rob\788 hurtme.wav" id="" volume="255">
+<STRING>Why do you say things that you know will hurt me?!?</STRING>
+</TAUNT>
+<TAUNT index="789" file=".\sounds\taunts\rob\789 hushmouth.wav" id="" volume="255">
+<STRING>Hush your mouth!</STRING>
+</TAUNT>
+<TAUNT index="790" file=".\sounds\taunts\rob\790 knack.wav" id="" volume="255">
+<STRING>Boy, oh boy, you got a knack for getting yourself out of trouble.</STRING>
+</TAUNT>
+<TAUNT index="791" file=".\sounds\taunts\rob\791 laughwhileucan.wav" id="" volume="255">
+<STRING>Laugh while you can, monkey-boy!</STRING>
+</TAUNT>
+<TAUNT index="792" file=".\sounds\taunts\rob\792 Ln_bull.wav" id="" volume="255">
+<STRING>Ya screw with the bull, ya get the horn!</STRING>
+</TAUNT>
+<TAUNT index="793" file=".\sounds\taunts\rob\793 Ln_stank.wav" id="" volume="255">
+<STRING>My head hurts, my feet stink and I don't love Jesus!</STRING>
+		</TAUNT>
+		<TAUNT index="794" file=".\sounds\taunts\rob\794 madashell.wav" id="" volume="255">
+			<STRING>I'm as mad as hell, and I'm not going to take this anymore!</STRING>
+		</TAUNT>
+		<TAUNT index="795" file=".\sounds\taunts\rob\795 mistake2.wav" id="" volume="255">
+			<STRING>You do and it'll be the biggest mistake you ever made, you Texas brush popper!</STRING>
+</TAUNT>
+<TAUNT index="796" file=".\sounds\taunts\rob\796 mocking.wav" id="" volume="255">
+<STRING>You're mocking me, aren't you?</STRING>
+</TAUNT>
+<TAUNT index="797" file=".\sounds\taunts\rob\797 mthshut.wav" id="" volume="255">
+<STRING>Maybe that'll learn ya to keep your big mouth shut!</STRING>
+		</TAUNT>
+		<TAUNT index="798" file=".\sounds\taunts\rob\798 nasty.wav" id="" volume="255">
+			<STRING>Oh, that is nasty!</STRING>
+		</TAUNT>
+		<TAUNT index="799" file=".\sounds\taunts\rob\799 zoo.wav" id="" volume="255">
+			<STRING>What do you think this is?!? A zoo?!?</STRING>
+		</TAUNT>
+		<TAUNT index="800" file=".\sounds\taunts\rob\800 nobodytellsme.wav" id="" volume="255">
+			<STRING>I don't know what kind of people you're used to dealing with. Nobody tells me what to do in my place.</STRING>
+		</TAUNT>
+		<TAUNT index="801" file=".\sounds\taunts\rob\801 notcricket.wav" id="" volume="255">
+			<STRING>Do not speak to me of rules. This is war! This is not a game of cricket!</STRING>
+		</TAUNT>
+		<TAUNT index="802" file=".\sounds\taunts\rob\802 noterror.wav" id="" volume="255">
+			<STRING>There is no terror in your threats.</STRING>
+		</TAUNT>
+		<TAUNT index="803" file=".\sounds\taunts\rob\803 notlistening.wav" id="" volume="255">
+			<STRING>Don't bother responding. We're not listening.</STRING>
+		</TAUNT>
+		<TAUNT index="804" file=".\sounds\taunts\rob\804 ohreally.wav" id="" volume="255">
+			<STRING>Oh, really?!?</STRING>
+		</TAUNT>
+		<TAUNT index="805" file=".\sounds\taunts\rob\805 peopleskills2.wav" id="" volume="255">
+			<STRING>You know, we have to work on your people skills.</STRING>
+		</TAUNT>
+		<TAUNT index="806" file=".\sounds\taunts\rob\806 point2this.wav" id="" volume="255">
+			<STRING>I'm sure there's a point to all of this.</STRING>
+		</TAUNT>
+		<TAUNT index="807" file=".\sounds\taunts\rob\807 poontang.wav" id="" volume="255">
+			<STRING>Yeah, I could use some goddamn poontang, myself, right now.</STRING>
+		</TAUNT>
+		<TAUNT index="808" file=".\sounds\taunts\rob\808 ratsass.wav" id="" volume="255">
+			<STRING>The answers to these questions, and more, on next week's episode of Who Gives A Rat's Ass.</STRING>
+		</TAUNT>
+		<TAUNT index="809" file=".\sounds\taunts\rob\809 Sf_over.wav" id="" volume="255">
+			<STRING>I said get over here boy!</STRING>
+		</TAUNT>
+		<TAUNT index="810" file=".\sounds\taunts\rob\810 shdntlaf.wav" id="" volume="255">
+			<STRING>We shouldn't laugh. -We really shouldn't.</STRING>
+		</TAUNT>
+		<TAUNT index="811" file=".\sounds\taunts\rob\811 someoneelseannoy.wav" id="" volume="255">
+			<STRING>Oh, isn't there someone else you can annoy? Friends? Family? Poisonous reptiles?</STRING>
+</TAUNT>
+<TAUNT index="812" file=".\sounds\taunts\rob\812 st_9_2.wav" id="" volume="255">
+<STRING>You’re crazy!</STRING>
+</TAUNT>
+<TAUNT index="813" file=".\sounds\taunts\rob\813 takeyourbestshot.wav" id="" volume="255">
+<STRING>Take your best shot.</STRING>
+</TAUNT>
+<TAUNT index="814" file=".\sounds\taunts\rob\814 thinkyourenuts.wav" id="" volume="255">
+<STRING>I think you're nuts, but this isn't the best time to argue.</STRING>
+</TAUNT>
+<TAUNT index="815" file=".\sounds\taunts\rob\815 tickevil.wav" id="" volume="255">
+<STRING>Villains, I say to you now, knock off all that evil!</STRING>
+</TAUNT>
+<TAUNT index="816" file=".\sounds\taunts\rob\816 tsktsk.wav" id="" volume="255">
+<STRING>Tsk, tsk. –Yeah, tsk. –And another tsk!</STRING>
+</TAUNT>
+<TAUNT index="817" file=".\sounds\taunts\rob\817 Vx_baby2.wav" id="" volume="255">
+<STRING>Oh, poor baby...</STRING>
+</TAUNT>
+<TAUNT index="818" file=".\sounds\taunts\rob\818 Vx_bring.wav" id="" volume="255">
+<STRING>Bring it on!</STRING>
+</TAUNT>
+<TAUNT index="819" file=".\sounds\taunts\rob\819 worstthing.wav" id="" volume="255">
+<STRING>Well, if that is the worst thing that happens today, I'll be thrilled.</STRING>
+		</TAUNT>
+		<TAUNT index="820" file=".\sounds\taunts\rob\820 dreddlaw.wav" id="" volume="255">
+			<STRING>I am ‘The Law’!</STRING>
+		</TAUNT>
+		<TAUNT index="821" file=".\sounds\taunts\rob\821 wav69.wav" id="" volume="255">
+			<STRING>It’s a lie…the evidence have been falsified. I never broke the law, I am the law!</STRING>
+		</TAUNT>
+		<TAUNT index="822" file=".\sounds\taunts\rob\822 whatthehell2.wav" id="" volume="255">
+			<STRING>What the hell are you talking about?!?</STRING>
+		</TAUNT>
+		<TAUNT index="823" file=".\sounds\taunts\rob\823 whatwasthat.wav" id="" volume="255">
+			<STRING>What was that?!?</STRING>
+		</TAUNT>
+		<TAUNT index="824" file=".\sounds\taunts\rob\824 whogives.wav" id="" volume="255">
+			<STRING>Who gives a shit?!?</STRING>
+		</TAUNT>
+		<TAUNT index="825" file=".\sounds\taunts\rob\825 willnot.wav" id="" volume="255">
+			<STRING>I will not be pushed, filed, stamped, indexed, briefed, debriefed, or numbered!</STRING>
+		</TAUNT>
+		<TAUNT index="826" file=".\sounds\taunts\rob\826 wonthurt.wav" id="" volume="255">
+			<STRING>Now, this won't hurt a bit.</STRING>
+</TAUNT>
+<TAUNT index="827" file=".\sounds\taunts\rob\827 2010_02.wav" id="" volume="255">
+<STRING>What's going to happen? Something wonderful...</STRING>
+		</TAUNT>
+		<TAUNT index="828" file=".\sounds\taunts\rob\828 allyourbase.wav" id="" volume="255">
+			<STRING>All your base are belong to us!</STRING>
+		</TAUNT>
+		<TAUNT index="829" file=".\sounds\taunts\rob\829 andnow.wav" id="" volume="255">
+			<STRING>And now, you die!</STRING>
+		</TAUNT>
+		<TAUNT index="830" file=".\sounds\taunts\rob\830 appraisl.wav" id="" volume="255">
+			<STRING>The Emperor does not share your optimistic appraisal of the situation.</STRING>
+		</TAUNT>
+		<TAUNT index="831" file=".\sounds\taunts\rob\831 badthing.wav" id="" volume="255">
+			<STRING>Ooh, I done a bad thing.</STRING>
+		</TAUNT>
+		<TAUNT index="832" file=".\sounds\taunts\rob\832 imabadboy.wav" id="" volume="255">
+			<STRING>Oohhoho I am a bad boy… A very bad boy…</STRING>
+		</TAUNT>
+		<TAUNT index="833" file=".\sounds\taunts\rob\833 reflexes.wav" id="" volume="255">
+			<STRING>It’s all in the reflexes!</STRING>
+		</TAUNT>
+		<TAUNT index="834" file=".\sounds\taunts\rob\834 Sf_hands.wav" id="" volume="255">
+			<STRING>Hands up, son!</STRING>
+		</TAUNT>
+		<TAUNT index="835" file=".\sounds\taunts\rob\835 st_5_2.wav" id="" volume="255">
+			<STRING>They’re a bunch of cowards!</STRING>
+		</TAUNT>
+		<TAUNT index="836" file=".\sounds\taunts\rob\836 st_8_2.wav" id="" volume="255">
+			<STRING>This is too easy!!!</STRING>
+		</TAUNT>
+		<TAUNT index="837" file=".\sounds\taunts\rob\837 startrunning.wav" id="" volume="255">
+			<STRING>It's time to start running!</STRING>
+</TAUNT>
+<TAUNT index="838" file=".\sounds\taunts\rob\838 strengthirrelevant.wav" id="" volume="255">
+<STRING>Strength is irrelevant. Resistance is futile. We wish to improve ourselves. We will add your biological and technological distinctiveness to our own. Your culture will adapt to service ours.</STRING>
+</TAUNT>
+<TAUNT index="839" file=".\sounds\taunts\rob\839 freedomirrelevant.wav" id="" volume="255">
+<STRING>Freedom is irrelevant. Self-determination is irrelevant. You must comply.</STRING>
+</TAUNT>
+<TAUNT index="840" file=".\sounds\taunts\rob\840 xterm01.wav" id="" volume="255">
+<STRING>Exterminate! Annihilate! Destroy!</STRING>
+</TAUNT>
+<TAUNT index="841" file=".\sounds\taunts\rob\841 itisdone.wav" id="" volume="255">
+<STRING>It is done imperious leader</STRING>
+</TAUNT>
+<TAUNT index="842" file=".\sounds\taunts\rob\842 obey2.wav" id="" volume="255">
+<STRING>The choice is yours: obey me and live, or disobey and die.</STRING>
+</TAUNT>
+<TAUNT index="843" file=".\sounds\taunts\rob\843 unhapend.wav" id="" volume="255">
+<STRING>Well, you're just in time for what might be a very unhappy ending.</STRING>
+		</TAUNT>
+		<TAUNT index="844" file=".\sounds\taunts\rob\844 despot.wav" id="" volume="255">
+			<STRING>The entire world will beg to bow before me, their charismatic despot!</STRING>
+		</TAUNT>
+		<TAUNT index="845" file=".\sounds\taunts\rob\845 destroy1.wav" id="" volume="255">
+			<STRING>There is no escape...</STRING>
+		</TAUNT>
+		<TAUNT index="846" file=".\sounds\taunts\rob\846 donttellme.wav" id="" volume="255">
+			<STRING>Don't tell me you didn't see that coming...</STRING>
+		</TAUNT>
+		<TAUNT index="847" file=".\sounds\taunts\rob\847 duke_gotta_hurt.wav" id="" volume="255">
+			<STRING>Ooo, that's gotta hurt!</STRING>
+</TAUNT>
+<TAUNT index="848" file=".\sounds\taunts\rob\848 duke_mess.wav" id="" volume="255">
+<STRING>Heh, heh, heh. What a mess!</STRING>
+</TAUNT>
+<TAUNT index="849" file=".\sounds\taunts\rob\849 takapicture.wav" id="" volume="255">
+<STRING>Why don't you take a picture? It'll last longer, ha ha!</STRING>
+</TAUNT>
+<TAUNT index="850" file=".\sounds\taunts\rob\850 future.wav" id="" volume="255">
+<STRING>Gentlemen, I give you the future.</STRING>
+</TAUNT>
+<TAUNT index="851" file=".\sounds\taunts\rob\851 hmmm blabla.wav" id="" volume="255">
+<STRING>Hmm. Blah-blah-blah...</STRING>
+</TAUNT>
+<TAUNT index="852" file=".\sounds\taunts\rob\852 getnothing.wav" id="" volume="255">
+<STRING>So you get nothing! You lose! Good day, sir!</STRING>
+</TAUNT>
+<TAUNT index="853" file=".\sounds\taunts\rob\853 victoryismine.wav" id="" volume="255">
+<STRING>At last, victory is mine!</STRING>
+</TAUNT>
+<TAUNT index="854" file=".\sounds\taunts\rob\854 leavemealone.wav" id="" volume="255">
+<STRING>I told you people to leave me alone… I told you to beat it!</STRING>
+</TAUNT>
+<TAUNT index="855" file=".\sounds\taunts\rob\855 lesson4u.wav" id="" volume="255">
+<STRING>Well, there's a lesson for you...</STRING>
+		</TAUNT>
+		<TAUNT index="856" file=".\sounds\taunts\rob\856 letthatbealesson.wav" id="" volume="255">
+			<STRING>Let that be a lesson to the two of you little… </STRING>
+		</TAUNT>
+		<TAUNT index="857" file=".\sounds\taunts\rob\857 Ln_sob.wav" id="" volume="255">
+			<STRING>Die you son of a bitch!</STRING>
+		</TAUNT>
+		<TAUNT index="858" file=".\sounds\taunts\rob\858 wereallhere.wav" id="" volume="255">
+			<STRING>We're all here to do what we're all here to do.</STRING>
+		</TAUNT>
+		<TAUNT index="859" file=".\sounds\taunts\rob\859 oohbusted.wav" id="" volume="255">
+			<STRING>Ooh, busted! </STRING>
+		</TAUNT>
+		<TAUNT index="860" file=".\sounds\taunts\rob\860 peepldie.wav" id="" volume="255">
+			<STRING>Some people die before their time, so that others can live… It’s a cornerstone of civilization.</STRING>
+		</TAUNT>
+		<TAUNT index="861" file=".\sounds\taunts\rob\861 Jukebox.wav" id="" volume="255">
+			<STRING>*Jukebox*</STRING>
+		</TAUNT>
+		<TAUNT index="862" file=".\sounds\taunts\rob\862 intruder.wav" id="" volume="255">
+			<STRING>Intruder alert! Intruder alert!</STRING>
+		</TAUNT>
+		<TAUNT index="863" file=".\sounds\taunts\rob\863 redalert1.wav" id="" volume="255">
+			<STRING>Red alert! Red alert!</STRING>
+		</TAUNT>
+		<TAUNT index="864" file=".\sounds\taunts\rob\864 secalert.wav" id="" volume="255">
+			<STRING>Security alert, all decks!</STRING>
+		</TAUNT>
+		<TAUNT index="865" file=".\sounds\taunts\rob\865 tarzan.wav" id="" volume="255">
+			<STRING>*Tarzan-yell*</STRING>
+		</TAUNT>
+		<TAUNT index="866" file=".\sounds\taunts\rob\866 slippedmymind.wav" id="" volume="255">
+			<STRING>Well you know huh, it must have slipped my mind!</STRING>
+		</TAUNT>
+		<TAUNT index="867" file=".\sounds\taunts\rob\867 anyquestionsladies.wav" id="" volume="255">
+			<STRING>Any questions! ladies? Nooo?!? Well I didn’t think so… tataa that’s the real end.</STRING>
+		</TAUNT>
+		<TAUNT index="868" file=".\sounds\taunts\rob\868 goodevil.wav" id="" volume="255">
+			<STRING>Now you see that evil will always triumph, because good is dumb!</STRING>
+		</TAUNT>
+		<TAUNT index="869" file=".\sounds\taunts\rob\869 goodshow.wav" id="" volume="255">
+			<STRING>Good show… Jolly good show Major!</STRING>
+		</TAUNT>
+		<TAUNT index="870" file=".\sounds\taunts\rob\870 grudge.wav" id="" volume="255">
+			<STRING>I thought you said you don't hold a grudge. -I don't. I have no surviving enemies. . .at all.</STRING>
+		</TAUNT>
+		<TAUNT index="871" file=".\sounds\taunts\rob\871 hal_bye.wav" id="" volume="255">
+			<STRING>This conversation can serve no purpose anymore, goodbye.</STRING>
+		</TAUNT>
+		<TAUNT index="872" file=".\sounds\taunts\rob\872 littlepeople.wav" id="" volume="255">
+			<STRING>I'd like to thank all the little people I stepped on to get where I am today.</STRING>
+</TAUNT>
+<TAUNT index="873" file=".\sounds\taunts\rob\873 neverhappened.wav" id="" volume="255">
+<STRING>Uh, l-let's pretend like this never happened.</STRING>
+		</TAUNT>
+		<TAUNT index="874" file=".\sounds\taunts\rob\874 st_16_2.wav" id="" volume="255">
+			<STRING>Good job, Lads!</STRING>
+		</TAUNT>
+		<TAUNT index="875" file=".\sounds\taunts\rob\875 okloveya.wav" id="" volume="255">
+			<STRING>OK, Love you… Bye-Bye</STRING>
+		</TAUNT>
+		<TAUNT index="876" file=".\sounds\taunts\rob\876 phewthatwasclose.wav" id="" volume="255">
+			<STRING>Phew, well that was close, we was nearly eaten alive!</STRING>
+		</TAUNT>
+		<TAUNT index="877" file=".\sounds\taunts\rob\877 neverrest.wav" id="" volume="255">
+			<STRING>I shall never rest until I bring him to justice.</STRING>
+		</TAUNT>
+		<TAUNT index="878" file=".\sounds\taunts\rob\878 thankyou2.wav" id="" volume="255">
+			<STRING>Ladies and gentlemen, my mother thanks you... my father thanks you... my sister thanks you... and I thank you.</STRING>
+		</TAUNT>
+		<TAUNT index="879" file=".\sounds\taunts\rob\879 Do you want MoR.wav" id="" volume="255">
+			<STRING>Do you want MoR?!? Check out:
+Http://www.mastersleague.net</STRING>
+		</TAUNT>
+		<TAUNT index="880" file=".\sounds\taunts\rob\880 - Don't be alarmed.wav" id="" volume="">
+			<STRING>Hello, we’re your new neighbours, don’t be alarmed, we’re Negroes.</STRING>
+		</TAUNT>
+		<TAUNT index="881" file=".\sounds\taunts\rob\881 - Want something.wav" id="" volume="">
+			<STRING>Y’all want something</STRING>
+		</TAUNT>
+		<TAUNT index="882" file=".\sounds\taunts\rob\882 - Wtf's going on here.wav" id="" volume="">
+			<STRING>What the fuck’s going on here</STRING>
+		</TAUNT>
+		<TAUNT index="883" file=".\sounds\taunts\rob\883 - who tf are you.wav" id="" volume="">
+			<STRING>Who the fuck are you, what you doing here</STRING>
+		</TAUNT>
+		<TAUNT index="884" file=".\sounds\taunts\rob\884 - Power ranger stuck up my ass.wav" id="" volume="">
+			<STRING>I got a power ranger stuck up my ass</STRING>
+		</TAUNT>
+		<TAUNT index="885" file=".\sounds\taunts\rob\885 - You two mofo need Jesus.wav" id="" volume="">
+			<STRING>You two motherfuckers need Jesus ………. Cover your ears baby</STRING>
+		</TAUNT>
+		<TAUNT index="886" file=".\sounds\taunts\rob\886 - Bottom line.wav" id="" volume="">
+			<STRING>Bottom line, I will knock you the fuck out</STRING>
+		</TAUNT>
+		<TAUNT index="887" file=".\sounds\taunts\rob\887 - Lets finish strong.wav" id="" volume="">
+			<STRING>Oh yeah, let’s finish strong</STRING>
+		</TAUNT>
+		<TAUNT index="888" file=".\sounds\taunts\rob\888 - Not that easy.wav" id="" volume="">
+			<STRING>Hey man, it’s not that easy. If it was that easy you guys would be doing it.</STRING>
+		</TAUNT>
+		<TAUNT index="889" file=".\sounds\taunts\rob\889 - Hey does it look like i care.wav" id="" volume="">
+			<STRING>Hey, does it look like I care.</STRING>
+		</TAUNT>
+		<TAUNT index="890" file=".\sounds\taunts\rob\890 - Hey you want me to yell.wav" id="" volume="">
+			<STRING>Hey, you want me to yell at you? Cos I can do that</STRING>
+		</TAUNT>
+		<TAUNT index="891" file=".\sounds\taunts\rob\891 - Freeze mother bitches.wav" id="" volume="">
+			<STRING>Freeze mother bitches! …. Don’t you move</STRING>
+		</TAUNT>
+		<TAUNT index="892" file=".\sounds\taunts\rob\892 - I blow you.wav" id="" volume="">
+			<STRING>I blow you then I blow yooou.</STRING>
+		</TAUNT>
+		<TAUNT index="893" file=".\sounds\taunts\rob\893 - Ooh shit.wav" id="" volume="">
+			<STRING>Ooh shit !</STRING>
+		</TAUNT>
+		<TAUNT index="894" file=".\sounds\taunts\rob\894 - So sad.wav" id="" volume="">
+			<STRING>So sad</STRING>
+		</TAUNT>
+		<TAUNT index="895" file=".\sounds\taunts\rob\895 - That was cool.wav" id="" volume="">
+			<STRING>That was cool</STRING>
+		</TAUNT>
+		<TAUNT index="896" file=".\sounds\taunts\rob\896 - I need some details.wav" id="" volume="">
+			<STRING>Awww c’mon, I need some details. You get some booby, some assy, a pull on your poi poi? C’mon</STRING>
+		</TAUNT>
+		<TAUNT index="897" file=".\sounds\taunts\rob\897 - beautifuleyes.wav" id="" volume="">
+			<STRING>You have beautiful eyes</STRING>
+		</TAUNT>
+		<TAUNT index="898" file=".\sounds\taunts\rob\898 - iloveyou.wav" id="" volume="">
+			<STRING>I love you</STRING>
+		</TAUNT>
+		<TAUNT index="899" file=".\sounds\taunts\rob\899 - Valkurie_intro.wav" id="" volume="">
+			<STRING>*Ride of the Valkyrie* </STRING>
+		</TAUNT>
+		<TAUNT index="900" file=".\sounds\taunts\rob\900 nokaboom.wav" id="" volume="255">
+			<STRING>Where is the KABOOM??? There were supposed to be an earth shuttering KABOOM!!!</STRING>
+		</TAUNT>
+		<TAUNT index="901" file=".\sounds\taunts\rob\901 ct_affirm.wav" id="" volume="255">
+			<STRING>Affirmative.</STRING>
+		</TAUNT>
+		<TAUNT index="902" file=".\sounds\taunts\rob\902 negative.wav" id="" volume="255">
+			<STRING>Negative.</STRING>
+		</TAUNT>
+		<TAUNT index="903" file=".\sounds\taunts\rob\903 maybe.wav" id="" volume="255">
+			<STRING>Maaaaaybeeeeee... you'll think of meeeee, when you are all alone...</STRING>
+</TAUNT>
+<TAUNT index="904" file=".\sounds\taunts\rob\904 crying.wav" id="" volume="255">
+<STRING>*Baby crying*</STRING>
+</TAUNT>
+<TAUNT index="905" file=".\sounds\taunts\rob\905 ply.wav" id="" volume="255">
+<STRING>Let's play some Tetris motherfucker!</STRING>
+		</TAUNT>
+		<TAUNT index="906" file=".\sounds\taunts\rob\906 specialol.wav" id="" volume="255">
+			<STRING>Darrrr. Durrrr. I wanna be in the Special Olympics.</STRING>
+		</TAUNT>
+		<TAUNT index="907" file=".\sounds\taunts\rob\907 whiz.wav" id="" volume="255">
+			<STRING>Don't whiz on the electric fence.</STRING>
+</TAUNT>
+<TAUNT index="908" file=".\sounds\taunts\rob\908 gaym sux.wav" id="" volume="255">
+<STRING>Thiz Gaym sux!!!</STRING>
+</TAUNT>
+<TAUNT index="909" file=".\sounds\taunts\rob\909 dac.wav" id="" volume="255">
+<STRING>It's a bomb, Duck And Cover!</STRING>
+		</TAUNT>
+		<TAUNT index="910" file=".\sounds\taunts\rob\910 bloodycats.wav" id="" volume="255">
+			<STRING>Bloody things, I hate those bloody cats. They meow, they piss everywhere and their shit smells just bloody awful.</STRING>
+		</TAUNT>
+		<TAUNT index="911" file=".\sounds\taunts\rob\911 Fishversions.wav" id="" volume="255">
+			<STRING>I don't bloody believe it. They've got fish-versions of that little bastards now.</STRING>
+		</TAUNT>
+		<TAUNT index="912" file=".\sounds\taunts\rob\912 villagers.wav" id="" volume="255">
+			<STRING>Oh, shit! The villagers again...</STRING>
+		</TAUNT>
+		<TAUNT index="913" file=".\sounds\taunts\rob\913 Enjoyable Game.wav" id="" volume="255">
+			<STRING>Thank you for a very enjoyable game.</STRING>
+		</TAUNT>
+		<TAUNT index="914" file=".\sounds\taunts\rob\914 suck again.wav" id="" volume="255">
+			<STRING>Oh no! We suck again!!</STRING>
+		</TAUNT>
+		<TAUNT index="915" file=".\sounds\taunts\rob\915 furself.wav" id="" volume="255">
+			<STRING>Why don't you go outside and play hide and go fuck yourself?</STRING>
+</TAUNT>
+<TAUNT index="916" file=".\sounds\taunts\rob\916 ninja.wav" id="" volume="255">
+<STRING>*Ninja*</STRING>
+</TAUNT>
+<TAUNT index="917" file=".\sounds\taunts\rob\917 Thats it man Game Over.wav" id="" volume="255">
+<STRING>That's it man, GAME OVER MAN, Game Over!!</STRING>
+		</TAUNT>
+		<TAUNT index="918" file=".\sounds\taunts\rob\918 doh doh doh.wav" id="" volume="255">
+			<STRING>D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh! D'oh!</STRING>
+</TAUNT>
+<TAUNT index="919" file=".\sounds\taunts\rob\919 Twilight Zone.wav" id="" volume="255">
+<STRING>*Twilight Zone theme*</STRING>
+</TAUNT>
+<TAUNT index="920" file=".\sounds\taunts\rob\920 Always look on the bright side of life.wav" id="" volume="255">
+<STRING>And... always look on the bright side of life... *whistle* Come on!</STRING>
+</TAUNT>
+<TAUNT index="921" file=".\sounds\taunts\rob\921 Go ahead make my day.wav" id="" volume="255">
+<STRING>Go ahead, make my day!</STRING>
+</TAUNT>
+<TAUNT index="922" file=".\sounds\taunts\rob\922 who needs english.wav" id="" volume="255">
+<STRING>Pffft! English who needs that, i'm never going to England!</STRING>
+		</TAUNT>
+		<TAUNT index="923" file=".\sounds\taunts\rob\923 Whos the Man Huh.wav" id="" volume="255">
+			<STRING>Who's the man, huh!? Who's the MAN!?</STRING>
+		</TAUNT>
+		<TAUNT index="924" file=".\sounds\taunts\rob\924 Houston we have a problem.wav" id="" volume="255">
+			<STRING>Houston, we have a problem.</STRING>
+		</TAUNT>
+		<TAUNT index="925" file=".\sounds\taunts\rob\925 Artoo says that chances of survival are 725 to 1.wav" id="" volume="255">
+			<STRING>Artoo says that chances of survival are 725 to 1.</STRING>
+		</TAUNT>
+		<TAUNT index="926" file=".\sounds\taunts\rob\926 Banzai.wav" id="" volume="255">
+			<STRING>Banzai!</STRING>
+		</TAUNT>
+		<TAUNT index="927" file=".\sounds\taunts\rob\927 you're my hero.wav" id="" volume="255">
+			<STRING>You're my hero!</STRING>
+		</TAUNT>
+		<TAUNT index="928" file=".\sounds\taunts\rob\928 Roggan.wav" id="" volume="255">
+			<STRING>Roggan.</STRING>
+		</TAUNT>
+		<TAUNT index="929" file=".\sounds\taunts\rob\929 Raiding Party.wav" id="" volume="255">
+			<STRING>Raiding Party!!!</STRING>
+		</TAUNT>
+		<TAUNT index="930" file=".\sounds\taunts\rob\930 wololo.wav" id="" volume="255">
+			<STRING>Wololo!</STRING>
+		</TAUNT>
+		<TAUNT index="931" file=".\sounds\taunts\rob\931 laugh.wav" id="" volume="255">
+			<STRING>Ahahahahahahahahahaha uh!!</STRING>
+		</TAUNT>
+		<TAUNT index="932" file=".\sounds\taunts\rob\932 respect.wav" id="" volume="255">
+			<STRING>People have got to show the appropriate levels of respect. When you step outta line, you can expect to be respected... back.</STRING>
+		</TAUNT>
+		<TAUNT index="933" file=".\sounds\taunts\rob\933 bestbud.wav" id="" volume="255">
+			<STRING>I'll do anything for you! Cause you is my bestest buddy in the whoooole wide world!!</STRING>
+		</TAUNT>
+		<TAUNT index="934" file=".\sounds\taunts\rob\934 ruleno1.wav" id="" volume="255">
+			<STRING>Rule number one: My way, or he's a dead Motherf%#¤'s way. There ain't no more rules.</STRING>
+		</TAUNT>
+		<TAUNT index="935" file=".\sounds\taunts\rob\935 crocket.wav" id="" volume="255">
+			<STRING>Let's see how you like my cock rocket ... COCK ROCKET!!! </STRING>
+		</TAUNT>
+		<TAUNT index="936" file=".\sounds\taunts\rob\936 unbloody dead.wav" id="" volume="255">
+			<STRING>Bloody undead! Un-bloody dead! I mean, it's even worse than bloody cats! Undead! What's the bloody point?!</STRING>
+		</TAUNT>
+		<TAUNT index="937" file=".\sounds\taunts\rob\937 sue.wav" id="" volume="255">
+			<STRING>I tell ya, life aint easy for a boy named Sue.</STRING>
+		</TAUNT>
+		<TAUNT index="938" file=".\sounds\taunts\rob\938 war.wav" id="" volume="255">
+			<STRING>That's right. It's war once again... We are fighting an enemy like we have never encountered before. They're evil beyond reproach. Where they've come from? I don't know. We need to send them back to wherever it was.</STRING>
+		</TAUNT>
+		<TAUNT index="939" file=".\sounds\taunts\rob\939 killed_kenny.wav" id="" volume="255">
+			<STRING>Oh my god! They killed Kenny! You bastards!!!</STRING>
+		</TAUNT>
+		<TAUNT index="940" file=".\sounds\taunts\rob\940 killtomato-song.wav" id="" volume="255">
+			<STRING>*Attack of the Killer Tomatoes theme* </STRING>
+		</TAUNT>
+		<TAUNT index="941" file=".\sounds\taunts\rob\941 a-team.wav" id="" volume="255">
+			<STRING>*A-Team theme*</STRING>
+		</TAUNT>
+		<TAUNT index="942" file=".\sounds\taunts\rob\942 jamesbond.wav" id="" volume="255">
+			<STRING>*James Bond theme*</STRING>
+		</TAUNT>
+		<TAUNT index="943" file=".\sounds\taunts\rob\943 bananaphone.wav" id="" volume="255">
+			<STRING>Ding-a-ling-ling-ling-ling-ling-ling-ling! Boo-ba-doo-ba-doop! Boo-ba-doo-ba-doop! Ring ring ring ring ring ring ring banana phone! Ring ring ring ring ring ring ring banana phone!!</STRING>
+		</TAUNT>
+		<TAUNT index="944" file=".\sounds\taunts\rob\944 bananaphone2.wav" id="" volume="255">
+			<STRING>Ring ring ring ring ring ring ring banana phone. Ding dong ding dong ding dong ding banana phone. It grows in bunches, I've got my hunches, It's the best! Beats the rest! Cellular, Modular, Interactivodular!</STRING>
+		</TAUNT>
+		<TAUNT index="945" file=".\sounds\taunts\rob\945 ct_backup.wav" id="" volume="255">
+			<STRING>Need backup!</STRING>
+		</TAUNT>
+		<TAUNT index="946" file=".\sounds\taunts\rob\946 howdy.wav" id="" volume="255">
+			<STRING>Howdy-ho!</STRING>
+		</TAUNT>
+		<TAUNT index="947" file=".\sounds\taunts\rob\947 roger.wav" id="" volume="255">
+			<STRING>Roger that!</STRING>
+		</TAUNT>
+		<TAUNT index="948" file=".\sounds\taunts\rob\948 sabre_dance.wav" id="" volume="255">
+			<STRING>*Sabre Dance*</STRING>
+		</TAUNT>
+		<TAUNT index="949" file=".\sounds\taunts\rob\949 lovely countdown.wav" id="" volume="255">
+			<STRING>Oooh, and what is that? A lovely countdown. I wonder what's going to happen now...</STRING>
+		</TAUNT>
+		<TAUNT index="950" file=".\sounds\taunts\rob\950 mario.wav" id="" volume="255">
+			<STRING>It's-e me! Mario!</STRING>
+		</TAUNT>
+		<TAUNT index="951" file=".\sounds\taunts\rob\951 pikachu3.wav" id="" volume="255">
+			<STRING>Pikachu!</STRING>
+		</TAUNT>
+		<TAUNT index="952" file=".\sounds\taunts\rob\952 pikasong.wav" id="" volume="255">
+			<STRING>Pi, pika pikachu. Pi, pi-ka pikachu. Pi, pika pikachu. Pi pi-ka chaaaaaaa!</STRING>
+		</TAUNT>
+		<TAUNT index="953" file=".\sounds\taunts\rob\953 elephants.wav" id="" volume="255">
+			<STRING>Ohhhh, elephants, yeah! Elephants, yeah!</STRING>
+		</TAUNT>
+		<TAUNT index="954" file=".\sounds\taunts\rob\954 elephantsyeah.wav" id="" volume="255">
+			<STRING>Ohhhhhhhhhhhhhhhhh, EeeeeeeeeeeeeleeeeeeeeeeeeeePHANTS YEAAAAAAAAAHHHHHHHHHHHHH!!!</STRING>
+		</TAUNT>
+		<TAUNT index="955" file=".\sounds\taunts\rob\955 disco.wav" id="" volume="255">
+			<STRING>Burn, baby, burn! - Disco Inferno! - Burn, baby, burn! Burn that Mama down! Burn, baby, burn! - Disco Infernooo, yeah - Burn, baby, burn! Burn thah Mama down!</STRING>
+		</TAUNT>
+		<TAUNT index="956" file=".\sounds\taunts\rob\956 fuhrersface.wav" id="" volume="255">
+			<STRING>When der Führer says: "We iz de Master race", we Heil!, Heil!, right in the Führer's face! Not to love the Führer is a great disgrace, so we Heil!, Heil!, right in the Führer's face!</STRING>
+		</TAUNT>
+		<TAUNT index="957" file=".\sounds\taunts\rob\957 dogout.wav" id="" volume="255">
+			<STRING>Who let the dogs out!? Who, who, who, who? Who let the dogs out!? Who, who, who, who? Who let the dogs out!?</STRING>
+		</TAUNT>
+		<TAUNT index="958" file=".\sounds\taunts\rob\958 pok2.wav" id="" volume="255">
+			<STRING>Pokémon, (Gotta catch'em all!) A heart so true, our courage will pull us through. You teach me and I'll teach you. Po-ké-mon! Gotta catch'em all, gotta catch'em all. Pokémon!!!</STRING>
+		</TAUNT>
+		<TAUNT index="959" file=".\sounds\taunts\rob\959 konnichiwa.wav" id="" volume="255">
+			<STRING>KONNICHIWAAAAAA! Guys do it. Guys do it. Guys do it... Hoia! Hoia! Hoia!....</STRING>
+		</TAUNT>
+		<TAUNT index="960" file=".\sounds\taunts\rob\960 marseillese.wav" id="" volume="255">
+			<STRING>Aux armes, citoyens! Formez vos bataillons! Marchons, marchons, qu'un sang impur abreuve nos sillons!!</STRING>
+		</TAUNT>
+		<TAUNT index="961" file=".\sounds\taunts\rob\961 greatmightypoo.wav" id="" volume="255">
+			<STRING>Mememememe... I am the Great Mighty Poo and I'm going to throw my shit at you. A huge supply of tish come from my chocolate starfish. How about some scat, you little twat?</STRING>
+		</TAUNT>
+		<TAUNT index="962" file=".\sounds\taunts\rob\962 finland.wav" id="" volume="255">
+			<STRING> Finland, Finland, Finland. The country where I want to be, pony trekking or camping, or just watching TV... Finland, Finland, Finland, it's the country for me.</STRING>
+		</TAUNT>
+		<TAUNT index="963" file=".\sounds\taunts\rob\963 ilike`-´.wav" id="" volume="255">
+			<STRING>I like Chinese. I like Chinese, they only come up to your knees, yet they're always friendly and they're ready to please. `-´</STRING>
+		</TAUNT>
+		<TAUNT index="964" file=".\sounds\taunts\rob\964 america.wav" id="" volume="255">
+			<STRING>America, fuck yeah! Coming again to save the motherfucking day, yeah!</STRING>
+		</TAUNT>
+		<TAUNT index="965" file=".\sounds\taunts\rob\965 bad boys.wav" id="" volume="255">
+			<STRING>Bad boys, bad boys! Whatcha gonna do, whatcha gonna do, when they come for you?</STRING>
+		</TAUNT>
+		<TAUNT index="966" file=".\sounds\taunts\rob\966 young_man.wav" id="" volume="255">
+			<STRING>Young man! There's no need to feel down. I said, young man! Pick yourself off the ground! I said, YOUNG MAN! 'Cause you're in a new town! There's no need to be unhappy!</STRING>
+		</TAUNT>
+		<TAUNT index="967" file=".\sounds\taunts\rob\967 navy.wav" id="" volume="255">
+			<STRING>In the navy! Yes, you can sail the seven seas. In the navy! Yes, you can put your mind at ease. In the navy! Come on now, people, make a stand. In the navy, in the navy! Can't you see we need a hand.</STRING>
+		</TAUNT>
+		<TAUNT index="968" file=".\sounds\taunts\rob\968 Macho man.wav" id="" volume="255">
+			<STRING>Macho, macho man! (MACHO MAN!) I've got to be, a macho man! Macho, MACHO MAN! I've got to be a macho! Ow....</STRING>
+		</TAUNT>
+		<TAUNT index="969" file=".\sounds\taunts\rob\969 ymca.wav" id="" volume="255">
+			<STRING>It's fun to stay in the Y-M-C-A! It's fun to stay in the Y-M-C-A! They have everything for you men to enjoy, you can hang out with all the boys ... It's fun to stay in the Y-M-C-A! It's fun to stay in the Y-M-C-A-A! </STRING>
+		</TAUNT>
+		<TAUNT index="970" file=".\sounds\taunts\rob\970 homer meow meow meow.wav" id="" volume="255">
+			<STRING>Meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow! </STRING>
+		</TAUNT>
+		<TAUNT index="971" file=".\sounds\taunts\rob\971 beotches.wav" id="" volume="255">
+			<STRING>Hello again my hacker beotches. Ramzi in da hizz house.</STRING>
+		</TAUNT>
+		<TAUNT index="972" file=".\sounds\taunts\rob\972 warez.wav" id="" volume="255">
+			<STRING>Ok, lets find some Ware...Ez.. I will search for Bonzi Buddy....</STRING>
+		</TAUNT>
+		<TAUNT index="973" file=".\sounds\taunts\rob\973 its adolf.wav" id="" volume="255">
+			<STRING>I'm Mason Dixon and this is... My god it's Adolf Hitler!!!</STRING>
+		</TAUNT>
+		<TAUNT index="974" file=".\sounds\taunts\rob\974 gutenmorgenhitler.wav" id="" volume="255">
+			<STRING>This is Sam Smith. He's our undercoverexpert! He's only disguised as Adolf Hitler... Guten Morgen Herr Hitler ... Sprechen sie deutsch?</STRING>
+		</TAUNT>
+		<TAUNT index="975" file=".\sounds\taunts\rob\975 tomatoes are fags.wav" id="" volume="255">
+			<STRING>This is Man versus Vegetable. - Technically sir, tomatoes are fags. He means fruits. Ahh fruits... See what I mean....</STRING>
+		</TAUNT>
+		<TAUNT index="976" file=".\sounds\taunts\rob\976 i love to singa.wav" id="" volume="255">
+			<STRING>I love to sing-a. About the moon-a and the June-a and the spring-a. I love to sing-a. About a sky of blue-a, or a tea for two-a. Anything-a with a swing-a to an "I love you-a". I love to, I love to sing!</STRING>
+		</TAUNT>
+		<TAUNT index="977" file=".\sounds\taunts\rob\977 germans_arrived.wav" id="" volume="255">
+			<STRING>The Germans have arrived.</STRING>
+		</TAUNT>
+		<TAUNT index="978" file=".\sounds\taunts\rob\978 real world.wav" id="" volume="255">
+			<STRING>Welcome - to the real world.</STRING>
+		</TAUNT>
+		<TAUNT index="979" file=".\sounds\taunts\rob\979 made a mistake.wav" id="" volume="255">
+			<STRING>You made a mistake, and that was entirely unacceptable</STRING>
+		</TAUNT>
+		<TAUNT index="980" file=".\sounds\taunts\rob\980 taking fire.wav" id="" volume="255">
+			<STRING>Taking fire, need assistance!</STRING>
+		</TAUNT>
+		<TAUNT index="981" file=".\sounds\taunts\rob\981 fire in the hole.wav" id="" volume="255">
+			<STRING>Fire in the hole!</STRING>
+		</TAUNT>
+		<TAUNT index="982" file=".\sounds\taunts\rob\982 i need help.wav" id="" volume="255">
+			<STRING>I need help!</STRING>
+		</TAUNT>
+		<TAUNT index="983" file=".\sounds\taunts\rob\983 i luv ya man.wav" id="" volume="255">
+			<STRING>I luv ya, man!</STRING>
+		</TAUNT>
+		<TAUNT index="984" file=".\sounds\taunts\rob\984 bluepill.wav" id="" volume="255">
+			<STRING>Why oh why didn't I take the BLUE pill? </STRING>
+		</TAUNT>
+		<TAUNT index="985" file=".\sounds\taunts\rob\985 force.wav" id="" volume="255">
+			<STRING>The Force will be with you, always.</STRING>
+		</TAUNT>
+		<TAUNT index="986" file=".\sounds\taunts\rob\986 gowest.wav" id="" volume="255">
+			<STRING>(Go west!) Life is peaceful there. (Go west!) Lots of open air. (Go west!) To begin life new, (Go west!) This is what we'll do.</STRING>
+		</TAUNT>
+		<TAUNT index="987" file=".\sounds\taunts\rob\987 you're very brave.wav" id="" volume="255">
+			<STRING>You're very brave, when you're killing unarmed farmers!</STRING>
+		</TAUNT>
+		<TAUNT index="988" file=".\sounds\taunts\rob\988 jail.wav" id="" volume="255">
+			<STRING>If you were in the county jail, the first thing they'll do is look at those tennis shoes. And then some guy of a different race, probably ten times bigger then you, ALL MUSCLE and says "I want those shoes"...</STRING>
+</TAUNT>
+<TAUNT index="989" file=".\sounds\taunts\rob\989 garrison-you_go_to_hell.wav" id="" volume="255">
+<STRING>You go to Hell! You go to Hell and you die!</STRING>
+</TAUNT>
+<TAUNT index="990" file=".\sounds\taunts\rob\990 damnit.wav" id="" volume="255">
+<STRING>Goddamnit!</STRING>
+</TAUNT>
+<TAUNT index="991" file=".\sounds\taunts\rob\991 cartman-son_of_a_bitch_2.wav" id="" volume="255">
+<STRING>Ahh, son of a bitch!</STRING>
+</TAUNT>
+<TAUNT index="992" file=".\sounds\taunts\rob\992 garrison-you_talkin_to_me.wav" id="" volume="255">
+<STRING>You talkin' to me? I don't see anyone else around here, so you must be talkin to me...</STRING>
+</TAUNT>
+<TAUNT index="993" file=".\sounds\taunts\rob\993 grandpa-kill_me_god_damn_it.wav" id="" volume="255">
+<STRING>Kill me, goddamnit!</STRING>
+</TAUNT>
+<TAUNT index="994" file=".\sounds\taunts\rob\994 cartman-oh_look_another_hippie.wav" id="" volume="255">
+<STRING>Oh, look, another hippie.</STRING>
+</TAUNT>
+<TAUNT index="995" file=".\sounds\taunts\rob\995 anos.wav" id="" volume="255">
+<STRING>My anus is bleeding. Yaaaaaaay!</STRING>
+</TAUNT>
+<TAUNT index="996" file=".\sounds\taunts\rob\996 Empty your mind.wav" id="" volume="255">
+<STRING>Empty your mind, be formless. Shapeless, like water. Now, you put water into a cup, it becomes the cup. You put water into a bottle it becomes the bottle. You put it in a teapot it becomes the teapot... Be water, my friend.</STRING>
+</TAUNT>
+<TAUNT index="997" file=".\sounds\taunts\rob\997 kikrazz.wav" id="" volume="255">
+<STRING>Tey may kik r azz, but tey'll nevfr kik our FREEDUM!!!!!</STRING>
+		</TAUNT>
+		<TAUNT index="998" file=".\sounds\taunts\rob\998 braveheart.wav" id="" volume="255">
+			<STRING>Would you be willing to trade all the days from this day to that for one chance -- just one chance -- to come back here and tell our enemies that they may take our lives, but they'll never take our freedom!!</STRING>
+</TAUNT>
+<TAUNT index="999" file=".\sounds\taunts\rob\999 i_love_horses.wav" id="" volume="255">
+<STRING>I love horses, best of all the animals! I love horses, they're my friends! </STRING>
+		</TAUNT>
+</TAUNTS>
+</ROOT>
