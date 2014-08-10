@@ -2,10 +2,14 @@
 	.title{
 		font-size:3em;
 		padding:10px 0;
+		white-space: nowrap;
+		overflow:hidden;
 	}
 	.subtitle{
 		font-size:2em;
 		padding:10px 0;
+		white-space: nowrap;
+		overflow:hidden;
 	}
 	.buttons{
 		text-align:center;

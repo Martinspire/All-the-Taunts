@@ -9,3 +9,19 @@ var taunter = angular.module('Taunter', [
 	'Taunter.filters',
 	'Taunter.services'
 ]);
+angular.module('Taunter')
+	.config(['$routeProvider',
+		function ($routeProvider)
+		{
+			$routeProvider
+				.when('/',
+				{
+					templateUrl: 'partials/home.html',
+					controller: 'homeController'
+				})
+				.otherwise(
+				{
+					redirectTo: '/'
+				});
+		}
+	]);
