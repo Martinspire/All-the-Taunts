@@ -1,0 +1,13 @@
+<div class="mediaplayer">
+	<div class="title">{{media.filename}}</div>
+	<div class="progress">
+		<div class="progress-bar" ng-style="{width: (100 - ((media.current / media.length) * 100)) + '%' }"></div>
+		<div class="progress-current">{{media.current}}</div>
+		<div class="progress-length">{{media.length}}</div>
+	</div>
+	<div class="file">
+		<audio ng-model="media.file">
+		  <source src="taunts/899 - Valkurie_intro.wav" type="audio/wav">
+		</audio>
+	</div>
+</div>

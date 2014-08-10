@@ -12,8 +12,9 @@
 </head>
 
 <body class="ng-cloak" ng-controller="mainController" ontouchstart="">
-    <div class="pagewrapper" ng-view>
-    </div>
+    <div ng-include src="'partials/media.html'" ng-controller="mediaController"></div>
+    <div ng-include src="'partials/taunts.html'" ng-controller="tauntsController"></div>
+    <!-- <div class="pagewrapper" ng-view></div> -->
     <div ng-if="globalError.length > 0" class="globalerror" ng-show="globalError.length > 0">
         <div class="alert alert-danger" role="alert">
             <a class="btn btn-primary" onclick="window.location.reload(true);">{{'ERROR_RELOAD'}}</a>
@@ -30,6 +31,7 @@
     <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
     <script src="vendor/angular-touch/angular-touch.min.js"></script>
     <script src="vendor/ngstorage/ngStorage.min.js"></script>
+    <script src="vendor/angular-media-player/dist/angular-media-player.min.js"></script>
     <!-- Custom JS -->
     <script src="constants/constants.js"></script>
     <script src="controllers/controllers.js"></script>

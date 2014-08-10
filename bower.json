@@ -10,7 +10,8 @@
         "angular-sanitize": "1.2.21",
         "angular-touch": "1.2.21",
         "ngstorage": "0.3.0",
-        "bootstrap": "3.2.0"
+        "bootstrap": "3.2.0",
+        "angular-media-player": "0.5.6"
     },
     "private": true
 }
