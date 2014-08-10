@@ -215,6 +215,11 @@ module.exports = function (grunt)
 				},
 				{
 					expand: true,
+					src: ['taunts/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
 					src: ['index-dist.html'],
 					dest: 'dist/',
 					rename: function (dest, src)

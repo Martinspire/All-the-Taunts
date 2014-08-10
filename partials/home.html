@@ -1,1 +1,29 @@
-App dev is ready
+<h1 class="taunt-header">Play all the taunts!!!</h1>
+<div class="mediaplayer">
+	<div class="title">{{file.description}}</div>
+	<div class="subtitle">{{file.src}}</div>
+
+	<div class="progress-slider">
+		<input type="range" class="player-progress-slider" min="0" max="{{round(player.duration)}}" ng-model="player.currentTime" ng-if="player.currentTime !== undefined || player.currentTime === 0" ng-change="movePosition();"/>
+	</div>
+	<div class="progress-container">
+		<div class="progress-bar">
+			<div class="progress-value" ng-style="{width: ((round(player.currentTime) / round(player.duration)) * 100) + '%' }"></div>
+			<div class="progress-current">{{formatTime(player.currentTime)}}</div>
+			<div class="progress-length">{{formatTime(player.duration)}}</div>
+		</div>
+	</div>
+	<div class="file">
+		<audio media-player="player" ng-model="mainPlayer">
+		  <source src="{{file.src}}" type="audio/wav">
+		</audio>
+	</div>
+	<div class="buttons">
+	<a ng-click="player.play()" ng-show="!player.playing" class="icon play"></a> <a ng-click="player.pause();" ng-show="player.playing" class="icon pause"></a> <a ng-click="player.stop();" class="icon stop"></a>
+	</div>
+</div>
+<div class="taunts">
+	<ul>
+		<li ng-repeat="taunt in taunts" ng-click="player.load([{src: 'taunts/' + taunt[1], type: 'audio/wav'}], true); loadTaunt(taunt)">{{taunt[0]}} - {{taunt[2]}}</li>
+	</ul>
+</div>

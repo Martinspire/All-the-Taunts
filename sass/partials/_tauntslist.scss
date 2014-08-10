@@ -1,0 +1,18 @@
+.taunts{
+	overflow-y:auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+	ul{
+		list-style:none;
+		padding:0;
+		li{
+			padding:10px;
+			font-size:1.5em;
+			border-bottom:1px solid rgba(150,150,150,0.5);
+		}
+	}
+}

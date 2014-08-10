@@ -1,23 +1,26 @@
 // Base styles
-@import '_variables.scss';
-@import '_base.scss';
-@import '_bootstrap-overrides.scss';
+@import 'variables';
+@import 'base';
+@import 'bootstrap-overrides';
+
+// Icons
+@import 'vendor/components-font-awesome/scss/font-awesome';
 
 // Global styles
-@import '_structure.scss';
-@import '_header.scss';
-@import '_menu.scss';
-@import '_footer.scss';
-@import '_forms.scss';
+@import 'structure';
+@import 'header';
+@import 'menu';
+@import 'footer';
+@import 'forms';
 
 // Page specific styles
-@import 'partials/_home.scss';
-@import 'partials/_player.scss';
-@import 'partials/_taunt.scss';
-@import 'partials/_tauntslist.scss';
+@import 'partials/_home';
+@import 'partials/_player';
+@import 'partials/_taunt';
+@import 'partials/_tauntslist';
 
 // Directive styles
-@import '_popup.scss';
+@import 'popup';
 
 //Fixes for align-items: 
-@import '_ie-fix.scss';
+@import 'ie-fix';

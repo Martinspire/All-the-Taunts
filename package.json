@@ -1,7 +1,7 @@
 {
     "name": "All-the-Taunts",
     "description": "App for easily playing taunts",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "repository": "git",
     "private": true,
     "dependencies": {

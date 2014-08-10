@@ -7,14 +7,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- StyleSheets -->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/normalize-css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body class="ng-cloak" ng-controller="mainController" ontouchstart="">
-    <div ng-include src="'partials/media.html'" ng-controller="mediaController"></div>
-    <div ng-include src="'partials/taunts.html'" ng-controller="tauntsController"></div>
-    <!-- <div class="pagewrapper" ng-view></div> -->
+    <div class="pagewrapper" ng-view></div>
     <div ng-if="globalError.length > 0" class="globalerror" ng-show="globalError.length > 0">
         <div class="alert alert-danger" role="alert">
             <a class="btn btn-primary" onclick="window.location.reload(true);">{{'ERROR_RELOAD'}}</a>
