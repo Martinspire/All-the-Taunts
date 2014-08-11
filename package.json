@@ -5,7 +5,7 @@
     "repository": "git",
     "private": true,
     "dependencies": {
-        "bower": "1.3.8"
+        "bower": "1.3.9"
     },
     "devDependencies": {
         "body-parser": "1.6.2",
