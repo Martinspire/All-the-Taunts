@@ -1,10 +1,8 @@
-<h1 class="taunt-header">Play all the taunts!!!</h1>
 <div class="mediaplayer">
-	<div class="title">{{file.description}}</div>
-	<div class="subtitle">{{file.src}}</div>
+	<div class="title" ng-click="toggleExpandTitle();"><div class="text" ng-class="{expand: toggleTitle}">{{file.id}} - {{file.description}}</div></div>
 
 	<div class="progress-slider">
-		<input type="range" class="player-progress-slider" min="0" max="{{round(player.duration)}}" ng-model="player.currentTime" ng-if="player.currentTime !== undefined || player.currentTime === 0" ng-change="movePosition();"/>
+		<input type="range" class="player-progress-slider" min="0" max="{{round(player.duration)}}" ng-model="player.currentTime" ng-if="player.currentTime !== undefined || player.currentTime === 0" ng-change="setCurrentTime(player.currentTime);"/>
 	</div>
 	<div class="progress-container">
 		<div class="progress-bar">
@@ -19,11 +17,36 @@
 		</audio>
 	</div>
 	<div class="buttons">
-	<a ng-click="player.play()" ng-show="!player.playing" class="icon play"></a> <a ng-click="player.pause();" ng-show="player.playing" class="icon pause"></a> <a ng-click="player.stop();" class="icon stop"></a>
+	<a ng-click="play()" ng-show="!player.playing" class="icon play"></a> <a ng-click="pause();" ng-show="player.playing" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
+	</div>
+</div>
+<div class="menu">
+	<ul>
+		<li class="search" ng-click="toggleMenu('search')"></li>
+		<li class="filter" ng-click="toggleMenu('filter')"></li>
+		<li class="info" ng-click="toggleMenu('info')"></li>
+	</ul>
+</div>
+<div class="menu-addon" ng-class="menuSelection">
+	<div class="search">
+		<input type="number" ng-model="searchNumber"/>
+	</div>
+	<div class="filter">
+		<input type="text" ng-model="searchText"/>
+	</div>
+	<div class="info">
+		<h2>All The Taunts</h2>
+		<p>App made by Martin Spierings</p>
+		<p>All rights reserved &copy; 2014</p>
+		<p>Any questions can be emailed to taunts@martinspire.nl</p>
+		<p>
+			Version info:<br/>
+			1.0 - First release
+		</p>
 	</div>
 </div>
 <div class="taunts">
 	<ul>
-		<li ng-repeat="taunt in taunts" ng-click="player.load([{src: 'taunts/' + taunt[1], type: 'audio/wav'}], true); loadTaunt(taunt)">{{taunt[0]}} - {{taunt[2]}}</li>
+		<li ng-repeat="taunt in taunts | filter:[searchNumber,searchText]:false" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
 	</ul>
 </div>

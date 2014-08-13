@@ -1,0 +1,58 @@
+.menu{
+	width:100%;
+	height:50px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	background-color:$primary-color;
+	color:$font-light;
+	ul{
+		padding:0;
+		margin:0;
+		list-style:none;
+		li{
+			float:left;
+			height:50px;
+			width:50px;
+			margin:0 10px;
+			background-size:cover;
+		}
+		li.search{
+			background-image: url("../img/search_72_nobg.png");
+		}
+		li.filter{
+			background-image: url("../img/filter_72_nobg.png");
+		}
+		li.info{
+			float:right;
+			background-image: url("../img/info_72_nobg.png");
+		}
+	}
+}
+.menu-addon{
+	display:none;
+}
+.menu-addon.search,.menu-addon.filter, .menu-addon.info{
+	display:block;
+	font-size:1.5em;
+	padding:20px;
+	background-color:$secondary-background-color;
+	overflow-y:auto;
+}
+.menu-addon .search, .menu-addon .filter, .menu-addon .info{
+	display:none;
+}
+.menu-addon.search .search{
+	display:block;
+}
+.menu-addon.filter .filter{
+	display:block;
+}
+.menu-addon.info .info{
+	display:block;
+}
+.menu-addon h2{
+	margin:0;
+}
+.menu-addon .search input, .menu-addon .filter input{
+	width:100%;
+}

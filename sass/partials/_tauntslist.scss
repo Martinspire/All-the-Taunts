@@ -7,13 +7,21 @@
     -ms-flex: 1;
     -o-flex: 1;
     flex: 1;
+    border-top:1px solid $base-background;
+	background-color:lighten($primary-color,35%);
+	color:$font-dark;
 	ul{
 		list-style:none;
 		padding:0;
+		margin:0;
 		li{
 			padding:10px;
 			font-size:1.5em;
-			border-bottom:1px solid rgba(150,150,150,0.5);
+			border-bottom:1px solid $base-background;
+		}
+		li.selected{
+		    background-color:lighten($primary-color, 15%);
+		    color: $font-light;
 		}
 	}
 }

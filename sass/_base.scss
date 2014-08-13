@@ -2,6 +2,7 @@ body {
     height:100%;
     width:100%;
     font: $font-size $font-stack;
+    font-weight: $font-weight;
     color: $font-dark;
     margin: 0;
     padding: 0;
@@ -31,6 +32,13 @@ body {
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+
+    @media screen and (max-width: $break-medium) {
+        font-size:14px;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size:12px;
+    }
 }
 
 form {

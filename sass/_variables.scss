@@ -1,7 +1,9 @@
-$font-stack: Verdana, sans-serif;
-$font-size:12px;
+$font-stack: 'Roboto', Verdana, sans-serif;
+$font-weight:300;
+$font-size:16px;
 $font-light: #fff;
 $font-dark: #000;
+$base-background:#fcfcfc;
 $primary-color: #468af0;
 $secondary-color: #628cb2;
 $tertiary-color: #496884;
@@ -13,3 +15,7 @@ $button-info-background: #a2bad2;
 $button-info-disabled: #aaa;
 $navbar-background: #808285;
 $navbar-color:#fff;
+
+$break-small: 400px;
+$break-medium: 800px;
+$break-large: 1200px;

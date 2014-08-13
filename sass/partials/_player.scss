@@ -1,24 +1,33 @@
 .mediaplayer{
+	flex-shrink: 0;
+	flex-grow: 0;
 	.title{
-		font-size:3em;
-		padding:10px 0;
-		white-space: nowrap;
-		overflow:hidden;
+		padding:10px;
+		font-size:2.5em;
+		font-weight:bold;
+		color:$font-light;
+		background-color:$primary-color;
+	    @media screen and (max-width: $break-medium) {
+		    font-size:2em;
+		}
+	    @media screen and (max-width: $break-small) {
+		    font-size:1.5em;
+		}
+		.text{
+			height:1.333em;
+			overflow:hidden;
+		}
 	}
-	.subtitle{
-		font-size:2em;
-		padding:10px 0;
-		white-space: nowrap;
-		overflow:hidden;
+	.title>.text.expand{
+		height:auto;
+		overflow:normal;
 	}
 	.buttons{
 		text-align:center;
 		width:100%;
 	}
-	.progress-container{
-		width:100%;
-	}
 	.progress-slider{
+		margin:15px 15px 0;
 	    input[type=range].player-progress-slider  {
 	        -webkit-appearance: none;
 	        appearance:none;
@@ -65,36 +74,54 @@
 	        margin:0;
 	    }
 	}
+	.progress-container{
+		margin:0 15px 0;
+	}
 	.progress-bar{
 		height:50px;
 		background-color:$secondary-background-color;
 		margin:0 15px;
 		padding:0;
 		position:relative;
+		border-radius:5px;
+		overflow:hidden;
 		.progress-value{
 			position:absolute;
 			top:0;
 			left:0;
 			width:0;
 			height:50px;
-			background-color:$primary-color;
+			background-color:lighten($primary-color,25%);
 			z-index:15;
+		    @media screen and (max-width: $break-medium) {
+			    height:40px;
+			}
+		    @media screen and (max-width: $break-small) {
+			    height:30px;
+			}
 		}
-		.progress-current{
+		.progress-current,.progress-length{
 			position:absolute;
 			top:0;
-			left:0;
 			font-size:2em;
 			padding:5px;
+		    @media screen and (max-width: $break-small) {
+			    font-size:1.5em;
+			}
+		}
+		.progress-current{
+			left:0;
 			z-index:16;
 		}
 		.progress-length{
-			position:absolute;
-			top:0;
 			right:0;
-			font-size:2em;
-			padding:5px;
 			z-index:17;
+		}
+	    @media screen and (max-width: $break-medium) {
+		    height:40px;
+		}
+	    @media screen and (max-width: $break-small) {
+		    height:30px;
 		}
 	}
 	.icon{
@@ -115,8 +142,8 @@
 .icon.stop{
 	background-image: url("../img/stop_72.png");
 }
-.icon.shuffle{
-	background-image: url("../img/random_72.png");
+.icon.random{
+	background-image: url("../img/random_72_boxed.png");
 }
 .icon.repeat{
 	background-image: url("../img/repeat_72.png");
