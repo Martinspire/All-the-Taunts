@@ -215,6 +215,11 @@ module.exports = function (grunt)
 				},
 				{
 					expand: true,
+					src: ['font/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
 					src: ['taunts/**'],
 					dest: 'dist/'
 				},

@@ -4,8 +4,8 @@ var taunter = angular.module(
 taunter.factory('tauntsFactory', function tauntsFactory()
 {
 	var taunts = [
-		[101, "101 Led Zeppelin - Immigrant Song(laugh).wav",
-			"*Led Zeppelin - Immigrant Song*", 0
+		[101, "101 furself.wav",
+			"Why don't you go outside and play hide and go fuck yourself?", 0
 		],
 		[102, "102 haha.wav", "Haha!", 0],
 		[103, "103 tnt_tick.wav", "*Bomb*", 0],
@@ -1620,8 +1620,8 @@ taunter.factory('tauntsFactory', function tauntsFactory()
 		[912, "912 villagers.wav", "Oh, shit! The villagers again...", 0],
 		[913, "913 Enjoyable Game.wav", "Thank you for a very enjoyable game.", 0],
 		[914, "914 suck again.wav", "Oh no! We suck again!!", 0],
-		[915, "915 furself.wav",
-			"Why don't you go outside and play hide and go fuck yourself?", 0
+		[915, "915 Led Zeppelin - Immigrant Song(laugh).wav",
+			"*Led Zeppelin - Immigrant Song*", 0
 		],
 		[916, "916 ninja.wav", "*Ninja*", 0],
 		[917, "917 Thats it man Game Over.wav",
