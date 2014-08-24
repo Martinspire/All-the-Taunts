@@ -49,7 +49,11 @@ module.exports = function (grunt)
 				{
 					open: true,
 					base: './',
-					livereload: false
+					directory: './dist',
+					keepalive: true,
+					useAvailablePort: true,
+					livereload: false,
+					hostname: 'localhost',
 				}
 			}
 		},
@@ -181,11 +185,14 @@ module.exports = function (grunt)
 					dest: "dist/js/app.js"
 				}]
 			}
-
 		},
 		//remove everything in dist folder to start fresh
 		clean:
 		{
+			build:
+			{
+				src: ["build"]
+			},
 			dist:
 			{
 				src: ["dist"]
@@ -195,7 +202,7 @@ module.exports = function (grunt)
 		//will copy images, locales, partials and vendors and changes index-dist to index.html inside dist folder
 		copy:
 		{
-			dist:
+			build:
 			{
 				files: [
 				{
@@ -221,6 +228,68 @@ module.exports = function (grunt)
 				{
 					expand: true,
 					src: ['taunts/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
+					src: ['server.js'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
+					src: ['package-dist.json'],
+					dest: 'dist/',
+					rename: function (dest, src)
+					{
+						return dest + src.replace('package-dist', 'package');
+					}
+				},
+				{
+					expand: true,
+					src: ['index-dist.html'],
+					dest: 'dist/',
+					rename: function (dest, src)
+					{
+						return dest + src.replace('index-dist', 'index');
+					}
+				}]
+			},
+			dist:
+			{
+				files: [
+				{
+					expand: true,
+					src: ['img/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
+					src: ['partials/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
+					src: ['vendor/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
+					src: ['node_modules/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
+					src: ['font/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
+					src: ['taunts/**'],
+					dest: 'dist/'
+				},
+				{
+					expand: true,
+					src: ['server.js'],
 					dest: 'dist/'
 				},
 				{
@@ -292,6 +361,19 @@ module.exports = function (grunt)
 			{
 				path: 'http://localhost:<%= connect.options.port%>/dist'
 			}
+		},
+		nodewebkit:
+		{
+			options:
+			{
+				build_dir: './build',
+				// choose what platforms to compile for here
+				mac: false,
+				win: true,
+				linux32: false,
+				linux64: false
+			},
+			src: ['./dist/**/*']
 		}
 	});
 
@@ -317,4 +399,11 @@ module.exports = function (grunt)
 		'copy:dist', 'open:test'
 	]);
 
+	// Build task: allows for building an app out of repository
+	grunt.registerTask('build-dist', ['clean:dist', 'sass:dist', 'uglify:min',
+		'copy:build'
+	]);
+	// Build task: allows for building an app out of repository
+	grunt.registerTask('build', ['nodewebkit'
+	]);
 };

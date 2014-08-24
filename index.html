@@ -46,6 +46,10 @@
     <script src="services/tauntsFactory.js"></script>
     <script src="services/mediaFactory.js"></script>
     <script src="app.js"></script>
+	<script type="text/javascript">
+	//this is here to make node-webkit work with AngularJS routing
+	angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+	</script>
 </body>
 
 </html>

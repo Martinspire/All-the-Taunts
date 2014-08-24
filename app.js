@@ -10,8 +10,8 @@ var taunter = angular.module('Taunter', [
 	'Taunter.services'
 ]);
 angular.module('Taunter')
-	.config(['$routeProvider',
-		function ($routeProvider)
+	.config(['$routeProvider', '$locationProvider',
+		function ($routeProvider, $locationProvider)
 		{
 			$routeProvider
 				.when('/',
@@ -23,5 +23,7 @@ angular.module('Taunter')
 				{
 					redirectTo: '/'
 				});
+
+  			$locationProvider.html5Mode(true);
 		}
 	]);

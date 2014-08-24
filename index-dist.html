@@ -33,6 +33,10 @@
     <script src="vendor/angular-media-player/dist/angular-media-player.min.js"></script>
     <!-- Custom JS -->
     <script src="js/app.js"></script>
+	<script type="text/javascript">
+	//this is here to make node-webkit work with AngularJS routing
+	angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+	</script>
 </body>
 
 </html>
