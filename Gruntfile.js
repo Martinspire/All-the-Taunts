@@ -404,6 +404,6 @@ module.exports = function (grunt)
 		'copy:build'
 	]);
 	// Build task: allows for building an app out of repository
-	grunt.registerTask('build', ['nodewebkit'
+	grunt.registerTask('build', ['clean:build', 'nodewebkit'
 	]);
 };
