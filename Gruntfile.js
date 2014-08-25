@@ -237,7 +237,7 @@ module.exports = function (grunt)
 				},
 				{
 					expand: true,
-					src: ['package-dist.json'],
+					src: ['dist-package.json'],
 					dest: 'dist/',
 					rename: function (dest, src)
 					{
@@ -368,10 +368,10 @@ module.exports = function (grunt)
 			{
 				build_dir: './build',
 				// choose what platforms to compile for here
-				mac: false,
+				mac: true,
 				win: true,
-				linux32: false,
-				linux64: false
+				linux32: true,
+				linux64: true
 			},
 			src: ['./dist/**/*']
 		}
