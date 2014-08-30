@@ -5,8 +5,7 @@
 		padding:10px;
 		font-size:2.5em;
 		font-weight:bold;
-		color:$font-light;
-		background-color:$primary-color;
+		color:$primary-color;
 	    @media screen and (max-width: $break-medium) {
 		    font-size:2em;
 		}
@@ -93,6 +92,7 @@
 			height:50px;
 			background-color:lighten($primary-color,25%);
 			z-index:15;
+
 		    @media screen and (max-width: $break-medium) {
 			    height:40px;
 			}

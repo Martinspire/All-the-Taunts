@@ -1,10 +1,10 @@
 .sass-cache/
 BoschWeb.sublime-project
 BoschWeb.sublime-workspace
-vendor/
+frontend/css/
+frontend/vendor/
 node_modules/
 *.DS_Store
-css/
 dist/
 mocks/files/
 cache/

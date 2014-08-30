@@ -27,7 +27,7 @@ module.exports = function (grunt)
 				{
 					base: [
 						'.tmp',
-						'./'
+						'./frontend/'
 					]
 				}
 			},
@@ -39,7 +39,7 @@ module.exports = function (grunt)
 					base: [
 						'.tmp',
 						'test',
-						'./'
+						'./frontend/'
 					]
 				}
 			},
@@ -65,8 +65,8 @@ module.exports = function (grunt)
                 In case there is a /release/ directory found, we don't want to lint that
                 so we use the ! (bang) operator to ignore the specified directory
             */
-			files: ['Gruntfile.js', 'app.js', 'constants/*.js', 'controllers/**/*.js',
-				'directives/**/*.js', 'filters/**/*.js', 'services/**/*.js'
+			files: ['Gruntfile.js', 'frontend/app.js', 'frontend/constants/*.js', 'frontend/controllers/**/*.js',
+				'frontend/directives/**/*.js', 'frontend/filters/**/*.js', 'frontend/services/**/*.js'
 			],
 			options:
 			{
@@ -119,7 +119,7 @@ module.exports = function (grunt)
 					sourcemap: false
 				},
 				expand: true,
-				cwd: 'sass/',
+				cwd: 'frontend/sass/',
 				src: ['*.scss'],
 				dest: 'dist/css/',
 				ext: '.css'
@@ -134,16 +134,16 @@ module.exports = function (grunt)
 					//require: ['./app/styles/sass/helpers/url64.rb']
 				},
 				expand: true,
-				cwd: 'sass/',
+				cwd: 'frontend/sass/',
 				src: ['*.scss'],
-				dest: 'css/',
+				dest: 'frontend/css/',
 				ext: '.css'
 			}
 		},
 		//make js pretty by implementing certain code-standards
 		jsbeautifier:
 		{
-			files: ['*.js', '*/*.js'],
+			files: ['frontend/*.js', 'frontend/*/*.js', '!frontend/vendor/*'],
 			options:
 			{
 				js:
@@ -152,7 +152,7 @@ module.exports = function (grunt)
 					indentWithTabs: true,
 					jslintHappy: true,
 					brace_style: "expand",
-					wrap_line_length: 80
+					wrap_line_length: 0
 				}
 			}
 		},
@@ -175,12 +175,12 @@ module.exports = function (grunt)
 				files: [
 				{
 					src: [
-						"constants/constants.js",
-						"controllers/*.js",
-						"directives/*.js",
-						"filters/*.js",
-						"services/*.js",
-						"app.js"
+						"frontend/constants/constants.js",
+						"frontend/controllers/*.js",
+						"frontend/directives/*.js",
+						"frontend/filters/*.js",
+						"frontend/services/*.js",
+						"frontend/app.js"
 					],
 					dest: "dist/js/app.js"
 				}]
@@ -206,31 +206,37 @@ module.exports = function (grunt)
 			{
 				files: [
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['img/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['partials/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['vendor/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['font/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['taunts/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['server.js'],
 					dest: 'dist/'
@@ -258,31 +264,37 @@ module.exports = function (grunt)
 			{
 				files: [
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['img/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['partials/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['vendor/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['node_modules/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['font/**'],
 					dest: 'dist/'
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['taunts/**'],
 					dest: 'dist/'
@@ -310,8 +322,8 @@ module.exports = function (grunt)
 			{
 				livereload: true
 			},
-			files: ['*.js', '*/*.js', '*/*.json', '*.html', '**/*.html',
-				'!vendor/*', '!node_modules/*', '!dist/*', '!dist/*/*', '!dist/*/*/*'
+			files: ['frontend/*.js', 'frontend/**/*.js', 'frontend/*/*.json', 'frontend/*.html', 'frontend/**/*.html',
+				'!frontend/vendor/*', '!frontend/node_modules/*', '!dist/*', '!dist/**/*'
 			],
 			//tasks: 'default',
 			// js: {
@@ -320,7 +332,7 @@ module.exports = function (grunt)
 			// }
 			styles:
 			{
-				files: ['sass/**/*.scss'],
+				files: ['frontend/sass/**/*.scss'],
 				tasks: ['sass:dev']
 			},
 			tasks: ['jsbeautifier'],
@@ -332,9 +344,9 @@ module.exports = function (grunt)
 
 				},
 				files: [
-					'.**/*.html',
-					'.css/{,*/}*.css',
-					'.**/*.js'
+					'frontend/**/*.html',
+					'frontend/css/**/*.css',
+					'frontend/**/*.js'
 				]
 			}
 		},

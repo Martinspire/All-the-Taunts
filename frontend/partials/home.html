@@ -1,0 +1,54 @@
+<div class="menu">
+	<ul>
+		<li class="search" ng-click="toggleMenu('search');"></li>
+		<li class="filter" ng-click="toggleMenu('filter')"></li>
+		<li class="info" ng-click="toggleMenu('info')"></li>
+	</ul>
+</div>
+<div class="menu-addon" ng-class="menuSelection">
+	<div class="search">
+		<form ng-submit="playFirst(searchNumber)">
+			<input type="number" id="searchnumber" name="searchnumber" placeholder="Play #" ng-model="searchNumber" focus-input="searchNumberFocus" class="mousetrap"/>
+		</form>
+	</div>
+	<div class="filter">
+		<form ng-submit="playFirst(searchText)">
+			<input type="text" id="searchtext" name="searchtext" placeholder="Filter by text" ng-model="searchText" focus-input="searchTextFocus" class="mousetrap"/>
+		</form>
+	</div>
+	<div class="info">
+		<h2>All The Taunts</h2>
+		<p>App made by Martin Spierings</p>
+		<p>All rights reserved &copy; 2014</p>
+		<p>Any questions can be emailed to taunts@martinspire.nl</p>
+		<p>
+			Version info:<br/>
+			1.1.1 - First release
+		</p>
+	</div>
+</div>
+<div class="mediaplayer">
+	<div class="title" ng-click="toggleExpandTitle();"><div class="text" ng-class="{expand: toggleTitle}">{{file.id}} - {{file.description}}</div></div>
+
+	<div class="progress-container">
+		<div class="progress-bar">
+			<div class="progress-value" ng-style="{width: ((round(player.currentTime) / round(player.duration)) * 100) + '%' }"></div>
+			<div class="progress-current">{{player.formatTime}}</div>
+			<div class="progress-length">{{player.formatDuration}}</div>
+		</div>
+	</div>
+	<div class="file">
+		<audio media-player="player" ng-model="mainPlayer">
+		  <source src="{{file.src}}" type="audio/wav">
+		</audio>
+	</div>
+	<div class="buttons">
+	<a ng-click="play()" ng-show="!player.playing" class="icon play"></a> <a ng-click="pause();" ng-show="player.playing" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
+	</div>
+	<div>{{listOfTaunts}}</div>
+</div>
+<div class="taunts">
+	<ul>
+		<li ng-model="listOfTaunts" ng-repeat="taunt in taunts | filter:[searchNumber,searchText]" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
+	</ul>
+</div>

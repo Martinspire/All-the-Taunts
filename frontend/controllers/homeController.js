@@ -1,9 +1,8 @@
 var taunter = angular.module(
 	'Taunter.controllers.homeController', []);
 
-taunter.controller('homeController', ['$scope', '$rootScope', '$timeout',
-	'tauntsFactory',
-	function ($scope, $rootScope, $timeout, tauntsFactory)
+taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filter', 'hotkeys', 'tauntsFactory',
+	function ($scope, $rootScope, $timeout, $filter, hotkeys, tauntsFactory)
 	{
 		$scope.playThis = function (taunt, start)
 		{
@@ -23,6 +22,7 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout',
 				type: 'audio/wav'
 			}], autostart);
 			$scope.toggleTitle = false;
+			console.log(taunt);
 		}
 		$scope.playRandom = function ()
 		{
@@ -55,14 +55,40 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout',
 
 		$scope.searchNumber = undefined;
 		$scope.searchText = undefined;
+		$scope.searchNumberFocus = false;
+		$scope.searchTextFocus = false;
+
+		$scope.playFirst = function (keyword)
+		{
+			if (keyword === undefined || keyword === "")
+			{
+				return false;
+			}
+			var playTaunt = $filter('filter')($scope.taunts, keyword);
+			if (playTaunt.length > 0)
+			{
+				$scope.playThis(playTaunt[0], true);
+			}
+		}
+
 		$scope.menuSelection;
 		$scope.toggleMenu = function (item)
 		{
 			$scope.searchNumber = undefined;
 			$scope.searchText = undefined;
+			$scope.searchNumberFocus = false;
+			$scope.searchTextFocus = false;
 			if ($scope.menuSelection !== item)
 			{
 				$scope.menuSelection = item;
+				if (item === 'search')
+				{
+					$scope.searchNumberFocus = true;
+				}
+				else if (item === 'filter')
+				{
+					$scope.searchTextFocus = true;
+				}
 			}
 			else
 			{
@@ -107,6 +133,43 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout',
 				minutes < 10 ? "0" +
 				minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
 		}
+
+		hotkeys.add(
+		{
+			combo: 'shift+s',
+			description: 'Open search',
+			callback: function (event)
+			{
+				if ($scope.menuSelection === 'search')
+				{
+					$scope.searchNumber = undefined;
+				}
+				else
+				{
+					$scope.toggleMenu('search');
+				}
+				event.preventDefault();
+			},
+			allowIn: 'input'
+		});
+		hotkeys.add(
+		{
+			combo: 'shift+f',
+			description: 'Open filter',
+			callback: function (event)
+			{
+				if ($scope.menuSelection === 'filter')
+				{
+					$scope.searchText = undefined;
+				}
+				else
+				{
+					$scope.toggleMenu('filter');
+				}
+				event.preventDefault();
+			},
+			allowIn: 'input'
+		});
 
 		$timeout(function ()
 		{

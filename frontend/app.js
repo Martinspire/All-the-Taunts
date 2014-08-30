@@ -3,6 +3,7 @@ var taunter = angular.module('Taunter', [
 	'ngSanitize',
 	'ngStorage',
 	'mediaPlayer',
+	'cfp.hotkeys',
 	'Taunter.constants',
 	'Taunter.controllers',
 	'Taunter.directives',
@@ -24,6 +25,6 @@ angular.module('Taunter')
 					redirectTo: '/'
 				});
 
-  			$locationProvider.html5Mode(true);
+			$locationProvider.html5Mode(true);
 		}
 	]);
