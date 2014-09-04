@@ -45,10 +45,9 @@
 	<div class="buttons">
 	<a ng-click="play()" ng-show="!player.playing" class="icon play"></a> <a ng-click="pause();" ng-show="player.playing" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
 	</div>
-	<div>{{listOfTaunts}}</div>
 </div>
 <div class="taunts">
 	<ul>
-		<li ng-model="listOfTaunts" ng-repeat="taunt in taunts | filter:[searchNumber,searchText]" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
+		<li ng-repeat="taunt in taunts | filter:[searchNumber,searchText]" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
 	</ul>
 </div>

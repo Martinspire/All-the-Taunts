@@ -9,8 +9,8 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			var autostart = true;
 			if (start === false)
 			{
-				autostart = false
-			};
+				autostart = false;
+			}
 			$scope.file = {
 				src: "taunts/" + taunt[1],
 				description: taunt[2],
@@ -23,35 +23,35 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			}], autostart);
 			$scope.toggleTitle = false;
 			console.log(taunt);
-		}
+		};
 		$scope.playRandom = function ()
 		{
 			var rand = $scope.taunts[Math.floor(Math.random() * $scope.taunts.length)];
 			$scope.playThis(rand);
-		}
+		};
 		$scope.play = function ()
 		{
 			$scope.player.play();
-		}
+		};
 		$scope.pause = function ()
 		{
 			$scope.player.pause();
-		}
+		};
 		$scope.stop = function ()
 		{
 			$scope.player.pause();
 			$scope.player.seek(0);
-		}
+		};
 		$scope.setCurrentTime = function (time)
 		{
 			$scope.player.seek(time);
-		}
+		};
 
 		$scope.toggleTitle = false;
 		$scope.toggleExpandTitle = function ()
 		{
 			$scope.toggleTitle = !$scope.toggleTitle;
-		}
+		};
 
 		$scope.searchNumber = undefined;
 		$scope.searchText = undefined;
@@ -69,9 +69,9 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			{
 				$scope.playThis(playTaunt[0], true);
 			}
-		}
+		};
 
-		$scope.menuSelection;
+		$scope.menuSelection = undefined;
 		$scope.toggleMenu = function (item)
 		{
 			$scope.searchNumber = undefined;
@@ -94,13 +94,13 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			{
 				$scope.menuSelection = undefined;
 			}
-		}
+		};
 
 		$scope.file = {
 			src: "taunts/899 - Valkurie_intro.wav",
 			description: "*Ride of the Valkyrie*",
 			id: 899
-		}
+		};
 
 		$scope.taunts = tauntsFactory.getTaunts();
 
@@ -111,28 +111,28 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			{
 				src: 'taunts/' + $scope.taunts[t][1],
 				type: 'audio/wav'
-			})
+			});
 		}
 
 		$scope.round = function (number)
 		{
 			return Math.round(number);
-		}
+		};
 
-		$scope.formatTime = function (seconds)
+		$scope.formatTime = function (totalSeconds)
 		{
-			if (isNaN(seconds))
+			if (isNaN(totalSeconds))
 			{
 				return "00:00";
 			}
-			seconds = Math.round(seconds);
-			var hours = parseInt(seconds / 3600) % 24;
-			var minutes = parseInt(seconds / 60) % 60;
-			var seconds = seconds % 60;
+			totalSeconds = Math.round(totalSeconds);
+			var hours = parseInt(totalSeconds / 3600) % 24;
+			var minutes = parseInt(totalSeconds / 60) % 60;
+			var seconds = totalSeconds % 60;
 			return (hours > 0 ? (hours < 10 ? "0" + hours : hours) + ":" : "") + (
 				minutes < 10 ? "0" +
 				minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
-		}
+		};
 
 		hotkeys.add(
 		{
