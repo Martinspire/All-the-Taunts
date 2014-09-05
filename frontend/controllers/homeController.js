@@ -62,6 +62,8 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 		{
 			if (keyword === undefined || keyword === "")
 			{
+				$scope.searchNumber = undefined;
+				$scope.searchText = undefined;
 				return false;
 			}
 			var playTaunt = $filter('filter')($scope.taunts, keyword);

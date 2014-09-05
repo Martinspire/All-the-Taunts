@@ -48,6 +48,7 @@
 </div>
 <div class="taunts">
 	<ul>
-		<li ng-repeat="taunt in taunts | filter:[searchNumber,searchText]" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
+		<li ng-repeat="taunt in filterTaunts = (taunts | filter:{0: searchNumber, 2: searchText})" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
+		<li ng-if="filterTaunts.length < 1">No taunts left</li>
 	</ul>
 </div>
