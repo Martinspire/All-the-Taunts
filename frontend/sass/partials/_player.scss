@@ -6,10 +6,10 @@
 		font-size:2.5em;
 		font-weight:bold;
 		color:$primary-color;
-	    @media screen and (max-width: $break-medium) {
+	    @media screen and (max-width: $desktop) {
 		    font-size:2em;
 		}
-	    @media screen and (max-width: $break-small) {
+	    @media screen and (max-width: $mobile) {
 		    font-size:1.5em;
 		}
 		.text{
@@ -93,10 +93,10 @@
 			background-color:lighten($primary-color,25%);
 			z-index:15;
 
-		    @media screen and (max-width: $break-medium) {
+		    @media screen and (max-width: $desktop) {
 			    height:40px;
 			}
-		    @media screen and (max-width: $break-small) {
+		    @media screen and (max-width: $mobile) {
 			    height:30px;
 			}
 		}
@@ -105,7 +105,7 @@
 			top:0;
 			font-size:2em;
 			padding:5px;
-		    @media screen and (max-width: $break-small) {
+		    @media screen and (max-width: $mobile) {
 			    font-size:1.5em;
 			}
 		}
@@ -117,10 +117,10 @@
 			right:0;
 			z-index:17;
 		}
-	    @media screen and (max-width: $break-medium) {
+	    @media screen and (max-width: $desktop) {
 		    height:40px;
 		}
-	    @media screen and (max-width: $break-small) {
+	    @media screen and (max-width: $mobile) {
 		    height:30px;
 		}
 	}
@@ -131,6 +131,9 @@
 		background-size:cover;
 		display:inline-block;
 		margin:10px;
+	}
+	.description{
+		display:none;
 	}
 }
 .icon.play{
@@ -168,4 +171,12 @@
 }
 .icon.audiofile{
 	background-image: url("../img/file_type_audio_72.png");
+}
+
+@media only screen and (min-width:$desktop) {
+	.description{
+		display:block;
+		font-size:1.5em;
+		padding:20px;
+	}
 }

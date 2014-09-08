@@ -43,16 +43,30 @@
 }
 .menu-addon.search .search{
 	display:block;
+	padding:20px;
 }
 .menu-addon.filter .filter{
 	display:block;
+	padding:20px;
 }
 .menu-addon.info .info{
 	display:block;
+	padding:20px;
 }
 .menu-addon h2{
 	margin:0;
 }
 .menu-addon .search input, .menu-addon .filter input{
 	width:100%;
+}
+
+@media only screen and (min-width:$desktop) {
+    .pagewrapper>.menu-addon{
+    	position:absolute;
+    	width:100%;
+    	top:50px;
+    	z-index:1000;
+    	padding:0;
+    	box-shadow: 3px 3px 5px #aaa;
+    }
 }

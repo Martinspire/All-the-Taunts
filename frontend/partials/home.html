@@ -27,28 +27,31 @@
 		</p>
 	</div>
 </div>
-<div class="mediaplayer">
-	<div class="title" ng-click="toggleExpandTitle();"><div class="text" ng-class="{expand: toggleTitle}">{{file.id}} - {{file.description}}</div></div>
+<div class="page flex">
+	<div class="mediaplayer">
+		<div class="title" ng-click="toggleExpandTitle();"><div class="text" ng-class="{expand: toggleTitle}">{{file.id}} - {{file.description}}</div></div>
 
-	<div class="progress-container">
-		<div class="progress-bar">
-			<div class="progress-value" ng-style="{width: ((round(player.currentTime) / round(player.duration)) * 100) + '%' }"></div>
-			<div class="progress-current">{{player.formatTime}}</div>
-			<div class="progress-length">{{player.formatDuration}}</div>
+		<div class="progress-container">
+			<div class="progress-bar">
+				<div class="progress-value" ng-style="{width: ((round(player.currentTime) / round(player.duration)) * 100) + '%' }"></div>
+				<div class="progress-current">{{player.formatTime}}</div>
+				<div class="progress-length">{{player.formatDuration}}</div>
+			</div>
 		</div>
+		<div class="file">
+			<audio media-player="player" ng-model="mainPlayer">
+			  <source src="{{file.src}}" type="audio/wav">
+			</audio>
+		</div>
+		<div class="buttons">
+		<a ng-click="play()" ng-show="!player.playing" class="icon play"></a> <a ng-click="pause();" ng-show="player.playing" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
+		</div>
+		<div class="description">{{file.description}}</div>
 	</div>
-	<div class="file">
-		<audio media-player="player" ng-model="mainPlayer">
-		  <source src="{{file.src}}" type="audio/wav">
-		</audio>
+	<div class="taunts">
+		<ul>
+			<li ng-repeat="taunt in filterTaunts = (taunts | filter:{0: searchNumber, 2: searchText})" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
+			<li ng-if="filterTaunts.length < 1">No taunts left</li>
+		</ul>
 	</div>
-	<div class="buttons">
-	<a ng-click="play()" ng-show="!player.playing" class="icon play"></a> <a ng-click="pause();" ng-show="player.playing" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
-	</div>
-</div>
-<div class="taunts">
-	<ul>
-		<li ng-repeat="taunt in filterTaunts = (taunts | filter:{0: searchNumber, 2: searchText})" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
-		<li ng-if="filterTaunts.length < 1">No taunts left</li>
-	</ul>
 </div>
