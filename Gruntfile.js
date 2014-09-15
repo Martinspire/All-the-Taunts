@@ -18,6 +18,7 @@ module.exports = function (grunt)
 			{
 				port: 8000,
 				livereload: 35729,
+				directory: './frontend',
 				// Change this to '0.0.0.0' to access the server from outside
 				//hostname: '0.0.0.0'
 			},
@@ -27,7 +28,8 @@ module.exports = function (grunt)
 				{
 					base: [
 						'.tmp',
-						'./frontend/'
+						'frontend',
+						'./'
 					]
 				}
 			},
@@ -39,7 +41,7 @@ module.exports = function (grunt)
 					base: [
 						'.tmp',
 						'test',
-						'./frontend/'
+						'./'
 					]
 				}
 			},
@@ -47,8 +49,7 @@ module.exports = function (grunt)
 			{
 				options:
 				{
-					open: true,
-					base: './',
+					base: './dist',
 					directory: './dist',
 					keepalive: true,
 					useAvailablePort: true,
@@ -247,10 +248,11 @@ module.exports = function (grunt)
 					dest: 'dist/',
 					rename: function (dest, src)
 					{
-						return dest + src.replace('package-dist', 'package');
+						return dest + src.replace('dist-package', 'package');
 					}
 				},
 				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['index-dist.html'],
 					dest: 'dist/',
@@ -300,11 +302,7 @@ module.exports = function (grunt)
 					dest: 'dist/'
 				},
 				{
-					expand: true,
-					src: ['server.js'],
-					dest: 'dist/'
-				},
-				{
+					cwd: 'frontend/',
 					expand: true,
 					src: ['index-dist.html'],
 					dest: 'dist/',
@@ -401,10 +399,13 @@ module.exports = function (grunt)
 		]);
 	});
 	// Distribution task: running cleaning on dist folder, create main.css from sass files, compress and combine js files and copy all needed files to dist folder
-	grunt.registerTask('dist', ['clean:dist', 'sass:dist', 'uglify:min',
+	grunt.registerTask('dist-prepare', ['clean:dist', 'sass:dist', 'uglify:min',
 		'copy:dist'
 	]);
 
+	// Distribution task: running cleaning on dist folder, create main.css from sass files, compress and combine js files and copy all needed files to dist folder
+	grunt.registerTask('dist-serve', ['connect:dist', 'open:dist'
+	]);
 	// Test task: allows for testing with debugging off and authentication normal
 	// TODO: remove debugging and change backend when we have hardware
 	grunt.registerTask('test', ['clean:dist', 'sass:dist', 'uglify:min',
@@ -412,7 +413,7 @@ module.exports = function (grunt)
 	]);
 
 	// Build task: allows for building an app out of repository
-	grunt.registerTask('build-dist', ['clean:dist', 'sass:dist', 'uglify:min',
+	grunt.registerTask('build-prepare', ['clean:dist', 'sass:dist', 'uglify:min',
 		'copy:build'
 	]);
 	// Build task: allows for building an app out of repository

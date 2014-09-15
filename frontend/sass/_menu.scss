@@ -63,8 +63,10 @@
 @media only screen and (min-width:$desktop) {
     .pagewrapper>.menu-addon{
     	position:absolute;
-    	width:100%;
-    	top:50px;
+    	width:auto;
+    	top:40%;
+    	left:40%;
+    	right:40%;
     	z-index:1000;
     	padding:0;
     	box-shadow: 3px 3px 5px #aaa;

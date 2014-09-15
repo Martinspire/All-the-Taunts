@@ -71,6 +71,7 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			{
 				$scope.playThis(playTaunt[0], true);
 			}
+			$scope.menuSelection = undefined;
 		};
 
 		$scope.menuSelection = undefined;
