@@ -4,6 +4,16 @@ var taunter = angular.module(
 taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filter', 'hotkeys', 'tauntsFactory', 'ngAudio',
 	function ($scope, $rootScope, $timeout, $filter, hotkeys, tauntsFactory, ngAudio)
 	{
+		$scope.toggleTitle = false;
+
+		$scope.searchNumber = undefined;
+		$scope.searchText = undefined;
+		$scope.searchNumberFocus = false;
+		$scope.searchTextFocus = false;
+
+		$scope.filterSelection = undefined;
+		$scope.infoSelection = false;
+
 		$scope.taunts = tauntsFactory.getTaunts();
 
 		$scope.player = ngAudio.load('taunts/' + $scope.taunts[0][1]);
@@ -51,16 +61,10 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			$scope.player.setCurrentTime(time);
 		};
 
-		$scope.toggleTitle = false;
 		$scope.toggleExpandTitle = function ()
 		{
 			$scope.toggleTitle = !$scope.toggleTitle;
 		};
-
-		$scope.searchNumber = undefined;
-		$scope.searchText = undefined;
-		$scope.searchNumberFocus = false;
-		$scope.searchTextFocus = false;
 
 		$scope.playFirst = function (keyword)
 		{
@@ -78,16 +82,15 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			$scope.menuSelection = undefined;
 		};
 
-		$scope.menuSelection = undefined;
-		$scope.toggleMenu = function (item)
+		$scope.toggleFilter = function (item)
 		{
 			$scope.searchNumber = undefined;
 			$scope.searchText = undefined;
 			$scope.searchNumberFocus = false;
 			$scope.searchTextFocus = false;
-			if ($scope.menuSelection !== item)
+			if ($scope.filterSelection !== item)
 			{
-				$scope.menuSelection = item;
+				$scope.filterSelection = item;
 				if (item === 'search')
 				{
 					$scope.searchNumberFocus = true;
@@ -99,7 +102,19 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			}
 			else
 			{
-				$scope.menuSelection = undefined;
+				$scope.filterSelection = undefined;
+			}
+		};
+
+		$scope.toggleInfo = function (newValue)
+		{
+			if (newValue === true || newValue === false)
+			{
+				$scope.infoSelection = newValue;
+			}
+			else
+			{
+				$scope.infoSelection = !$scope.infoSelection;
 			}
 		};
 
@@ -129,13 +144,13 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			description: 'Open search',
 			callback: function (event)
 			{
-				if ($scope.menuSelection === 'search')
+				if ($scope.filterSelection === 'search')
 				{
 					$scope.searchNumber = undefined;
 				}
 				else
 				{
-					$scope.toggleMenu('search');
+					$scope.toggleFilter('search');
 				}
 				event.preventDefault();
 			},
@@ -147,13 +162,13 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			description: 'Open filter',
 			callback: function (event)
 			{
-				if ($scope.menuSelection === 'filter')
+				if ($scope.filterSelection === 'filter')
 				{
 					$scope.searchText = undefined;
 				}
 				else
 				{
-					$scope.toggleMenu('filter');
+					$scope.toggleFilter('filter');
 				}
 				event.preventDefault();
 			},

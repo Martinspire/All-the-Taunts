@@ -26,49 +26,103 @@
 			float:right;
 			background-image: url("../img/info_72_nobg.png");
 		}
+		@media only screen and (min-width:$desktop) {
+			li.search,li.filter{display:none;}
+		}
 	}
 }
-.menu-addon{
+.filtering,.information{
 	display:none;
 }
-.menu-addon.search,.menu-addon.filter, .menu-addon.info{
+.filtering.search,.filtering.filter{
 	display:block;
 	font-size:1.5em;
 	padding:20px;
 	background-color:$secondary-background-color;
 	overflow-y:auto;
 }
-.menu-addon .search, .menu-addon .filter, .menu-addon .info{
+.filtering .search, .filtering .filter, .information{
 	display:none;
 }
-.menu-addon.search .search{
+.filtering.search .search{
 	display:block;
 	padding:20px;
 }
-.menu-addon.filter .filter{
+.filtering.filter .filter{
 	display:block;
 	padding:20px;
 }
-.menu-addon.info .info{
+.filtering.info .info{
 	display:block;
 	padding:20px;
 }
-.menu-addon h2{
+.filtering .search input, .filtering .filter input{
+	width:100%;
+}
+.information.infoSelection{
+	display:block;
+	font-size:1.5em;
+	padding:20px;
+	background-color:darken($secondary-background-color,10%);
+	overflow-y:auto;
+	position:absolute;
+	top:25%;
+	left:25%;
+	width:50%;
+	height:50%;
+	box-shadow:0 0 5px #999;
+	z-index:1000;
+}
+.information h2{
 	margin:0;
 }
-.menu-addon .search input, .menu-addon .filter input{
-	width:100%;
+.information a.close{
+	display:block;
+	float:right;
+	background-image: url("./../img/cross_72.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	width:40px;
+	height:40px;
 }
 
 @media only screen and (min-width:$desktop) {
-    .pagewrapper>.menu-addon{
-    	position:absolute;
-    	width:auto;
-    	top:40%;
-    	left:40%;
-    	right:40%;
-    	z-index:1000;
-    	padding:0;
-    	box-shadow: 3px 3px 5px #aaa;
+    .pagewrapper>.filtering{
+    	display:block;
     }
+    .pagewrapper>.filtering .search{
+    	position:absolute;
+    	display:block;
+    	top:50px;
+    	left:50%;
+    	right:25%;
+    	width:25%;
+    	height:40px;
+    	z-index:1000;
+    	padding:20px;
+		font-size:1.5em;
+		background-color:$secondary-background-color;
+		overflow-y:auto;
+	}
+    .pagewrapper>.filtering .filter{
+    	position:absolute;
+    	display:block;
+    	top:50px;
+    	left:75%;
+    	right:0;
+    	width:25%;
+    	height:40px;
+    	z-index:1000;
+    	padding:20px;
+		font-size:1.5em;
+		background-color:$secondary-background-color;
+		overflow-y:auto;
+	}
+	.filtering.search, .filtering.filter {
+		display: block;
+		font-size: inherit;
+		padding: 0;
+		background-color: transparent;
+		overflow-y: auto;
+	}
 }

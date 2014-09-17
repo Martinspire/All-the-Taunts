@@ -1,11 +1,11 @@
 <div class="menu">
 	<ul>
-		<li class="search" ng-click="toggleMenu('search');"></li>
-		<li class="filter" ng-click="toggleMenu('filter')"></li>
-		<li class="info" ng-click="toggleMenu('info')"></li>
+		<li class="search" ng-click="toggleFilter('search');"></li>
+		<li class="filter" ng-click="toggleFilter('filter')"></li>
+		<li class="info" ng-click="toggleInfo()"></li>
 	</ul>
 </div>
-<div class="menu-addon" ng-class="menuSelection">
+<div class="filtering" ng-class="filterSelection">
 	<div class="search">
 		<form ng-submit="playFirst(searchNumber)">
 			<input type="number" id="searchnumber" name="searchnumber" placeholder="Play #" ng-model="searchNumber" focus-input="searchNumberFocus" class="mousetrap"/>
@@ -16,16 +16,20 @@
 			<input type="text" id="searchtext" name="searchtext" placeholder="Filter by text" ng-model="searchText" focus-input="searchTextFocus" class="mousetrap"/>
 		</form>
 	</div>
-	<div class="info">
-		<h2>All The Taunts</h2>
-		<p>App made by Martin Spierings</p>
-		<p>All rights reserved &copy; 2014</p>
-		<p>Any questions can be emailed to taunts@martinspire.nl</p>
-		<p>
-			Version info:<br/>
-			1.1.1 - First release
-		</p>
-	</div>
+</div>
+<div class="information" ng-class="{infoSelection: infoSelection}">
+	<a class="close" ng-click="toggleInfo(false);"></a>
+	<h2>All The Taunts</h2>
+	<p>App made by Martin Spierings</p>
+	<p>Shortcuts:<br/>
+	Shift+S = search by number<br/>
+	Shift+F = search by keyword<br/>
+	Shift+M = Mute<br/>
+	<p>All rights reserved &copy; 2014</p>
+	<p>
+		Version info:<br/>
+		1.5.2
+	</p>
 </div>
 <div class="page flex">
 	<div class="mediaplayer">
