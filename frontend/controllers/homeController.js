@@ -1,28 +1,31 @@
 var taunter = angular.module(
 	'Taunter.controllers.homeController', []);
 
-taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filter', 'hotkeys', 'tauntsFactory',
-	function ($scope, $rootScope, $timeout, $filter, hotkeys, tauntsFactory)
+taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filter', 'hotkeys', 'tauntsFactory', 'ngAudio',
+	function ($scope, $rootScope, $timeout, $filter, hotkeys, tauntsFactory, ngAudio)
 	{
+		$scope.taunts = tauntsFactory.getTaunts();
+
+		$scope.player = ngAudio.load('taunts/' + $scope.taunts[0][1]);
+		$scope.file = {
+			src: $scope.taunts[0][1],
+			description: $scope.taunts[0][2],
+			id: $scope.taunts[0][0]
+		};
+
 		$scope.playThis = function (taunt, start)
 		{
-			var autostart = true;
-			if (start === false)
-			{
-				autostart = false;
-			}
 			$scope.file = {
 				src: "taunts/" + taunt[1],
 				description: taunt[2],
 				id: taunt[0]
 			};
-			$scope.player.load([
+			$scope.player.load('taunts/' + taunt[1]);
+			if (start === true || start === undefined)
 			{
-				src: 'taunts/' + taunt[1],
-				type: 'audio/wav'
-			}], autostart);
+				$scope.player.play();
+			}
 			$scope.toggleTitle = false;
-			console.log(taunt);
 		};
 		$scope.playRandom = function ()
 		{
@@ -39,12 +42,11 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 		};
 		$scope.stop = function ()
 		{
-			$scope.player.pause();
-			$scope.player.seek(0);
+			$scope.player.stop();
 		};
 		$scope.setCurrentTime = function (time)
 		{
-			$scope.player.seek(time);
+			$scope.player.setCurrentTime(time);
 		};
 
 		$scope.toggleTitle = false;
@@ -98,14 +100,6 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 				$scope.menuSelection = undefined;
 			}
 		};
-
-		$scope.file = {
-			src: "taunts/899 - Valkurie_intro.wav",
-			description: "*Ride of the Valkyrie*",
-			id: 899
-		};
-
-		$scope.taunts = tauntsFactory.getTaunts();
 
 		$scope.playlist = [];
 		for (var t in $scope.taunts)
@@ -173,11 +167,17 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			},
 			allowIn: 'input'
 		});
-
-		$timeout(function ()
+		hotkeys.add(
 		{
-			console.log($scope.player);
-			$scope.playThis($scope.taunts[0], false);
+			combo: 'shift+m',
+			description: 'Mute',
+			callback: function (event)
+			{
+				$scope.player.stop();
+				event.preventDefault();
+			},
+			allowIn: 'input'
 		});
+		console.log($scope.player);
 	}
 ]);

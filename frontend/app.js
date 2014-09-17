@@ -2,7 +2,7 @@ var taunter = angular.module('Taunter', [
 	'ngRoute',
 	'ngSanitize',
 	'ngStorage',
-	'mediaPlayer',
+	'ngAudio',
 	'cfp.hotkeys',
 	'Taunter.constants',
 	'Taunter.controllers',

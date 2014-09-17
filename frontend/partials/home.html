@@ -33,18 +33,18 @@
 
 		<div class="progress-container">
 			<div class="progress-bar">
-				<div class="progress-value" ng-style="{width: ((round(player.currentTime) / round(player.duration)) * 100) + '%' }"></div>
-				<div class="progress-current">{{player.formatTime}}</div>
-				<div class="progress-length">{{player.formatDuration}}</div>
+				<div class="progress-value" ng-style="{width: (player.progress * 100) + '%' }"></div>
+				<div class="progress-current">{{formatTime(player.currentTime)}}</div>
+				<div class="progress-length">{{formatTime(player.duration)}}</div>
 			</div>
-		</div>
+		</div><!-- 
 		<div class="file">
-			<audio media-player="player" ng-model="mainPlayer">
+			<audio ng-audio="player" ng-model="mainPlayer">
 			  <source src="{{file.src}}" type="audio/wav">
 			</audio>
-		</div>
+		</div> -->
 		<div class="buttons">
-		<a ng-click="play()" ng-show="!player.playing" class="icon play"></a> <a ng-click="pause();" ng-show="player.playing" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
+		<a ng-click="play()" ng-show="player.paused" class="icon play"></a> <a ng-click="pause();" ng-show="!player.paused" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
 		</div>
 		<div class="description">{{file.description}}</div>
 	</div>
