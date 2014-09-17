@@ -15,12 +15,14 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 
 		$scope.playThis = function (taunt, start)
 		{
+			$scope.player.stop();
 			$scope.file = {
 				src: "taunts/" + taunt[1],
 				description: taunt[2],
 				id: taunt[0]
 			};
-			$scope.player.load('taunts/' + taunt[1]);
+			var filename = 'taunts/' + taunt[1];
+			$scope.player = ngAudio.load(filename);
 			if (start === true || start === undefined)
 			{
 				$scope.player.play();
@@ -100,16 +102,6 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 				$scope.menuSelection = undefined;
 			}
 		};
-
-		$scope.playlist = [];
-		for (var t in $scope.taunts)
-		{
-			$scope.playlist.push(
-			{
-				src: 'taunts/' + $scope.taunts[t][1],
-				type: 'audio/wav'
-			});
-		}
 
 		$scope.round = function (number)
 		{

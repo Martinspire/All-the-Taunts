@@ -2,7 +2,7 @@
     "name": "All-the-Taunts",
     "description": "App for easily playing taunts",
     "author": "Martin Spierings",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "repository": "git",
     "private": true,
     "dependencies": {
