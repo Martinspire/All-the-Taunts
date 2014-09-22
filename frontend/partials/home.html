@@ -2,6 +2,7 @@
 	<ul>
 		<li class="search" ng-click="toggleFilter('search');"></li>
 		<li class="filter" ng-click="toggleFilter('filter')"></li>
+		<li class="setting" ng-click="toggleSettings()"></li>
 		<li class="info" ng-click="toggleInfo()"></li>
 	</ul>
 </div>
@@ -17,6 +18,14 @@
 		</form>
 	</div>
 </div>
+<div class="settings" ng-class="{settingsSelection: settingsSelection}">
+	<a class="close" ng-click="toggleSettings(false);"></a>
+	<h2>Settings</h2>
+	<p>
+		<label for="nickname">Name: </label>
+		<input type="text" name="nickname" ng-model="nickname">
+	</p>
+</div>
 <div class="information" ng-class="{infoSelection: infoSelection}">
 	<a class="close" ng-click="toggleInfo(false);"></a>
 	<h2>All The Taunts</h2>
@@ -28,7 +37,7 @@
 	<p>All rights reserved &copy; 2014</p>
 	<p>
 		Version info:<br/>
-		1.5.2
+		2.0.0
 	</p>
 </div>
 <div class="page flex">
@@ -51,6 +60,18 @@
 		<a ng-click="play()" ng-show="player.paused" class="icon play"></a> <a ng-click="pause();" ng-show="!player.paused" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
 		</div>
 		<div class="description">{{file.description}}</div>
+		<div class="chat" ng-show="hasChat">
+			<h2>Chat <i>as {{nickname}}</i></h2>
+			<div class="message-input">
+				<form role="form" novalidate name="form" class="flexrow">
+				<input class="col-10" type="text" required ng-maxlength="50" ng-model="message"/>
+				<button class="send-message col-2" ng-enable="form.$valid" ng-click="sendMessage()">Send!</button>
+				</form>
+			</div>
+		    <ul>
+		    	<li ng-repeat="m in messageLog | orderBy:'id':true track by $index">{{m.from}}: {{m.msg}}</li>
+		    </ul>
+		</div>
 	</div>
 	<div class="taunts">
 		<ul>

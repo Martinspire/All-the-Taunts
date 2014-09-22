@@ -22,6 +22,8 @@
             </ul>
         </div>
     </div>
+    <!-- Socket IO -->
+    <script src="vendor/socket.io-client/socket.io.js"></script>
     <!-- AngularJS -->
     <script src="vendor/angular/angular.js"></script>
     <script src="vendor/angular-animate/angular-animate.min.js"></script>
@@ -32,6 +34,7 @@
     <script src="vendor/ngstorage/ngStorage.min.js"></script>
     <script src="vendor/angular-audio/angular.audio.js"></script>
     <script src="vendor/angular-hotkeys/build/hotkeys.min.js"></script>
+    <script src="vendor/angular-socket-io/socket.js"></script>
     <!-- Custom JS -->
     <script src="constants/constants.js"></script>
     <script src="controllers/controllers.js"></script>
@@ -47,11 +50,9 @@
     <script src="services/tauntsServices.js"></script>
     <script src="services/tauntsFactory.js"></script>
     <script src="services/mediaFactory.js"></script>
+    <script src="services/socketFactory.js"></script>
     <script src="app.js"></script>
-	<script type="text/javascript">
-	//this is here to make node-webkit work with AngularJS routing
-	angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
-	</script>
+    <script src="http://localhost:8001/livereload.js"></script>
 </body>
 
 </html>

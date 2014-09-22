@@ -22,6 +22,9 @@
 		li.filter{
 			background-image: url("../img/filter_72_nobg.png");
 		}
+		li.setting{
+			background-image: url("../img/gear_72_nobg.png");
+		}
 		li.info{
 			float:right;
 			background-image: url("../img/info_72_nobg.png");
@@ -31,7 +34,7 @@
 		}
 	}
 }
-.filtering,.information{
+.filtering,.information, .settings{
 	display:none;
 }
 .filtering.search,.filtering.filter{
@@ -41,7 +44,7 @@
 	background-color:$secondary-background-color;
 	overflow-y:auto;
 }
-.filtering .search, .filtering .filter, .information{
+.filtering .search, .filtering .filter{
 	display:none;
 }
 .filtering.search .search{
@@ -52,31 +55,26 @@
 	display:block;
 	padding:20px;
 }
-.filtering.info .info{
-	display:block;
-	padding:20px;
-}
 .filtering .search input, .filtering .filter input{
 	width:100%;
 }
-.information.infoSelection{
+.information.infoSelection, .settings.settingsSelection{
 	display:block;
 	font-size:1.5em;
 	padding:20px;
 	background-color:darken($secondary-background-color,10%);
 	overflow-y:auto;
 	position:absolute;
-	top:25%;
-	left:25%;
-	width:50%;
-	height:50%;
-	box-shadow:0 0 5px #999;
+	top:50px;
+	left:0;
+	width:100%;
+	height:100%;
 	z-index:1000;
 }
-.information h2{
+.information h2, .settings h2{
 	margin:0;
 }
-.information a.close{
+.information a.close, .settings a.close{
 	display:block;
 	float:right;
 	background-image: url("./../img/cross_72.png");
@@ -124,5 +122,12 @@
 		padding: 0;
 		background-color: transparent;
 		overflow-y: auto;
+	}
+	.information.infoSelection, .settings.settingsSelection{
+		top:25%;
+		left:25%;
+		width:50%;
+		height:50%;
+		box-shadow:0 0 5px #999;
 	}
 }

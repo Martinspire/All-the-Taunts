@@ -173,10 +173,49 @@
 	background-image: url("../img/file_type_audio_72.png");
 }
 
+.chat{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background-color:$secondary-background-color;
+	h2{
+		padding:4px 10px;
+		margin:0;
+		color: $font-light;
+		background-color: $primary-color;
+	}
+	ul{
+		padding:0 20px;
+		margin:0;
+		height:100px;
+		overflow-y:auto;
+		list-style: none;
+		li{
+			padding:3px 0;
+		}
+	}
+	.message-input{
+		padding:10px;
+		input, button{
+			margin:10px;
+		}
+	}
+}
+
 @media only screen and (min-width:$desktop) {
 	.description{
 		display:block;
 		font-size:1.5em;
 		padding:20px;
+	}
+	.chat{
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:50%;
+		ul{
+			height:200px;
+		}
 	}
 }

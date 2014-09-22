@@ -8,7 +8,8 @@ var taunter = angular.module('Taunter', [
 	'Taunter.controllers',
 	'Taunter.directives',
 	'Taunter.filters',
-	'Taunter.services'
+	'Taunter.services',
+	'btford.socket-io'
 ]);
 angular.module('Taunter')
 	.config(['$routeProvider', '$locationProvider',

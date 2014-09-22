@@ -12,49 +12,104 @@ module.exports = function (grunt)
 		pkg: grunt.file.readJSON('package.json'),
 
 		// Used to connect to a locally running web server (so Jasmine can test against a DOM)
-		connect:
-		{
-			options:
-			{
-				port: 8000,
-				livereload: 35729,
-				directory: './frontend',
-				// Change this to '0.0.0.0' to access the server from outside
-				//hostname: '0.0.0.0'
+		// connect:
+		// {
+		// 	options:
+		// 	{
+		// 		port: 8000,
+		// 		livereload: 35729,
+		// 		directory: './frontend',
+		// 		debug: true,
+		// 		// Change this to '0.0.0.0' to access the server from outside
+		// 		//hostname: '0.0.0.0'
+		// 		// onCreateServer: function(server, connect, options){
+		// 		// 	var io = require('socket.io').listen(server);
+		// 		// 	var messages = [];
+		// 		// 	io.sockets.on('connection', function(socket){
+		// 		// 		socket.broadcast.emit('user connected');
+		// 		// 		console.log("new user");
+						
+		// 		// 	    socket.on('taunt', function (data) {
+		// 		// 	    	var from = data.from;
+		// 		// 	    	var taunt = data.taunt;
+		// 		// 	    	var msg = data.msg;
+		// 		// 			console.log('recieved taunt from', from, 'taunt', taunt, 'msg', JSON.stringify(msg));
+		// 		// 			messages.push({msg: msg, from: from});
+		// 		// 			io.sockets.emit('taunt', {
+		// 		// 				taunt: taunt,
+		// 		// 				from: from,
+		// 		// 				msg: msg
+		// 		// 			});
+		// 		// 			console.log('broadcast complete');
+		// 		// 		});
+
+		// 		// 	    socket.on('message', function (data) {
+		// 		// 	    	var from = data.from;
+		// 		// 	    	var msg = data.msg;
+		// 		// 			console.log('recieved message from', from, 'msg', JSON.stringify(msg));
+		// 		// 			messages.push({msg: msg, from: from});
+		// 		// 			io.sockets.emit('broadcast', {
+		// 		// 				msg: msg,
+		// 		// 				from: from
+		// 		// 			});
+		// 		// 			console.log('broadcast complete');
+		// 		// 		});
+
+		// 		// 	    socket.on('history', function () {
+		// 		// 	    	console.log('recieved task to send history');
+		// 		// 			io.sockets.emit('history', {
+		// 		// 				messages: messages
+		// 		// 			});
+		// 		// 			console.log('broadcast complete');
+		// 		// 		});
+		// 		// 	});
+		// 		// }
+		// 	},
+		// 	livereload:
+		// 	{
+		// 		options:
+		// 		{
+		// 			base: [
+		// 				'.tmp',
+		// 				'frontend',
+		// 				'./'
+		// 			]
+		// 		}
+		// 	},
+		// 	test:
+		// 	{
+		// 		options:
+		// 		{
+		// 			port: 9001,
+		// 			base: [
+		// 				'.tmp',
+		// 				'test',
+		// 				'./'
+		// 			]
+		// 		}
+		// 	},
+		// 	dist:
+		// 	{
+		// 		options:
+		// 		{
+		// 			base: './dist',
+		// 			directory: './dist',
+		// 			keepalive: true,
+		// 			useAvailablePort: true,
+		// 			livereload: false,
+		// 			hostname: 'localhost',
+		// 			onCreateServer: null
+		// 		}
+		// 	}
+		// },
+		express: {
+			options: {
+
 			},
-			livereload:
-			{
-				options:
-				{
-					base: [
-						'.tmp',
-						'frontend',
-						'./'
-					]
-				}
-			},
-			test:
-			{
-				options:
-				{
-					port: 9001,
-					base: [
-						'.tmp',
-						'test',
-						'./'
-					]
-				}
-			},
-			dist:
-			{
-				options:
-				{
-					base: './dist',
-					directory: './dist',
-					keepalive: true,
-					useAvailablePort: true,
-					livereload: false,
-					hostname: 'localhost',
+			dev: {
+				options: {
+					script: 'backend/server.js',
+					debug: true
 				}
 			}
 		},
@@ -144,7 +199,7 @@ module.exports = function (grunt)
 		//make js pretty by implementing certain code-standards
 		jsbeautifier:
 		{
-			files: ['frontend/*.js', 'frontend/*/*.js', '!frontend/vendor/*'],
+			files: ['frontend/*.js', 'frontend/**/*.js', '!frontend/vendor/*'],
 			options:
 			{
 				js:
@@ -316,60 +371,74 @@ module.exports = function (grunt)
 		// Run: 'grunt watch' from command line for this section to take effect
 		watch:
 		{
-			options:
-			{
-				livereload: true
+			frontend: {
+				options:
+				{
+					livereload: 8001
+				},
+				files: ['frontend/*.js', 'frontend/**/*.js', 'frontend/*/*.json', 'frontend/*.html', 'frontend/**/*.html',
+					'!frontend/vendor/*', '!frontend/node_modules/*', '!dist/*', '!dist/**/*'
+				],
+				tasks: ['jsbeautifier']
+				// livereload:
+				// {
+				// 	options:
+				// 	{
+				// 		livereload: '<%= connect.options.livereload %>',
+
+				// 	},
+				// 	files: [
+				// 		'frontend/**/*.html',
+				// 		'frontend/css/**/*.css',
+				// 		'frontend/**/*.js'
+				// 	]
+				// }
 			},
-			files: ['frontend/*.js', 'frontend/**/*.js', 'frontend/*/*.json', 'frontend/*.html', 'frontend/**/*.html',
-				'!frontend/vendor/*', '!frontend/node_modules/*', '!dist/*', '!dist/**/*'
-			],
-			//tasks: 'default',
-			// js: {
-			//     files: ['<%= jshint.files %>'],
-			//     tasks: ['jshint']
-			// }
-			styles:
-			{
+			sass: {
+				options:
+				{
+					livereload: 8001
+				},
 				files: ['frontend/sass/**/*.scss'],
 				tasks: ['sass:dev']
 			},
-			tasks: ['jsbeautifier'],
-			livereload:
-			{
-				options:
-				{
-					livereload: '<%= connect.options.livereload %>',
-
-				},
-				files: [
-					'frontend/**/*.html',
-					'frontend/css/**/*.css',
-					'frontend/**/*.js'
-				]
+			express: {
+				files: ['backend/**/*.js', 'Gruntfile.js'],
+				tasks: ['express:dev'],
+				options:{
+					nospawn:true,
+					atBegin: true
+				}
 			}
 		},
 		// Run some tasks in parallel to speed up build process
-		concurrent:
+		parallel:
 		{
-			server: [
-				'sass:dev'
-			],
-			dev: [
-				'sass:dev'
-			],
-			dist: [
-				'sass:dist'
-			]
+			dev: {
+				options:{
+					stream: true
+				},
+				tasks: [{
+					grunt: true,
+					args: ['watch:frontend']
+				},{
+					grunt: true,
+					args: ['watch:sass']
+				}, {
+					grunt: true,
+					args: ['watch:express']
+				}]
+			}
 		},
 		open:
 		{
 			dev:
 			{
-				path: 'http://localhost:<%= connect.options.port%>'
+				path: 'http://localhost:8000'
 			},
 			test:
 			{
-				path: 'http://localhost:<%= connect.options.port%>/dist'
+				path: 'http://localhost:8000/dist'
 			}
 		},
 		nodewebkit:
@@ -391,8 +460,15 @@ module.exports = function (grunt)
 	grunt.registerTask('default', function ()
 	{
 		grunt.task.run([
+			'parallel:dev'
+		]);
+	});
+	// Default task: running development server with livereload, beautifier and watch for sass changes. User is logged in.
+	grunt.registerTask('backup', function ()
+	{
+		grunt.task.run([
 			'concurrent:dev',
-			'connect:livereload',
+			'concurrent:express',
 			'open:dev',
 			'jsbeautifier',
 			'watch'
