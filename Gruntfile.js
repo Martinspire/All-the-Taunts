@@ -10,119 +10,28 @@ module.exports = function (grunt)
 	grunt.initConfig(
 	{
 		pkg: grunt.file.readJSON('package.json'),
-
-		// Used to connect to a locally running web server (so Jasmine can test against a DOM)
-		// connect:
-		// {
-		// 	options:
-		// 	{
-		// 		port: 8000,
-		// 		livereload: 35729,
-		// 		directory: './frontend',
-		// 		debug: true,
-		// 		// Change this to '0.0.0.0' to access the server from outside
-		// 		//hostname: '0.0.0.0'
-		// 		// onCreateServer: function(server, connect, options){
-		// 		// 	var io = require('socket.io').listen(server);
-		// 		// 	var messages = [];
-		// 		// 	io.sockets.on('connection', function(socket){
-		// 		// 		socket.broadcast.emit('user connected');
-		// 		// 		console.log("new user");
-						
-		// 		// 	    socket.on('taunt', function (data) {
-		// 		// 	    	var from = data.from;
-		// 		// 	    	var taunt = data.taunt;
-		// 		// 	    	var msg = data.msg;
-		// 		// 			console.log('recieved taunt from', from, 'taunt', taunt, 'msg', JSON.stringify(msg));
-		// 		// 			messages.push({msg: msg, from: from});
-		// 		// 			io.sockets.emit('taunt', {
-		// 		// 				taunt: taunt,
-		// 		// 				from: from,
-		// 		// 				msg: msg
-		// 		// 			});
-		// 		// 			console.log('broadcast complete');
-		// 		// 		});
-
-		// 		// 	    socket.on('message', function (data) {
-		// 		// 	    	var from = data.from;
-		// 		// 	    	var msg = data.msg;
-		// 		// 			console.log('recieved message from', from, 'msg', JSON.stringify(msg));
-		// 		// 			messages.push({msg: msg, from: from});
-		// 		// 			io.sockets.emit('broadcast', {
-		// 		// 				msg: msg,
-		// 		// 				from: from
-		// 		// 			});
-		// 		// 			console.log('broadcast complete');
-		// 		// 		});
-
-		// 		// 	    socket.on('history', function () {
-		// 		// 	    	console.log('recieved task to send history');
-		// 		// 			io.sockets.emit('history', {
-		// 		// 				messages: messages
-		// 		// 			});
-		// 		// 			console.log('broadcast complete');
-		// 		// 		});
-		// 		// 	});
-		// 		// }
-		// 	},
-		// 	livereload:
-		// 	{
-		// 		options:
-		// 		{
-		// 			base: [
-		// 				'.tmp',
-		// 				'frontend',
-		// 				'./'
-		// 			]
-		// 		}
-		// 	},
-		// 	test:
-		// 	{
-		// 		options:
-		// 		{
-		// 			port: 9001,
-		// 			base: [
-		// 				'.tmp',
-		// 				'test',
-		// 				'./'
-		// 			]
-		// 		}
-		// 	},
-		// 	dist:
-		// 	{
-		// 		options:
-		// 		{
-		// 			base: './dist',
-		// 			directory: './dist',
-		// 			keepalive: true,
-		// 			useAvailablePort: true,
-		// 			livereload: false,
-		// 			hostname: 'localhost',
-		// 			onCreateServer: null
-		// 		}
-		// 	}
-		// },
 		express: {
 			options: {
 
+			},
+			dist: {
+				options: {
+					script: 'backend/server.js',
+					debug: false,
+        			node_env: 'dist'
+				}
 			},
 			dev: {
 				options: {
 					script: 'backend/server.js',
 					debug: true,
-					serverreload: true,
-					livereload:true
+        			node_env: 'dev'
 				}
 			}
 		},
 		//used to setup jshint for use in IDE's like Sublime and validate with display in terminal command
 		jshint:
 		{
-			/*
-                Note:
-                In case there is a /release/ directory found, we don't want to lint that
-                so we use the ! (bang) operator to ignore the specified directory
-            */
 			files: ['Gruntfile.js', 'frontend/app.js', 'frontend/constants/*.js', 'frontend/controllers/**/*.js',
 				'frontend/directives/**/*.js', 'frontend/filters/**/*.js', 'frontend/services/**/*.js'
 			],
@@ -233,12 +142,12 @@ module.exports = function (grunt)
 				files: [
 				{
 					src: [
-						"frontend/constants/constants.js",
+						"frontend/app.js",
+						"frontend/constants/*.js",
 						"frontend/controllers/*.js",
 						"frontend/directives/*.js",
 						"frontend/filters/*.js",
-						"frontend/services/*.js",
-						"frontend/app.js"
+						"frontend/services/*.js"
 					],
 					dest: "dist/js/app.js"
 				}]
@@ -381,19 +290,6 @@ module.exports = function (grunt)
 					'!frontend/vendor/*', '!frontend/node_modules/*', '!dist/*', '!dist/**/*'
 				],
 				tasks: ['jsbeautifier']
-				// livereload:
-				// {
-				// 	options:
-				// 	{
-				// 		livereload: '<%= connect.options.livereload %>',
-
-				// 	},
-				// 	files: [
-				// 		'frontend/**/*.html',
-				// 		'frontend/css/**/*.css',
-				// 		'frontend/**/*.js'
-				// 	]
-				// }
 			},
 			sass: {
 				files: ['frontend/sass/**/*.scss'],
@@ -422,13 +318,8 @@ module.exports = function (grunt)
 		},
 		open:
 		{
-			dev:
-			{
+			all: {
 				path: 'http://localhost:8000'
-			},
-			test:
-			{
-				path: 'http://localhost:8000/dist'
 			}
 		},
 		nodewebkit:
@@ -451,18 +342,7 @@ module.exports = function (grunt)
 	{
 		grunt.task.run([
 			'express:dev',
-			'open:dev',
-			'watch'
-		]);
-	});
-	// Default task: running development server with livereload, beautifier and watch for sass changes. User is logged in.
-	grunt.registerTask('backup', function ()
-	{
-		grunt.task.run([
-			'concurrent:dev',
-			'concurrent:express',
-			'open:dev',
-			'jsbeautifier',
+			'open:all',
 			'watch'
 		]);
 	});
@@ -472,12 +352,12 @@ module.exports = function (grunt)
 	]);
 
 	// Distribution task: running cleaning on dist folder, create main.css from sass files, compress and combine js files and copy all needed files to dist folder
-	grunt.registerTask('dist-serve', ['connect:dist', 'open:dist'
+	grunt.registerTask('dist-serve', ['express:dist', 'open:all', 'watch'
 	]);
 	// Test task: allows for testing with debugging off and authentication normal
 	// TODO: remove debugging and change backend when we have hardware
 	grunt.registerTask('test', ['clean:dist', 'sass:dist', 'uglify:min',
-		'copy:dist', 'open:test'
+		'copy:dist', 'open:all'
 	]);
 
 	// Build task: allows for building an app out of repository

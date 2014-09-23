@@ -1,5 +1,6 @@
-angular.module('Taunter')
-	.filter('bytes', function ()
+taunter.filter('bytes', [
+
+	function ()
 	{
 		return function (bytes, precision)
 		{
@@ -10,4 +11,5 @@ angular.module('Taunter')
 			return (bytes / Math.pow(1024, Math.floor(number)))
 				.toFixed(precision) + ' ' + units[number];
 		};
-	});
+	}
+]);

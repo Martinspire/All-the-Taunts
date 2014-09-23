@@ -1,6 +1,5 @@
-var taunter = angular.module('Taunter');
-angular.module('Taunter')
-	.directive('focusInput', function ($timeout, $parse)
+taunter.directive('focusInput', ['$timeout', '$parse',
+	function ($timeout, $parse)
 	{
 		return {
 			link: function (scope, element, attrs)
@@ -19,4 +18,5 @@ angular.module('Taunter')
 				});
 			}
 		};
-	});
+	}
+]);

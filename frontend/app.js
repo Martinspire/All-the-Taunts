@@ -7,21 +7,20 @@ var taunter = angular.module('Taunter', [
 	'cfp.hotkeys',
 	'btford.socket-io'
 ]);
-angular.module('Taunter')
-	.config(['$routeProvider', '$locationProvider',
-		function ($routeProvider, $locationProvider)
-		{
-			$routeProvider
-				.when('/',
-				{
-					templateUrl: 'partials/home.html',
-					controller: 'homeController'
-				})
-				.otherwise(
-				{
-					redirectTo: '/'
-				});
+taunter.config(['$routeProvider', '$locationProvider',
+	function ($routeProvider, $locationProvider)
+	{
+		$routeProvider
+			.when('/',
+			{
+				templateUrl: 'partials/home.html',
+				controller: 'homeController'
+			})
+			.otherwise(
+			{
+				redirectTo: '/'
+			});
 
-			$locationProvider.html5Mode(true);
-		}
-	]);
+		$locationProvider.html5Mode(true);
+	}
+]);

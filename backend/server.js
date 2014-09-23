@@ -20,8 +20,14 @@ require('./sockets')(io);
 // start the server
 server.listen(8000, function(){ console.log("Server listening on port 8000");});
 
-app.use(express.static(path.join(__dirname, '../frontend/.tmp')));
-app.use(express.static(path.join(__dirname, '../frontend')));
+if(process.env.NODE_ENV === 'dist'){
+  app.use(express.static(path.join(__dirname, '../dist/.tmp')));
+  app.use(express.static(path.join(__dirname, '../dist')));
+}
+else{
+  app.use(express.static(path.join(__dirname, '../frontend/.tmp')));
+  app.use(express.static(path.join(__dirname, '../frontend')));
+}
 
 // view engine setup (for later)
 app.set('views', path.join(__dirname, 'views'));

@@ -1,7 +1,7 @@
 {
   "name": "All-the-Taunts",
   "description": "App for easily playing taunts",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "dependencies": {
     "angular": "~1.2.25",
     "angular-animate": "~1.2.25",

@@ -1,6 +1,6 @@
-var taunter = angular.module('Taunter');
-angular.module('Taunter')
-	.directive('popup', function ()
+taunter.directive('popup', [
+
+	function ()
 	{
 		return {
 			restrict: 'E',
@@ -8,4 +8,5 @@ angular.module('Taunter')
 			transclude: 'true',
 			templateUrl: 'partials/directive/popup.html'
 		};
-	});
+	}
+]);
