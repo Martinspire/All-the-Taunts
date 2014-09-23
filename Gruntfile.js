@@ -109,7 +109,9 @@ module.exports = function (grunt)
 			dev: {
 				options: {
 					script: 'backend/server.js',
-					debug: true
+					debug: true,
+					serverreload: true,
+					livereload:true
 				}
 			}
 		},
@@ -371,11 +373,10 @@ module.exports = function (grunt)
 		// Run: 'grunt watch' from command line for this section to take effect
 		watch:
 		{
+			options: {
+			 	livereload: 8080
+			},
 			frontend: {
-				options:
-				{
-					livereload: 8001
-				},
 				files: ['frontend/*.js', 'frontend/**/*.js', 'frontend/*/*.json', 'frontend/*.html', 'frontend/**/*.html',
 					'!frontend/vendor/*', '!frontend/node_modules/*', '!dist/*', '!dist/**/*'
 				],
@@ -395,10 +396,6 @@ module.exports = function (grunt)
 				// }
 			},
 			sass: {
-				options:
-				{
-					livereload: 8001
-				},
 				files: ['frontend/sass/**/*.scss'],
 				tasks: ['sass:dev']
 			},
@@ -406,28 +403,21 @@ module.exports = function (grunt)
 				files: ['backend/**/*.js', 'Gruntfile.js'],
 				tasks: ['express:dev'],
 				options:{
-					nospawn:true,
-					atBegin: true
+					spawn:false,
+					atBegin: false
 				}
 			}
 		},
 		// Run some tasks in parallel to speed up build process
-		parallel:
+		concurrent:
 		{
 			dev: {
-				options:{
-					stream: true
-				},
-				tasks: [{
-					grunt: true,
-					args: ['watch:frontend']
-				},{
-					grunt: true,
-					args: ['watch:sass']
-				}, {
-					grunt: true,
-					args: ['watch:express']
-				}]
+				target: {
+					options:{
+						logConcurrentOutput: true
+					},
+					tasks: ['watch:express','watch:frontend','watch:sass']
+				}
 			}
 		},
 		open:
@@ -460,7 +450,9 @@ module.exports = function (grunt)
 	grunt.registerTask('default', function ()
 	{
 		grunt.task.run([
-			'parallel:dev'
+			'express:dev',
+			'open:dev',
+			'watch'
 		]);
 	});
 	// Default task: running development server with livereload, beautifier and watch for sass changes. User is logged in.

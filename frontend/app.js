@@ -1,14 +1,10 @@
 var taunter = angular.module('Taunter', [
 	'ngRoute',
 	'ngSanitize',
+	'ngResource',
 	'ngStorage',
 	'ngAudio',
 	'cfp.hotkeys',
-	'Taunter.constants',
-	'Taunter.controllers',
-	'Taunter.directives',
-	'Taunter.filters',
-	'Taunter.services',
 	'btford.socket-io'
 ]);
 angular.module('Taunter')

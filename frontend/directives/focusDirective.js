@@ -1,23 +1,22 @@
-var taunter = angular.module(
-	'Taunter.directives.focusInput', []);
-
-taunter.directive('focusInput', function ($timeout, $parse)
-{
-	return {
-		link: function (scope, element, attrs)
-		{
-			var model = $parse(attrs.focusInput);
-			scope.$watch(model, function (value)
+var taunter = angular.module('Taunter');
+angular.module('Taunter')
+	.directive('focusInput', function ($timeout, $parse)
+	{
+		return {
+			link: function (scope, element, attrs)
 			{
-				if (value === true)
+				var model = $parse(attrs.focusInput);
+				scope.$watch(model, function (value)
 				{
-					$timeout(function ()
+					if (value === true)
 					{
-						scope.$apply(model.assign(scope, false));
-						element[0].focus();
-					}, 30);
-				}
-			});
-		}
-	};
-});
+						$timeout(function ()
+						{
+							scope.$apply(model.assign(scope, false));
+							element[0].focus();
+						}, 30);
+					}
+				});
+			}
+		};
+	});

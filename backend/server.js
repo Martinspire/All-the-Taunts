@@ -18,7 +18,7 @@ var express = require('express'),
 require('./sockets')(io);
 
 // start the server
-server.listen(8000);
+server.listen(8000, function(){ console.log("Server listening on port 8000");});
 
 app.use(express.static(path.join(__dirname, '../frontend/.tmp')));
 app.use(express.static(path.join(__dirname, '../frontend')));

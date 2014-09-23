@@ -1,10 +1,8 @@
-var taunter = angular.module(
-	'Taunter.services.tauntsServices', ['ngResource']);
+var taunter = angular.module('Taunter');
+angular.module('Taunter')
+	.service('tauntsServices', ['$resource',
+		function tauntsServices($resource)
+		{
 
-// Manage services
-taunter.service('tauntsServices', ['$resource',
-	function tauntsServices($resource)
-	{
-
-	}
-]);
+		}
+	]);
