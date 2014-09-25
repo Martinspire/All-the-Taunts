@@ -82,8 +82,7 @@ module.exports = function (grunt)
 				options:
 				{
 					style: 'compressed',
-					debugInfo: false,
-					sourcemap: false
+					debugInfo: false
 				},
 				expand: true,
 				cwd: 'frontend/sass/',

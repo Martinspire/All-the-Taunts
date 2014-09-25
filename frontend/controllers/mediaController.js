@@ -1,5 +1,5 @@
-taunter.controller('mediaController', ['$scope', 'tauntsFactory',
-	function ($scope, tauntsFactory) {
+taunter.controller('mediaController', ['tauntsFactory',
+	function (tauntsFactory) {
 
 	}
 ]);

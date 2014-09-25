@@ -38,7 +38,8 @@
 	display:none;
 }
 .filtering.search,.filtering.filter{
-	display:block;
+	@include flexbox;
+	@include flex(0,1,80px);
 	font-size:1.5em;
 	padding:20px;
 	background-color:$secondary-background-color;
@@ -47,15 +48,12 @@
 .filtering .search, .filtering .filter{
 	display:none;
 }
-.filtering.search .search{
-	display:block;
+.filtering.search .search,.filtering.filter .filter{
+	@include flexbox;
+	@include flex(1);
 	padding:20px;
 }
-.filtering.filter .filter{
-	display:block;
-	padding:20px;
-}
-.filtering .search input, .filtering .filter input{
+.filtering .search input, .filtering .filter input, .filtering form{
 	width:100%;
 }
 .information.infoSelection, .settings.settingsSelection{
@@ -86,38 +84,27 @@
 
 @media only screen and (min-width:$desktop) {
     .pagewrapper>.filtering{
-    	display:block;
+		@include flexbox;
+		@include flex-direction(row);
+		@include flex(1);
+	    position: absolute;
+	    width: 50%;
+	    height: 80px;
+	    top: 50px;
+	    right: 0;
+	    background-color: #e1e1e2;
     }
-    .pagewrapper>.filtering .search{
-    	position:absolute;
-    	display:block;
-    	top:50px;
-    	left:50%;
-    	right:25%;
-    	width:25%;
-    	height:40px;
-    	z-index:1000;
-    	padding:20px;
+    .pagewrapper>.filtering .search,.pagewrapper>.filtering .filter{
+		@include flexbox;
+		@include flex(1);
+    	width:50%;
+    	z-index:200;
 		font-size:1.5em;
-		background-color:$secondary-background-color;
-		overflow-y:auto;
-	}
-    .pagewrapper>.filtering .filter{
-    	position:absolute;
-    	display:block;
-    	top:50px;
-    	left:75%;
-    	right:0;
-    	width:25%;
-    	height:40px;
-    	z-index:1000;
-    	padding:20px;
-		font-size:1.5em;
-		background-color:$secondary-background-color;
-		overflow-y:auto;
+		margin:20px;
 	}
 	.filtering.search, .filtering.filter {
-		display: block;
+		@include flexbox;
+		@include flex(1);
 		font-size: inherit;
 		padding: 0;
 		background-color: transparent;

@@ -1,5 +1,5 @@
-taunter.controller('tauntsController', ['$scope', 'tauntsFactory',
-	function ($scope, tauntsFactory) {
+taunter.controller('tauntsController', ['tauntsFactory',
+	function (tauntsFactory) {
 
 	}
 ]);

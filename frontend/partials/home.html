@@ -1,33 +1,33 @@
 <div class="menu">
 	<ul>
-		<li class="search" ng-click="toggleFilter('search');"></li>
-		<li class="filter" ng-click="toggleFilter('filter')"></li>
-		<li class="setting" ng-click="toggleSettings()"></li>
-		<li class="info" ng-click="toggleInfo()"></li>
+		<li class="search" ng-click="home.toggleFilter('search');"></li>
+		<li class="filter" ng-click="home.toggleFilter('filter')"></li>
+		<li class="setting" ng-click="home.toggleSettings()"></li>
+		<li class="info" ng-click="home.toggleInfo()"></li>
 	</ul>
 </div>
-<div class="filtering" ng-class="filterSelection">
+<div class="filtering" ng-class="home.filterSelection">
 	<div class="search">
-		<form ng-submit="playFirst(searchNumber)">
-			<input type="number" id="searchnumber" name="searchnumber" placeholder="Play #" ng-model="searchNumber" focus-input="searchNumberFocus" class="mousetrap"/>
+		<form ng-submit="home.playFirst(home.searchNumber)">
+			<input type="number" id="searchnumber" name="searchnumber" placeholder="Play #" ng-model="home.searchNumber" focus-input="searchNumberFocus" class="mousetrap"/>
 		</form>
 	</div>
 	<div class="filter">
-		<form ng-submit="playFirst(searchText)">
-			<input type="text" id="searchtext" name="searchtext" placeholder="Filter by text" ng-model="searchText" focus-input="searchTextFocus" class="mousetrap"/>
+		<form ng-submit="playFirst(home.searchText)">
+			<input type="text" id="searchtext" name="searchtext" placeholder="Filter by text" ng-model="home.searchText" focus-input="searchTextFocus" class="mousetrap"/>
 		</form>
 	</div>
 </div>
-<div class="settings" ng-class="{settingsSelection: settingsSelection}">
-	<a class="close" ng-click="toggleSettings(false);"></a>
+<div class="settings" ng-class="{settingsSelection: home.settingsSelection}">
+	<a class="close" ng-click="home.toggleSettings(false);"></a>
 	<h2>Settings</h2>
 	<p>
 		<label for="nickname">Name: </label>
-		<input type="text" name="nickname" ng-model="nickname">
+		<input type="text" name="nickname" ng-model="home.nickname">
 	</p>
 </div>
-<div class="information" ng-class="{infoSelection: infoSelection}">
-	<a class="close" ng-click="toggleInfo(false);"></a>
+<div class="information" ng-class="{infoSelection: home.infoSelection}">
+	<a class="close" ng-click="home.toggleInfo(false);"></a>
 	<h2>All The Taunts</h2>
 	<p>App made by Martin Spierings</p>
 	<p>Shortcuts:<br/>
@@ -37,18 +37,18 @@
 	<p>All rights reserved &copy; 2014</p>
 	<p>
 		Version info:<br/>
-		2.0.2
+		2.1.0
 	</p>
 </div>
 <div class="page flex">
 	<div class="mediaplayer">
-		<div class="title" ng-click="toggleExpandTitle();"><div class="text" ng-class="{expand: toggleTitle}">{{file.id}} - {{file.description}}</div></div>
+		<div class="title" ng-click="home.toggleExpandTitle();"><div class="text" ng-class="{expand: home.toggleTitle}">{{home.file.id}} - {{home.file.description}}</div></div>
 
 		<div class="progress-container">
 			<div class="progress-bar">
-				<div class="progress-value" ng-style="{width: (player.progress * 100) + '%' }"></div>
-				<div class="progress-current">{{formatTime(player.currentTime)}}</div>
-				<div class="progress-length">{{formatTime(player.duration)}}</div>
+				<div class="progress-value" ng-style="{width: (home.player.progress * 100) + '%' }"></div>
+				<div class="progress-current">{{home.formatTime(home.player.currentTime)}}</div>
+				<div class="progress-length">{{home.formatTime(home.player.duration)}}</div>
 			</div>
 		</div><!-- 
 		<div class="file">
@@ -57,25 +57,25 @@
 			</audio>
 		</div> -->
 		<div class="buttons">
-		<a ng-click="play()" ng-show="player.paused" class="icon play"></a> <a ng-click="pause();" ng-show="!player.paused" class="icon pause"></a> <a ng-click="stop();" class="icon stop"></a> <a ng-click="playRandom();" class="icon random"></a>
+		<a ng-click="play()" ng-show="home.player.paused" class="icon play"></a> <a ng-click="home.pause();" ng-show="!home.player.paused" class="icon pause"></a> <a ng-click="home.stop();" class="icon stop"></a> <a ng-click="home.playRandom();" class="icon random"></a>
 		</div>
-		<div class="description">{{file.description}}</div>
-		<div class="chat" ng-show="hasChat">
-			<h2>Chat <i>as {{nickname}}</i></h2>
+		<div class="description">{{home.file.description}}</div>
+		<div class="chat" ng-show="home.hasChat">
+			<h2>Chat <i>as {{home.nickname}}</i></h2>
 			<div class="message-input">
 				<form role="form" novalidate name="form" class="flexrow">
-				<input class="col-10" type="text" required ng-maxlength="50" ng-model="message"/>
-				<button class="send-message col-2" ng-enable="form.$valid" ng-click="sendMessage()">Send!</button>
+				<input class="col-10" type="text" required ng-maxlength="50" ng-model="home.message"/>
+				<button class="send-message col-2" ng-enable="form.$valid" ng-click="home.sendMessage()">Send!</button>
 				</form>
 			</div>
 		    <ul>
-		    	<li ng-repeat="m in messageLog | orderBy:'id':true track by $index">{{m.from}}: {{m.msg}}</li>
+		    	<li ng-repeat="m in home.messageLog | orderBy:'id':true track by $index">{{m.from}}: {{m.msg}}</li>
 		    </ul>
 		</div>
 	</div>
 	<div class="taunts">
 		<ul>
-			<li ng-repeat="taunt in filterTaunts = (taunts | filter:{0: searchNumber, 2: searchText})" ng-click="playThis(taunt)" ng-class="{selected: file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
+			<li ng-repeat="taunt in filterTaunts = (home.taunts | filter:{0: home.searchNumber, 2: home.searchText})" ng-click="home.playThis(taunt)" ng-class="{selected: home.file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
 			<li ng-if="filterTaunts.length < 1">No taunts left</li>
 		</ul>
 	</div>

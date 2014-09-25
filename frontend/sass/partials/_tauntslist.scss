@@ -1,12 +1,7 @@
 .taunts{
 	overflow-y:auto;
 	overflow-x:hidden;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    -o-flex: 1;
-    flex: 1;
+    @include flex(1);
     border-top:1px solid $base-background;
 	background-color:lighten($primary-color,35%);
 	color:$font-dark;

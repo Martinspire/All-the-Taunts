@@ -1,32 +1,34 @@
-taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filter', 'hotkeys', 'tauntsFactory', 'ngAudio', 'broadcastFactory',
-	function ($scope, $rootScope, $timeout, $filter, hotkeys, tauntsFactory, ngAudio, broadcastFactory)
+taunter.controller('homeController', ['$scope', '$filter', 'hotkeys', 'ngAudio', 'tauntsFactory', 'broadcastFactory',
+	function ($scope, $filter, hotkeys, ngAudio, tauntsFactory, broadcastFactory)
 	{
-		$scope.toggleTitle = false;
+		/* jshint validthis: true */
+		var vm = this; //bind $scope to vm (viewmodel)
+		vm.toggleTitle = false;
 
-		$scope.searchNumber = undefined;
-		$scope.searchText = undefined;
-		$scope.searchNumberFocus = false;
-		$scope.searchTextFocus = false;
+		vm.searchNumber = undefined;
+		vm.searchText = undefined;
+		vm.searchNumberFocus = false;
+		vm.searchTextFocus = false;
 
-		$scope.filterSelection = undefined;
-		$scope.infoSelection = false;
-		$scope.settingsSelection = false;
+		vm.filterSelection = undefined;
+		vm.infoSelection = false;
+		vm.settingsSelection = false;
 
-		$scope.taunts = tauntsFactory.getTaunts();
+		vm.taunts = tauntsFactory.getTaunts();
 
-		$scope.player = ngAudio.load('taunts/' + $scope.taunts[0][1]);
-		$scope.file = {
-			src: $scope.taunts[0][1],
-			description: $scope.taunts[0][2],
-			id: $scope.taunts[0][0]
+		vm.player = ngAudio.load('taunts/' + vm.taunts[0][1]);
+		vm.file = {
+			src: vm.taunts[0][1],
+			description: vm.taunts[0][2],
+			id: vm.taunts[0][0]
 		};
 
-		$scope.message = '';
-		$scope.messageLog = [];
-		$scope.nickname = "anonymous";
-		$scope.hasChat = false;
+		vm.message = '';
+		vm.messageLog = [];
+		vm.nickname = "anonymous";
+		vm.hasChat = false;
 
-		$scope.playThis = function (taunt, start, network)
+		vm.playThis = function (taunt, start, network)
 		{
 			console.log("play", taunt, start, network);
 			if (network === undefined)
@@ -35,21 +37,21 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			}
 			if (!isNaN(taunt[0]))
 			{
-				$scope.player.stop();
-				$scope.file = {
+				vm.player.stop();
+				vm.file = {
 					src: "taunts/" + taunt[1],
 					description: taunt[2],
 					id: taunt[0]
 				};
 				var filename = 'taunts/' + taunt[1];
-				$scope.player = ngAudio.load(filename);
+				vm.player = ngAudio.load(filename);
 				if (start === true || start === undefined)
 				{
-					$scope.player.play();
+					vm.player.play();
 				}
-				$scope.toggleTitle = false;
+				vm.toggleTitle = false;
 
-				if ($scope.hasChat)
+				if (vm.hasChat)
 				{
 					if (network === false)
 					{
@@ -58,102 +60,102 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 				}
 			}
 		};
-		$scope.playRandom = function ()
+		vm.playRandom = function ()
 		{
-			var rand = $scope.taunts[Math.floor(Math.random() * $scope.taunts.length)];
-			$scope.playThis(rand);
+			var rand = vm.taunts[Math.floor(Math.random() * vm.taunts.length)];
+			vm.playThis(rand);
 		};
-		$scope.play = function ()
+		vm.play = function ()
 		{
-			$scope.player.play();
+			vm.player.play();
 		};
-		$scope.pause = function ()
+		vm.pause = function ()
 		{
-			$scope.player.pause();
+			vm.player.pause();
 		};
-		$scope.stop = function ()
+		vm.stop = function ()
 		{
-			$scope.player.stop();
+			vm.player.stop();
 		};
-		$scope.setCurrentTime = function (time)
+		vm.setCurrentTime = function (time)
 		{
-			$scope.player.setCurrentTime(time);
-		};
-
-		$scope.toggleExpandTitle = function ()
-		{
-			$scope.toggleTitle = !$scope.toggleTitle;
+			vm.player.setCurrentTime(time);
 		};
 
-		$scope.playFirst = function (keyword)
+		vm.toggleExpandTitle = function ()
+		{
+			vm.toggleTitle = !vm.toggleTitle;
+		};
+
+		vm.playFirst = function (keyword)
 		{
 			if (keyword === undefined || keyword === "")
 			{
-				$scope.searchNumber = undefined;
-				$scope.searchText = undefined;
+				vm.searchNumber = undefined;
+				vm.searchText = undefined;
 				return false;
 			}
-			var playTaunt = $filter('filter')($scope.taunts, keyword);
+			var playTaunt = $filter('filter')(vm.taunts, keyword);
 			if (playTaunt.length > 0)
 			{
-				$scope.playThis(playTaunt[0], true);
+				vm.playThis(playTaunt[0], true);
 			}
-			$scope.menuSelection = undefined;
+			vm.menuSelection = undefined;
 		};
 
-		$scope.toggleFilter = function (item)
+		vm.toggleFilter = function (item)
 		{
-			$scope.searchNumber = undefined;
-			$scope.searchText = undefined;
-			$scope.searchNumberFocus = false;
-			$scope.searchTextFocus = false;
-			if ($scope.filterSelection !== item)
+			vm.searchNumber = undefined;
+			vm.searchText = undefined;
+			vm.searchNumberFocus = false;
+			vm.searchTextFocus = false;
+			if (vm.filterSelection !== item)
 			{
-				$scope.filterSelection = item;
+				vm.filterSelection = item;
 				if (item === 'search')
 				{
-					$scope.searchNumberFocus = true;
+					vm.searchNumberFocus = true;
 				}
 				else if (item === 'filter')
 				{
-					$scope.searchTextFocus = true;
+					vm.searchTextFocus = true;
 				}
 			}
 			else
 			{
-				$scope.filterSelection = undefined;
+				vm.filterSelection = undefined;
 			}
 		};
 
-		$scope.toggleInfo = function (newValue)
+		vm.toggleInfo = function (newValue)
 		{
 			if (newValue === true || newValue === false)
 			{
-				$scope.infoSelection = newValue;
+				vm.infoSelection = newValue;
 			}
 			else
 			{
-				$scope.infoSelection = !$scope.infoSelection;
+				vm.infoSelection = !vm.infoSelection;
 			}
 		};
-		$scope.toggleSettings = function (newValue)
+		vm.toggleSettings = function (newValue)
 		{
 			if (newValue === true || newValue === false)
 			{
-				$scope.settingsSelection = newValue;
+				vm.settingsSelection = newValue;
 			}
 			else
 			{
-				$scope.settingsSelection = !$scope.settingsSelection;
+				vm.settingsSelection = !vm.settingsSelection;
 			}
 		};
 
-		$scope.round = function (number)
+		vm.round = function (number)
 		{
 			return Math.round(number);
 		};
 
-		$scope.formatTime = function (totalSeconds)
+		vm.formatTime = function (totalSeconds)
 		{
 			if (isNaN(totalSeconds))
 			{
@@ -174,13 +176,13 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			description: 'Open search',
 			callback: function (event)
 			{
-				if ($scope.filterSelection === 'search')
+				if (vm.filterSelection === 'search')
 				{
-					$scope.searchNumber = undefined;
+					vm.searchNumber = undefined;
 				}
 				else
 				{
-					$scope.toggleFilter('search');
+					vm.toggleFilter('search');
 				}
 				event.preventDefault();
 			},
@@ -192,13 +194,13 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			description: 'Open filter',
 			callback: function (event)
 			{
-				if ($scope.filterSelection === 'filter')
+				if (vm.filterSelection === 'filter')
 				{
-					$scope.searchText = undefined;
+					vm.searchText = undefined;
 				}
 				else
 				{
-					$scope.toggleFilter('filter');
+					vm.toggleFilter('filter');
 				}
 				event.preventDefault();
 			},
@@ -210,7 +212,7 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			description: 'Mute',
 			callback: function (event)
 			{
-				$scope.player.volume(0);
+				vm.player.volume(0);
 				event.preventDefault();
 			},
 			allowIn: 'input'
@@ -222,16 +224,16 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 		}
 		getHistory();
 
-		$scope.sendMessage = function ()
+		vm.sendMessage = function ()
 		{
-			var message = $scope.message;
+			var message = vm.message;
 			broadcastFactory.emit('message',
 			{
-				from: $scope.nickname,
+				from: vm.nickname,
 				msg: message
 			});
 			console.log('message sent', message);
-			$scope.message = '';
+			vm.message = '';
 		};
 
 		function sendTaunt(id)
@@ -239,15 +241,15 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			console.log("sending taunt", id);
 			broadcastFactory.emit('taunt',
 			{
-				from: $scope.nickname,
+				from: vm.nickname,
 				taunt: id,
-				msg: $scope.taunts[id][2]
+				msg: vm.taunts[id][2]
 			});
 			console.log('message sent',
 			{
-				from: $scope.nickname,
+				from: vm.nickname,
 				taunt: id,
-				msg: $scope.taunts[id][2]
+				msg: vm.taunts[id][2]
 			});
 		}
 
@@ -259,16 +261,16 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 				console.log('invalid taunt', data);
 				return;
 			}
-			var taunt = $scope.taunts[data.taunt];
+			var taunt = vm.taunts[data.taunt];
 			$scope.$apply(function ()
 			{
-				if ($scope.file.id !== taunt[0])
+				if (vm.file.id !== taunt[0])
 				{
-					$scope.playThis(taunt, true, true);
+					vm.playThis(taunt, true, true);
 				}
-				$scope.messageLog.push(
+				vm.messageLog.push(
 				{
-					id: $scope.messageLog.length,
+					id: vm.messageLog.length,
 					from: data.from,
 					msg: data.msg
 				});
@@ -285,9 +287,9 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			}
 			$scope.$apply(function ()
 			{
-				$scope.messageLog.push(
+				vm.messageLog.push(
 				{
-					id: $scope.messageLog.length,
+					id: vm.messageLog.length,
 					from: data.from,
 					msg: data.msg
 				});
@@ -295,8 +297,8 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 		});
 		$scope.$on('socket:broadcastHistory', function (event, data)
 		{
-			$scope.hasChat = true;
-			if ($scope.messageLog.length < 1)
+			vm.hasChat = true;
+			if (vm.messageLog.length < 1)
 			{
 				console.log('got history', data);
 				if (!data.messages)
@@ -308,7 +310,7 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 				{
 					for (var x = 0; x < data.messages.length; x++)
 					{
-						$scope.messageLog.push(
+						vm.messageLog.push(
 						{
 							id: x,
 							from: data.messages[x].from,
@@ -324,6 +326,6 @@ taunter.controller('homeController', ['$scope', '$rootScope', '$timeout', '$filt
 			console.log("error with socket");
 		});
 
-		console.log($scope.player);
+		console.log(vm.player);
 	}
 ]);

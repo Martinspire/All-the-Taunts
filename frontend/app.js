@@ -14,7 +14,8 @@ taunter.config(['$routeProvider', '$locationProvider',
 			.when('/',
 			{
 				templateUrl: 'partials/home.html',
-				controller: 'homeController'
+				controller: 'homeController',
+				controllerAs: 'home'
 			})
 			.otherwise(
 			{
