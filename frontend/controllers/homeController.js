@@ -1,5 +1,5 @@
-taunter.controller('homeController', ['$scope', '$filter', 'hotkeys', 'ngAudio', 'tauntsFactory', 'broadcastFactory',
-	function ($scope, $filter, hotkeys, ngAudio, tauntsFactory, broadcastFactory)
+taunter.controller('homeController', ['$scope', '$filter', '$interval', 'hotkeys', 'tauntsFactory', 'broadcastFactory',
+	function ($scope, $filter, $interval, hotkeys, tauntsFactory, broadcastFactory)
 	{
 		/* jshint validthis: true */
 		var vm = this; //bind $scope to vm (viewmodel)
@@ -16,7 +16,11 @@ taunter.controller('homeController', ['$scope', '$filter', 'hotkeys', 'ngAudio',
 
 		vm.taunts = tauntsFactory.getTaunts();
 
-		vm.player = ngAudio.load('taunts/' + vm.taunts[0][1]);
+		vm.currentTime = 0;
+		vm.duration = 0;
+		vm.progress = 0;
+
+		vm.player;
 		vm.file = {
 			src: vm.taunts[0][1],
 			description: vm.taunts[0][2],
@@ -37,14 +41,20 @@ taunter.controller('homeController', ['$scope', '$filter', 'hotkeys', 'ngAudio',
 			}
 			if (!isNaN(taunt[0]))
 			{
-				vm.player.stop();
+				//console.log(vm.player);
+				if (vm.player !== undefined)
+				{
+					vm.player.pause();
+					vm.currentTime = 0;
+				}
 				vm.file = {
 					src: "taunts/" + taunt[1],
 					description: taunt[2],
 					id: taunt[0]
 				};
-				var filename = 'taunts/' + taunt[1];
-				vm.player = ngAudio.load(filename);
+				var filename = 'http://' + location.host + '/taunts/' + taunt[1];
+				vm.player = new Audio();
+				vm.player.src = filename;
 				if (start === true || start === undefined)
 				{
 					vm.player.play();
@@ -67,20 +77,45 @@ taunter.controller('homeController', ['$scope', '$filter', 'hotkeys', 'ngAudio',
 		};
 		vm.play = function ()
 		{
-			vm.player.play();
+			if (vm.player !== undefined)
+			{
+				vm.player.play();
+			}
+			else
+			{
+				vm.playThis(vm.taunts[0]);
+			}
 		};
 		vm.pause = function ()
 		{
-			vm.player.pause();
+			if (vm.player !== undefined)
+			{
+				vm.player.pause();
+			}
 		};
 		vm.stop = function ()
 		{
-			vm.player.stop();
+			if (vm.player !== undefined)
+			{
+				vm.player.stop();
+			}
 		};
 		vm.setCurrentTime = function (time)
 		{
-			vm.player.setCurrentTime(time);
+			if (vm.player !== undefined)
+			{
+				vm.player.setCurrentTime(time);
+			}
 		};
+
+		vm.getProgress = function ()
+		{
+			if (isNaN(vm.duration) || isNaN(vm.currentTime))
+			{
+				return 0;
+			}
+			return (Math.floor((100 / vm.duration) * vm.currentTime));
+		}
 
 		vm.toggleExpandTitle = function ()
 		{
@@ -256,7 +291,7 @@ taunter.controller('homeController', ['$scope', '$filter', 'hotkeys', 'ngAudio',
 		$scope.$on('socket:broadcastTaunt', function (event, data)
 		{
 			console.log('got taunt', data);
-			if (!data.taunt)
+			if (data === undefined || data.taunt === undefined)
 			{
 				console.log('invalid taunt', data);
 				return;
@@ -280,7 +315,7 @@ taunter.controller('homeController', ['$scope', '$filter', 'hotkeys', 'ngAudio',
 		$scope.$on('socket:broadcastMessage', function (event, data)
 		{
 			console.log('got a message', data);
-			if (!data.msg)
+			if (data === undefined || data.msg === undefined)
 			{
 				console.log('invalid message', data);
 				return;
@@ -326,6 +361,21 @@ taunter.controller('homeController', ['$scope', '$filter', 'hotkeys', 'ngAudio',
 			console.log("error with socket");
 		});
 
-		console.log(vm.player);
+
+		$interval(function ()
+		{
+			if (vm.player !== undefined)
+			{
+				vm.currentTime = vm.player.currentTime.toFixed(0);
+				vm.progress = vm.getProgress();
+			}
+		}, 100);
+		$interval(function ()
+		{
+			if (vm.player !== undefined)
+			{
+				vm.duration = vm.player.duration.toFixed(0);
+			}
+		}, 100);
 	}
 ]);

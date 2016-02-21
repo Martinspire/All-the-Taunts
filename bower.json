@@ -14,7 +14,7 @@
     "normalize-css": "3.0.1",
     "angular-socket-io": "0.6.0",
     "angular-hotkeys": "chieffancypants/angular-hotkeys#1.4.3",
-    "angular-audio": "*",
+    "angular-audio": "^1.7.1",
     "socket.io": "1.1.0",
     "socket.io-client": "1.1.0"
   }

@@ -1,33 +1,33 @@
 <div class="menu">
 	<ul>
-		<li class="search" ng-click="home.toggleFilter('search');"></li>
-		<li class="filter" ng-click="home.toggleFilter('filter')"></li>
-		<li class="setting" ng-click="home.toggleSettings()"></li>
-		<li class="info" ng-click="home.toggleInfo()"></li>
+		<li class="search" data-ng-click="home.toggleFilter('search');">&nbsp;</li>
+		<li class="filter" data-ng-click="home.toggleFilter('filter')">&nbsp;</li>
+		<li class="setting" data-ng-click="home.toggleSettings()">&nbsp;</li>
+		<li class="info" data-ng-click="home.toggleInfo()">&nbsp;</li>
 	</ul>
 </div>
-<div class="filtering" ng-class="home.filterSelection">
+<div class="filtering" data-ng-class="home.filterSelection">
 	<div class="search">
-		<form ng-submit="home.playFirst(home.searchNumber)">
-			<input type="number" id="searchnumber" name="searchnumber" placeholder="Play #" ng-model="home.searchNumber" focus-input="searchNumberFocus" class="mousetrap"/>
+		<form data-ng-submit="home.playFirst(home.searchNumber)">
+			<input type="number" id="searchnumber" name="searchnumber" placeholder="Play #" data-ng-model="home.searchNumber" data-focus-input="searchNumberFocus" class="mousetrap"/>
 		</form>
 	</div>
 	<div class="filter">
-		<form ng-submit="playFirst(home.searchText)">
-			<input type="text" id="searchtext" name="searchtext" placeholder="Filter by text" ng-model="home.searchText" focus-input="searchTextFocus" class="mousetrap"/>
+		<form data-ng-submit="playFirst(home.searchText)">
+			<input type="text" id="searchtext" name="searchtext" placeholder="Filter by text" data-ng-model="home.searchText" data-focus-input="searchTextFocus" class="mousetrap"/>
 		</form>
 	</div>
 </div>
-<div class="settings" ng-class="{settingsSelection: home.settingsSelection}">
-	<a class="close" ng-click="home.toggleSettings(false);"></a>
+<div class="settings" data-ng-class="{settingsSelection: home.settingsSelection}">
+	<a class="close" data-ng-click="home.toggleSettings(false);"></a>
 	<h2>Settings</h2>
 	<p>
 		<label for="nickname">Name: </label>
-		<input type="text" name="nickname" ng-model="home.nickname">
+		<input type="text" name="nickname" id="nickname" data-ng-model="home.nickname"/>
 	</p>
 </div>
-<div class="information" ng-class="{infoSelection: home.infoSelection}">
-	<a class="close" ng-click="home.toggleInfo(false);"></a>
+<div class="information" data-ng-class="{infoSelection: home.infoSelection}">
+	<a class="close" data-ng-click="home.toggleInfo(false);"></a>
 	<h2>All The Taunts</h2>
 	<p>App made by Martin Spierings</p>
 	<p>Shortcuts:<br/>
@@ -42,41 +42,43 @@
 </div>
 <div class="page flex">
 	<div class="mediaplayer">
-		<div class="title" ng-click="home.toggleExpandTitle();"><div class="text" ng-class="{expand: home.toggleTitle}">{{home.file.id}} - {{home.file.description}}</div></div>
-
+		<div class="title" data-ng-click="home.toggleExpandTitle();"><div class="text" data-ng-class="{expand: home.toggleTitle}">{{home.file.id}} - {{home.file.description}}</div></div>
 		<div class="progress-container">
 			<div class="progress-bar">
-				<div class="progress-value" ng-style="{width: (home.player.progress * 100) + '%' }"></div>
-				<div class="progress-current">{{home.formatTime(home.player.currentTime)}}</div>
-				<div class="progress-length">{{home.formatTime(home.player.duration)}}</div>
+				<div class="progress-value" data-ng-style="{width: home.progress + '%' }"></div>
+				<div class="progress-current">{{home.formatTime(home.currentTime)}}</div>
+				<div class="progress-length">{{home.formatTime(home.duration)}}</div>
 			</div>
-		</div><!-- 
+		</div><!--
 		<div class="file">
-			<audio ng-audio="player" ng-model="mainPlayer">
+			<audio data-ng-audio="player" data-ng-model="mainPlayer">
 			  <source src="{{file.src}}" type="audio/wav">
 			</audio>
 		</div> -->
 		<div class="buttons">
-		<a ng-click="play()" ng-show="home.player.paused" class="icon play"></a> <a ng-click="home.pause();" ng-show="!home.player.paused" class="icon pause"></a> <a ng-click="home.stop();" class="icon stop"></a> <a ng-click="home.playRandom();" class="icon random"></a>
+		<a data-ng-click="home.play()" data-ng-show="home.player.paused === true || home.player === undefined" class="icon play"></a>
+		<a data-ng-click="home.pause();" data-ng-show="home.player.paused === false" class="icon pause"></a>
+		<a data-ng-click="home.stop();" class="icon stop"></a>
+		<a data-ng-click="home.playRandom();" class="icon random"></a>
 		</div>
 		<div class="description">{{home.file.description}}</div>
-		<div class="chat" ng-show="home.hasChat">
+		<div class="chat" data-ng-show="home.hasChat">
 			<h2>Chat <i>as {{home.nickname}}</i></h2>
 			<div class="message-input">
 				<form role="form" novalidate name="form" class="flexrow">
-				<input class="col-10" type="text" required ng-maxlength="50" ng-model="home.message"/>
-				<button class="send-message col-2" ng-enable="form.$valid" ng-click="home.sendMessage()">Send!</button>
+				<input class="col-10" type="text" required data-ng-maxlength="50" data-ng-model="home.message"/>
+				<button class="send-message col-2" data-ng-enable="form.$valid" data-ng-click="home.sendMessage()">Send!</button>
 				</form>
 			</div>
 		    <ul>
-		    	<li ng-repeat="m in home.messageLog | orderBy:'id':true track by $index">{{m.from}}: {{m.msg}}</li>
+		    	<li data-ng-repeat="m in home.messageLog | orderBy:'id':true track by $index">{{m.from}}: {{m.msg}}</li>
 		    </ul>
 		</div>
 	</div>
 	<div class="taunts">
 		<ul>
-			<li ng-repeat="taunt in filterTaunts = (home.taunts | filter:{0: home.searchNumber, 2: home.searchText})" ng-click="home.playThis(taunt)" ng-class="{selected: home.file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
-			<li ng-if="filterTaunts.length < 1">No taunts left</li>
+			<li data-ng-repeat="taunt in filterTaunts = (home.taunts | filter:{0: home.searchNumber, 2: home.searchText})" data-ng-click="home.playThis(taunt)" data-ng-class="{selected: home.file.id === taunt[0]}">{{taunt[0]}} - {{taunt[2]}}</li>
+			<li data-ng-if="filterTaunts.length < 1">No taunts left</li>
 		</ul>
 	</div>
 </div>
